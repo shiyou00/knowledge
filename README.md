@@ -1,5 +1,5 @@
 ### 周计划 5.27日 ~ 6.2日
-- 看云搬家到gitbook
+- 看云搬家到gitbook(每日10篇)
 - Angular 依赖注入
 - @Inject 和 @Input的区别
 - redux 以及 Angular中的应用

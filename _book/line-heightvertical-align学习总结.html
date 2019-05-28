@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>gitbook的使用以及快速部署 · lion</title>
+        <title>line-height && vertical-align 学习总结 · lion</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -103,10 +103,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="HTML.md" />
+    <link rel="next" href="深入学习CSS外边距margin（重叠效果，margin传递效果，marginauto实现块级元素）.md" />
     
     
-    <link rel="prev" href="学习资源收藏.html" />
+    <link rel="prev" href="CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.html" />
     
 
     
@@ -240,7 +240,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4" data-path="gitbook的使用以及快速部署.html">
+        <li class="chapter " data-level="1.2.4" data-path="gitbook的使用以及快速部署.html">
             
                 <a href="gitbook的使用以及快速部署.html">
             
@@ -613,7 +613,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.1.9" data-path="line-heightvertical-align学习总结.html">
+        <li class="chapter active" data-level="1.4.1.9" data-path="line-heightvertical-align学习总结.html">
             
                 <a href="line-heightvertical-align学习总结.html">
             
@@ -3665,7 +3665,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >gitbook的使用以及快速部署</a>
+        <a href="." >line-height && vertical-align 学习总结</a>
     </h1>
 </div>
 
@@ -3681,52 +3681,153 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x524D;&#x8A00;</h2>
-<p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4F7F;&#x7528; gitbook &#x5E76;&#x4E14;&#x53D1;&#x5E03;&#x5230;github pages&#x4E2D;</p>
-<h2 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h2>
 <blockquote>
-<p>&#x5B89;&#x88C5;&#x524D;&#x9700;&#x8981;&#x81EA;&#x884C;&#x5B89;&#x88C5;node.js</p>
+<p>line-height&#x3001;font-size&#x3001;vertical-align&#x662F;&#x8BBE;&#x7F6E;&#x884C;&#x5185;&#x5143;&#x7D20;&#x5E03;&#x5C40;&#x7684;&#x5173;&#x952E;&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x76F8;&#x4E92;&#x4F9D;&#x8D56;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6539;&#x53D8;&#x884C;&#x95F4;&#x8DDD;&#x79BB;&#x3001;&#x8BBE;&#x7F6E;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x7B49;&#x90FD;&#x9700;&#x8981;&#x5B83;&#x4EEC;&#x7684;&#x901A;&#x529B;&#x5408;&#x4F5C;&#x3002;</p>
 </blockquote>
-<pre class="language-"><code>sudo npm install gitbook -g
-</code></pre><h2 id="&#x4F7F;&#x7528;"><a name="&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;</h2>
-<p>1&#x3001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;git&#x4ED3;&#x5E93;
-<img src="image/1.png" alt=""></p>
-<p><img src="image/2.png" alt=""></p>
-<p>2&#x3001;&#x62C9;&#x53D6;git&#x4ED3;&#x5E93;</p>
-<pre class="language-"><code>git clone https://github.com/shiyou00/book.git
-cd book/
-</code></pre><p>3&#x3001;&#x521D;&#x59CB;&#x5316;gitbook</p>
-<pre class="language-"><code>gitbook init &#x521D;&#x59CB;&#x5316;
-gitbook serve &#x542F;&#x52A8;&#x670D;&#x52A1;
-</code></pre><p><img src="image/3.png" alt=""></p>
-<p>4&#x3001;&#x6253;&#x5F00;&#x754C;&#x9762;
-<code>http://localhost:4000</code>
-<img src="image/4.png" alt=""></p>
-<p>&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
-<pre class="language-"><code>$ tree book/
-book/
-&#x251C;&#x2500;&#x2500; README.md
-&#x2514;&#x2500;&#x2500; SUMMARY.md
-0 directories, 2 files
-</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x7684;&#x4E66;&#x7C4D;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x4E86;</p>
-<h2 id="&#x53D1;&#x5E03;&#x5230;-github-pages"><a name="&#x53D1;&#x5E03;&#x5230;-github-pages" class="anchor-navigation-ex-anchor" href="#&#x53D1;&#x5E03;&#x5230;-github-pages"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53D1;&#x5E03;&#x5230; github pages</h2>
-<p>1&#x3001;&#x63A8;&#x9001;&#x4EE3;&#x7801;&#x5230;git&#x4ED3;&#x5E93;</p>
-<pre class="language-"><code>git add .
-git commit -m &quot;add pages&quot;
-git push
-</code></pre><p>2&#x3001;&#x5B89;&#x88C5;&#x5DE5;&#x5177;</p>
-<pre class="language-"><code>sudo npm install -g gh-pages
-</code></pre><p>3&#x3001;&#x6267;&#x884C;<code>gitbook build</code> &#x628A;&#x4E66;&#x7C4D;&#x6253;&#x5305;&#x5230;_book&#x76EE;&#x5F55;&#x4E0B;</p>
-<p>4&#x3001;&#x6267;&#x884C;&#x547D;&#x4EE4;<code>gh-pages -d _book</code></p>
-<p>&#x81F3;&#x6B64;&#x5C31;&#x53D1;&#x5E03;&#x6210;&#x7ACB;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x76F8;&#x5E94;&#x7684;&#x94FE;&#x63A5;&#xFF1A;
-<code>Your site is published at https://shiyou00.github.io/book/</code></p>
-<p><img src="image/5.png" alt=""></p>
-<p>&#x597D;&#x4E86;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x90E8;&#x7F72;&#x5230;github pages&#x4E2D;&#x6258;&#x7BA1;&#x4E86;&#xFF0C;&#x4EE5;&#x540E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7EBF;&#x4E0A;&#x8BBF;&#x95EE;&#x4E86;&#xFF0C;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x3002;</p>
-<h2 id="gitbook&#x7684;&#x4F7F;&#x7528;&#x6559;&#x7A0B;"><a name="gitbook&#x7684;&#x4F7F;&#x7528;&#x6559;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#gitbook&#x7684;&#x4F7F;&#x7528;&#x6559;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>gitbook&#x7684;&#x4F7F;&#x7528;&#x6559;&#x7A0B;</h2>
-<ul>
-<li><a href="http://gitbook.zhangjikai.com/" target="_blank">gitbook&#x7684;&#x4F7F;&#x7528;&#x6559;&#x7A0B;</a> </li>
-</ul>
+<h2 id="&#x884C;&#x9AD8;-line-height"><a name="&#x884C;&#x9AD8;-line-height" class="anchor-navigation-ex-anchor" href="#&#x884C;&#x9AD8;-line-height"><i class="fa fa-link" aria-hidden="true"></i></a>&#x884C;&#x9AD8; line-height</h2>
+<blockquote>
+<p>line-height&#x884C;&#x9AD8;&#x662F;&#x6307;&#x6587;&#x672C;&#x884C;&#x57FA;&#x7EBF;&#x4E4B;&#x95F4;&#x7684;&#x8DDD;&#x79BB;&#x3002;</p>
+</blockquote>
+<p>&#x884C;&#x9AD8;line-height&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x5F71;&#x54CD;&#x884C;&#x5185;&#x5143;&#x7D20;&#x548C;&#x5176;&#x4ED6;&#x884C;&#x5185;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E3A;&#x4E00;&#x4E2A;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;line-height&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x503C;&#x53EA;&#x662F;&#x5E94;&#x7528;&#x5230;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x5185;&#x8054;&#x5185;&#x5BB9;&#x65F6;&#x624D;&#x4F1A;&#x6709;&#x5F71;&#x54CD;&#x3002;</p>
+<p>&#x5728;&#x5E94;&#x7528;&#x5230;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x65F6;&#xFF0C;line-height&#x5B9A;&#x4E49;&#x4E86;&#x5143;&#x7D20;&#x6587;&#x672C;&#x57FA;&#x7EBF;&#x4E4B;&#x95F4;&#x7684;&#x6700;&#x5C0F;&#x8DDD;&#x79BB;&#xFF0C;&#x5373;&#x6700;&#x5C0F;&#x884C;&#x9AD8;</p>
+<pre class="language-"><code>line-height
+&#x503C;: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>length</span><span class="token punctuation">&gt;</span></span> | <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>percentage</span><span class="token punctuation">&gt;</span></span> | <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>number</span><span class="token punctuation">&gt;</span></span> | normal | inherit
+&#x521D;&#x59CB;&#x503C;: normal(&#x901A;&#x5E38;line-height:normal&#x7684;&#x503C;&#x4E3A;font-size&#x503C;&#x7684;1.2&#x500D;)
+&#x5E94;&#x7528;&#x4E8E;: &#x6240;&#x6709;&#x5143;&#x7D20;
+&#x7EE7;&#x627F;&#x6027;: &#x6709;
+&#x767E;&#x5206;&#x6570;: &#x76F8;&#x5BF9;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;font-size
+</code></pre><p><img src="https://img2018.cnblogs.com/blog/958602/201904/958602-20190402160019307-1549435907.png" alt=""></p>
+<p>[&#x6CE8;&#x610F;]&#x5982;&#x679C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x5B50;&#x7EA7;&#x5185;&#x8054;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x7684;&#x201C;&#x884C;&#x9AD8;&#x201D;&#x6BD4;&#x201C;&#x6700;&#x5C0F;&#x884C;&#x9AD8;&#x201D;&#x5927;&#xFF0C;&#x5219;&#x884C;&#x6846;&#x4EE5;&#x8BBE;&#x7F6E;&#x201C;&#x884C;&#x9AD8;&#x201D;&#x6765;&#x6E32;&#x67D3;&#xFF1B;&#x5982;&#x679C;&#x5C0F;&#xFF0C;&#x5219;&#x4EE5;&#x201C;&#x6700;&#x5C0F;&#x884C;&#x9AD8;&#x201D;&#x6765;&#x6E32;&#x67D3;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5B50;&#x7EA7;&#x5185;&#x8054;&#x5143;&#x7D20;&#x7684;&#x884C;&#x9AD8;&#x90FD;&#x662F;&#x884C;&#x5185;&#x6846;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x884C;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x884C;&#x5185;&#x5143;&#x7D20;(&#x5305;&#x62EC;&#x4EE3;&#x8868;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x533F;&#x540D;&#x6587;&#x672C;)&#xFF0C;&#x6700;&#x5927;&#x7684;&#x884C;&#x5185;&#x6846;&#x9AD8;&#x5EA6;&#x624D;&#x80FD;&#x6210;&#x4E3A;&#x6574;&#x884C;&#x7684;&#x884C;&#x9AD8;&#x3002;</p>
+<p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f4" target="_blank">&#x6548;&#x679C;&#x5C55;&#x793A;</a></p>
+<h2 id="&#x91CD;&#x8981;&#x6982;&#x5FF5;"><a name="&#x91CD;&#x8981;&#x6982;&#x5FF5;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x8981;&#x6982;&#x5FF5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x8981;&#x6982;&#x5FF5;</h2>
+<p>&#x3010;&#x5185;&#x5BB9;&#x533A;&#x3011;</p>
+<blockquote>
+<p>&#x5BF9;&#x4E8E;&#x884C;&#x5185;&#x975E;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x6216;&#x533F;&#x540D;&#x6587;&#x672C;&#x67D0;&#x4E00;&#x90E8;&#x5206;&#xFF0C;font-size&#x786E;&#x5B9A;&#x4E86;&#x5185;&#x5BB9;&#x533A;&#x7684;&#x9AD8;&#x5EA6;</p>
+</blockquote>
+<p><img src="https://img2018.cnblogs.com/blog/958602/201904/958602-20190402161153561-391987903.png" alt=""></p>
+<p>&#x3010;&#x884C;&#x5185;&#x6846;&#x3011;</p>
+<p>&#x5185;&#x5BB9;&#x533A;&#x52A0;&#x4E0A;&#x884C;&#x95F4;&#x8DDD;&#x7B49;&#x4E8E;&#x884C;&#x5185;&#x6846;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x884C;&#x5185;&#x975E;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x7684;font-size&#x4E3A;15px&#xFF0C;line-height&#x4E3A;21px&#xFF0C;&#x5219;&#x76F8;&#x5DEE;6px&#x3002;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5C06;&#x8FD9;6&#x50CF;&#x7D20;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x5C06;&#x5176;&#x4E00;&#x534A;&#x5206;&#x522B;&#x5E94;&#x7528;&#x5230;&#x5185;&#x5BB9;&#x533A;&#x7684;&#x9876;&#x90E8;&#x548C;&#x5E95;&#x90E8;&#xFF0C;&#x8FD9;&#x5C31;&#x5F97;&#x5230;&#x4E86;&#x884C;&#x5185;&#x6846;</p>
+<p><img src="https://img2018.cnblogs.com/blog/958602/201904/958602-20190402161309606-1519888719.png" alt=""></p>
+<p>&#x5F53;line-height&#x5C0F;&#x4E8E;font-size&#x65F6;&#xFF0C;&#x884C;&#x5185;&#x6846;&#x5B9E;&#x9645;&#x4E0A;&#x5C0F;&#x4E8E;&#x5185;&#x5BB9;&#x533A;</p>
+<p><img src="https://img2018.cnblogs.com/blog/958602/201904/958602-20190402161404574-1249977150.png" alt=""></p>
+<p>&#x3010;&#x884C;&#x6846;&#x3011;</p>
+<blockquote>
+<p>&#x884C;&#x6846;&#x5B9A;&#x4E49;&#x4E3A;&#x884C;&#x4E2D;&#x6700;&#x9AD8;&#x884C;&#x5185;&#x6846;&#x7684;&#x9876;&#x7AEF;&#x5230;&#x6700;&#x4F4E;&#x884C;&#x5185;&#x6846;&#x5E95;&#x7AEF;&#x4E4B;&#x95F4;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x800C;&#x4E14;&#x5404;&#x884C;&#x6846;&#x7684;&#x9876;&#x7AEF;&#x6328;&#x7740;&#x4E0A;&#x4E00;&#x884C;&#x884C;&#x6846;&#x7684;&#x5E95;&#x7AEF;</p>
+</blockquote>
+<p><img src="https://img2018.cnblogs.com/blog/958602/201904/958602-20190402161538672-1535488118.png" alt=""></p>
+<p>&#x3010;&#x6846;&#x5C5E;&#x6027;&#x3011;</p>
+<p>&#x5185;&#x8FB9;&#x8DDD;&#x3001;&#x5916;&#x8FB9;&#x8DDD;&#x548C;&#x8FB9;&#x6846;&#x4E0D;&#x5F71;&#x54CD;&#x884C;&#x6846;&#x7684;&#x9AD8;&#x5EA6;&#xFF0C;&#x5373;&#x4E0D;&#x5F71;&#x54CD;&#x884C;&#x9AD8;</p>
+<p>&#x884C;&#x5185;&#x5143;&#x7D20;&#x7684;&#x8FB9;&#x6846;&#x8FB9;&#x754C;&#x7531;font-size&#x800C;&#x4E0D;&#x662F;line-height&#x63A7;&#x5236;</p>
+<p>&#x5916;&#x8FB9;&#x8DDD;&#x4E0D;&#x4F1A;&#x5E94;&#x7528;&#x5230;&#x884C;&#x5185;&#x975E;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x7684;&#x9876;&#x7AEF;&#x548C;&#x5E95;&#x7AEF;</p>
+<p>margin-left&#x3001;padding-left&#x3001;border-left&#x5E94;&#x7528;&#x5230;&#x5143;&#x7D20;&#x7684;&#x5F00;&#x59CB;&#x5904;&#xFF1B;&#x800C;margin-right&#x3001;padding-right&#x3001;border-right&#x5E94;&#x7528;&#x5230;&#x5143;&#x7D20;&#x7684;&#x7ED3;&#x5C3E;&#x5904;</p>
+<p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f5" target="_blank">&#x6548;&#x679C;&#x5C55;&#x793A;</a></p>
+<p>&#x3010;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x3011;</p>
+<p>&#x884C;&#x5185;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x9700;&#x8981;&#x4F7F;&#x7528;line-height&#x503C;&#xFF0C;&#x4ECE;&#x800C;&#x5728;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x65F6;&#x80FD;&#x6B63;&#x786E;&#x5730;&#x5B9A;&#x4F4D;&#x5143;&#x7D20;&#x3002;&#x56E0;&#x4E3A;vertical-align&#x7684;&#x767E;&#x5206;&#x6570;&#x503C;&#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x5143;&#x7D20;&#x7684;line-height&#x6765;&#x8BA1;&#x7B97;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x6765;&#x8BF4;&#xFF0C;&#x56FE;&#x50CF;&#x672C;&#x8EAB;&#x7684;&#x9AD8;&#x5EA6;&#x65E0;&#x5173;&#x7D27;&#x8981;&#xFF0C;&#x5173;&#x952E;&#x662F;line-height&#x7684;&#x503C;</p>
+<p>&#x9ED8;&#x8BA4;&#x5730;&#xFF0C;&#x884C;&#x5185;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x4F4D;&#x4E8E;&#x57FA;&#x7EBF;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x5411;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x589E;&#x52A0;&#x4E0B;&#x5185;&#x8FB9;&#x8DDD;&#x3001;&#x5916;&#x8FB9;&#x8DDD;&#x6216;&#x8FB9;&#x6846;&#xFF0C;&#x5185;&#x5BB9;&#x533A;&#x4F1A;&#x4E0A;&#x79FB;&#x3002;</p>
+<p>&#x66FF;&#x6362;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x662F;&#x6B63;&#x5E38;&#x6D41;&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x884C;&#x6846;&#x7684;&#x57FA;&#x7EBF;&#x3002;&#x9664;&#x975E;&#xFF0C;&#x8BE5;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x4E3A;&#x7A7A;&#x6216;&#x8005;&#x672C;&#x8EAB;&#x7684;overflow&#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x662F;visible&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x57FA;&#x7EBF;&#x662F;margin&#x5E95;&#x8FB9;&#x7F18;</p>
+<h2 id="&#x5782;&#x76F4;&#x5BF9;&#x9F50;"><a name="&#x5782;&#x76F4;&#x5BF9;&#x9F50;" class="anchor-navigation-ex-anchor" href="#&#x5782;&#x76F4;&#x5BF9;&#x9F50;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5782;&#x76F4;&#x5BF9;&#x9F50;</h2>
+<blockquote>
+<p>vertical-align&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#xFF0C;&#x6240;&#x6709;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x884C;&#x9AD8;</p>
+<pre class="language-"><code>&#x503C;: baseline | sub | super | top | text-top | middle | bottom | text-bottom | <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>length</span><span class="token punctuation">&gt;</span></span> | <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>percentage</span><span class="token punctuation">&gt;</span></span> | inherit
+&#x521D;&#x59CB;&#x503C;: baseline
+&#x5E94;&#x7528;&#x4E8E;: &#x884C;&#x5185;&#x5143;&#x7D20;&#x3001;&#x66FF;&#x6362;&#x5143;&#x7D20;&#x3001;&#x8868;&#x5355;&#x5143;&#x683C;
+&#x7EE7;&#x627F;&#x6027;: &#x65E0;
+&#x767E;&#x5206;&#x6570;: &#x76F8;&#x5BF9;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#x884C;&#x9AD8;line-height
+</code></pre></blockquote>
+<p>[&#x6CE8;&#x610F;]IE7-&#x6D4F;&#x89C8;&#x5668;&#x4E2D;vertical-align&#x7684;&#x767E;&#x5206;&#x6BD4;&#x503C;&#x4E0D;&#x652F;&#x6301;&#x5C0F;&#x6570;&#x884C;&#x9AD8;&#xFF0C;&#x4E14;&#x53D6;baseline&#x3001;middle&#x3001;text-bottom&#x7B49;&#x503C;&#x65F6;&#x4E0E;&#x6807;&#x51C6;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x5C55;&#x793A;&#x6548;&#x679C;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x662F;&#x5C06;&#x884C;&#x5185;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;display:inline-block </p>
+<pre class="language-"><code>vertical-align:baseline(&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;)
+vertical-align:sub(&#x964D;&#x4F4E;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x5230;&#x7236;&#x5143;&#x7D20;&#x5408;&#x9002;&#x7684;&#x4E0B;&#x6807;&#x4F4D;&#x7F6E;)
+vertical-align:super(&#x5347;&#x9AD8;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x5230;&#x7236;&#x5143;&#x7D20;&#x5408;&#x9002;&#x7684;&#x4E0A;&#x6807;&#x4F4D;&#x7F6E;)
+vertical-align:bottom(&#x628A;&#x5BF9;&#x9F50;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5E95;&#x7AEF;&#x4E0E;&#x884C;&#x6846;&#x5E95;&#x7AEF;&#x5BF9;&#x9F50;)
+vertical-align:text-bottom(&#x628A;&#x5143;&#x7D20;&#x7684;&#x5E95;&#x7AEF;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x533A;&#x57DF;&#x7684;&#x5E95;&#x7AEF;&#x5BF9;&#x9F50;)
+vertical-align:top(&#x628A;&#x5BF9;&#x9F50;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x9876;&#x7AEF;&#x4E0E;&#x884C;&#x6846;&#x9876;&#x7AEF;&#x5BF9;&#x9F50;)
+vertical-align:text-top(&#x628A;&#x5143;&#x7D20;&#x7684;&#x9876;&#x7AEF;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x533A;&#x57DF;&#x7684;&#x9876;&#x7AEF;&#x5BF9;&#x9F50;)
+vertical-align:middle(&#x5143;&#x7D20;&#x7684;&#x4E2D;&#x5782;&#x70B9;&#x4E0E;&#x7236;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x7EBF;&#x52A0;1/2&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x5B57;&#x6BCD;X&#x7684;&#x9AD8;&#x5EA6;&#x5BF9;&#x9F50;)
+vertical-align:(+-n)px(&#x5143;&#x7D20;&#x76F8;&#x5BF9;&#x4E8E;&#x57FA;&#x7EBF;&#x4E0A;&#x4E0B;&#x504F;&#x79FB;npx)
+vertical-align:x%(&#x76F8;&#x5BF9;&#x4E8E;&#x5143;&#x7D20;&#x7684;line-height&#x503C;)
+vertical-align:inherit(&#x4ECE;&#x7236;&#x5143;&#x7D20;&#x7EE7;&#x627F;vertical-align&#x5C5E;&#x6027;&#x7684;&#x503C;)
+</code></pre><p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f6" target="_blank">&#x6548;&#x679C;&#x5C55;&#x793A;</a></p>
+<p>&#x3010;inline-block&#x5E95;&#x90E8;&#x7A7A;&#x9699;&#x3011;</p>
+<p>inline-block&#x5143;&#x7D20;&#x5728;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E2D;&#x7559;&#x7A7A;&#x9699;&#x5C31;&#x662F;&#x56E0;&#x4E3A;&#x56FE;&#x50CF;&#x7684;&#x9ED8;&#x8BA4;&#x5782;&#x76F4;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x662F;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;(&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#x5728;&#x539F;&#x7406;&#x4E0A;&#x76F8;&#x5F53;&#x4E8E;&#x56FE;&#x50CF;&#x5E95;&#x8FB9;&#x4E0E;&#x533F;&#x540D;&#x6587;&#x672C;&#x5927;&#x5199;&#x82F1;&#x6587;&#x5B57;&#x6BCD;X&#x7684;&#x5E95;&#x8FB9;&#x5BF9;&#x9F50;)&#xFF1B;&#x800C;&#x533F;&#x540D;&#x6587;&#x672C;&#x662F;&#x6709;&#x884C;&#x9AD8;&#x7684;&#xFF0C;&#x7EE7;&#x627F;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x7684;&#x884C;&#x9AD8;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;normal(&#x5373;font-size&#x7684;1.2&#x500D;)&#xFF0C;&#x6240;&#x4EE5;X&#x7684;&#x5E95;&#x8FB9;&#x8DDD;&#x79BB;&#x884C;&#x6846;&#x6709;&#x4E00;&#x6BB5;&#x8DDD;&#x79BB;&#xFF0C;&#x8FD9;&#x6BB5;&#x8DDD;&#x79BB;&#x5C31;&#x662F;&#x56FE;&#x50CF;&#x7559;&#x51FA;&#x7684;&#x7A7A;&#x9699;</p>
+<p>&#x4E8E;&#x662F;&#xFF0C;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x89E3;&#x51B3;&#x529E;&#x6CD5;</p>
+<p>2&#x3001;&#x7236;&#x7EA7;&#x7684;line-height: 0
+&#x8FD9;&#x6837;&#x4F7F;&#x533F;&#x540D;&#x6587;&#x672C;&#x4E0E;&#x884C;&#x6846;&#x7684;&#x8DDD;&#x79BB;&#x4E3A;0</p>
+<p>3&#x3001;vertical-align: top/middle/bottom</p>
+<p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f7" target="_blank">&#x5185;&#x8054;&#x5757;&#x5143;&#x7D20;&#x5E95;&#x90E8;&#x7A7A;&#x9699;&#x6D88;&#x9664;&#x6F14;&#x793A;</a></p>
+<h2 id="&#x5E94;&#x7528;"><a name="&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;</h2>
+<p>&#x3010;1&#x3011;&#x5355;&#x884C;&#x6587;&#x672C;&#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</p>
+<pre class="language-"><code>div{
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+</code></pre><p>[&#x6CE8;&#x610F;]&#x597D;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x5199;&#x7740;&#x5355;&#x884C;&#x6587;&#x672C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x662F;&#x5C06;&#x9AD8;&#x5EA6;&#x548C;&#x884C;&#x9AD8;&#x8BBE;&#x7F6E;&#x6210;&#x4E00;&#x6837;&#x7684;&#x503C;&#xFF0C;&#x4F46;&#x9AD8;&#x5EA6;&#x5176;&#x5B9E;&#x662F;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x3002;&#x4EC5;&#x4EC5;&#x8BBE;&#x7F6E;&#x884C;&#x9AD8;&#x5C31;&#x53EF;&#x4EE5;&#xFF0C;&#x6587;&#x5B57;&#x5728;&#x4E00;&#x884C;&#x4E2D;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x663E;&#x793A;&#x7684;</p>
+<p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f8" target="_blank">&#x6548;&#x679C;&#x6F14;&#x793A;</a></p>
+<p>&#x3010;2&#x3011;&#x56FE;&#x7247;&#x8FD1;&#x4F3C;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</p>
+<pre class="language-"><code>div{
+    line-height: 200px;
+    text-align: center;
+}
+img{
+    vertical-align: middle;
+}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>&#x7531;&#x4E8E;&#x5B57;&#x7B26;X&#x5728;em&#x6846;&#x4E2D;&#x5E76;&#x4E0D;&#x662F;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x7684;&#xFF0C;&#x4E14;&#x5404;&#x4E2A;&#x5B57;&#x4F53;&#x7684;&#x5B57;&#x7B26;X&#x7684;&#x9AD8;&#x4F4E;&#x4F4D;&#x7F6E;&#x4E0D;&#x4E00;&#x81F4;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5F53;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x8F83;&#x5927;&#x65F6;&#xFF0C;&#x8FD9;&#x79CD;&#x5DEE;&#x5F02;&#x5C31;&#x66F4;&#x660E;&#x663E;</p>
+<p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f9" target="_blank">&#x6548;&#x679C;&#x5C55;&#x793A;</a></p>
+<p>&#x3010;3&#x3011;&#x56FE;&#x7247;&#x5B8C;&#x5168;&#x5782;&#x76F4;&#x5C45;&#x4E2D;
+&#x5728;&#x65B9;&#x6CD5;2&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8BBE;&#x7F6E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x7684;font-size&#x4E3A;0&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x56FE;&#x7247;&#x5B8C;&#x5168;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</p>
+<pre class="language-"><code>div{
+    line-height: 200px;
+    text-align: center;
+    font-size: 0;
+}
+img{
+    vertical-align: middle;
+}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f10" target="_blank">&#x6548;&#x679C;&#x6F14;&#x793A;</a></p>
+<p>&#x3010;4&#x3011;&#x591A;&#x884C;&#x6587;&#x672C;&#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;
+&#x7531;&#x4E8E;&#x65B9;&#x6CD5;3&#x8BBE;&#x7F6E;font-size&#x4E3A;0&#x7684;&#x5C40;&#x9650;&#x6027;&#xFF0C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x91CC;&#x9762;&#x65E0;&#x6CD5;&#x653E;&#x7F6E;&#x6587;&#x672C;&#x3002;&#x65B9;&#x6CD5;4&#x4E3B;&#x8981;&#x901A;&#x8FC7;&#x65B0;&#x589E;&#x5143;&#x7D20;&#x6765;&#x5B9E;&#x73B0;&#x5782;&#x76F4;&#x5C45;&#x4E2D;&#x6548;&#x679C;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x7528;&#x4E8E;&#x56FE;&#x7247;&#x7684;&#x6C34;&#x5E73;&#x5782;&#x76F4;&#x5C45;&#x4E2D;</p>
+<pre class="language-"><code>div{
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    text-align: center;
+}
+span{
+    display:inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+    width: 100px;
+}    
+i{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>&#x6211;&#x662F;&#x7279;&#x522B;&#x957F;&#x7684;&#x7279;&#x522B;&#x957F;&#x7684;&#x7279;&#x522B;&#x957F;&#x7684;&#x7279;&#x522B;&#x957F;&#x7684;&#x591A;&#x884C;&#x6587;&#x5B57;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f11" target="_blank">&#x6548;&#x679C;&#x6F14;&#x793A;</a></p>
+<p>&#x3010;5&#x3011;&#x56FE;&#x6807;&#x548C;&#x6587;&#x672C;&#x5BF9;&#x9F50;</p>
+<p>1&#x3001;&#x4F7F;&#x7528;&#x957F;&#x5EA6;&#x8D1F;&#x503C;</p>
+<pre class="language-"><code>img{
+    vertical-align: -5px;
+}
+</code></pre><p>&#x6839;&#x636E;&#x5B9E;&#x8DF5;&#x7ECF;&#x9A8C;&#xFF0C;20*20&#x50CF;&#x7D20;&#x7684;&#x56FE;&#x6807;&#x540E;&#x9762;&#x8DDF;14px&#x7684;&#x6587;&#x5B57;&#xFF0C;vertical-align&#x8BBE;&#x7F6E;&#x4E3A;-5px&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x5BF9;&#x9F50;&#x6548;&#x679C;</p>
+<p>2&#x3001;&#x4F7F;&#x7528;&#x6587;&#x672C;&#x5E95;&#x90E8;&#x5BF9;&#x9F50;</p>
+<pre class="language-"><code>img{
+    vertical-align: text-bottom;
+}
+</code></pre><p>&#x4F7F;&#x7528;baseline&#x4F1A;&#x4F7F;&#x56FE;&#x6807;&#x504F;&#x4E0A;&#xFF1B;&#x4F7F;&#x7528;top/bottom&#x4F1A;&#x53D7;&#x5230;&#x5176;&#x4ED6;&#x884C;&#x5185;&#x5143;&#x7D20;&#x5F71;&#x54CD;&#x9020;&#x6210;&#x5B9A;&#x4F4D;&#x504F;&#x5DEE;&#xFF1B;&#x4F7F;&#x7528;middle&#x9700;&#x8981;&#x6070;&#x597D;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E14;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x9AD8;&#xFF1B;&#x4F7F;&#x7528;text-bottom&#x8F83;&#x5408;&#x9002;&#xFF0C;&#x4E0D;&#x53D7;&#x884C;&#x9AD8;&#x53CA;&#x5176;&#x4ED6;&#x5185;&#x8054;&#x5143;&#x7D20;&#x5F71;&#x54CD;</p>
+<p><a href="https://shiyou00.github.io/lion/dist/html/css-box-model/box.html?case=f12" target="_blank">&#x6548;&#x679C;&#x5C55;&#x793A;</a> </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; frankshi.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-28 16:12:02
+2019-05-28 18:41:54
 </span></footer>
                                 
                                 </section>
@@ -3754,12 +3855,12 @@ git push
 
             
                 
-                <a href="学习资源收藏.html" class="navigation navigation-prev " aria-label="Previous page: 学习资源收藏">
+                <a href="CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.html" class="navigation navigation-prev " aria-label="Previous page: * CSS 视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="HTML.md" class="navigation navigation-next " aria-label="Next page: HTML">
+                <a href="深入学习CSS外边距margin（重叠效果，margin传递效果，marginauto实现块级元素）.md" class="navigation navigation-next " aria-label="Next page: 深入学习CSS外边距margin（重叠效果，margin传递效果，margin:auto实现块级元素）">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -3770,7 +3871,7 @@ git push
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"gitbook的使用以及快速部署","level":"1.2.4","depth":2,"next":{"title":"HTML","level":"1.3","depth":1,"path":"HTML.md","ref":"HTML.md","articles":[{"title":"HTML 基础语法（HTML简介，HTML文档声明）","level":"1.3.1","depth":2,"path":"HTML基础语法（HTML简介，HTML文档声明）.md","ref":"HTML基础语法（HTML简介，HTML文档声明）.md","articles":[]},{"title":"HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）","level":"1.3.2","depth":2,"path":"HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）.md","ref":"HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）.md","articles":[]},{"title":"HTML属性","level":"1.3.3","depth":2,"path":"HTML属性.md","ref":"HTML属性.md","articles":[]},{"title":"HTML常用标签（a，img）","level":"1.3.4","depth":2,"path":"HTML常用标签（a，img）.md","ref":"HTML常用标签（a，img）.md","articles":[]},{"title":"HTML表格","level":"1.3.5","depth":2,"path":"HTML表格.md","ref":"HTML表格.md","articles":[]},{"title":"HTML iframe 使用postMessage方法进行跨文档消息传递","level":"1.3.6","depth":2,"path":"HTMLiframe使用postMessage方法进行跨文档消息传递.md","ref":"HTMLiframe使用postMessage方法进行跨文档消息传递.md","articles":[]},{"title":"HTML 表单(form元素介绍，input元素的常用type类型，input元素的常用属性)","level":"1.3.7","depth":2,"path":"HTML表单form元素介绍，input元素的常用type类型，input元素的常用属性.md","ref":"HTML表单form元素介绍，input元素的常用type类型，input元素的常用属性.md","articles":[]},{"title":"HTML meta标签,base标签","level":"1.3.8","depth":2,"path":"HTMLmeta标签,base标签.md","ref":"HTMLmeta标签,base标签.md","articles":[]},{"title":"HTML 条件注释规范","level":"1.3.9","depth":2,"path":"HTML条件注释规范.md","ref":"HTML条件注释规范.md","articles":[]},{"title":"【重难】深入理解HTML表格","level":"1.3.10","depth":2,"path":"【重难】深入理解HTML表格.md","ref":"【重难】深入理解HTML表格.md","articles":[]},{"title":"【重难】JavaScript中attribute和property的区别以及最佳实践","level":"1.3.11","depth":2,"path":"JavaScript中attribute和property的区别以及最佳实践.md","ref":"JavaScript中attribute和property的区别以及最佳实践.md","articles":[]},{"title":"【重难】table单元格中文字过长如何进行省略 table-layout","level":"1.3.12","depth":2,"path":"【重难】table单元格中文字过长如何进行省略table-layout.md","ref":"【重难】table单元格中文字过长如何进行省略table-layout.md","articles":[]}]},"previous":{"title":"学习资源收藏","level":"1.2.3","depth":2,"path":"学习资源收藏.md","ref":"学习资源收藏.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"user"},"github":{"url":"https://github.com/shiyou00/knowledge"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"gitbook的使用以及快速部署.md","mtime":"2019-05-28T08:12:02.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-28T10:45:57.335Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"line-height && vertical-align 学习总结","level":"1.4.1.9","depth":3,"next":{"title":"深入学习CSS外边距margin（重叠效果，margin传递效果，margin:auto实现块级元素）","level":"1.4.1.10","depth":3,"path":"深入学习CSS外边距margin（重叠效果，margin传递效果，marginauto实现块级元素）.md","ref":"深入学习CSS外边距margin（重叠效果，margin传递效果，marginauto实现块级元素）.md","articles":[]},"previous":{"title":"* CSS 视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间","level":"1.4.1.8","depth":3,"path":"CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.md","ref":"CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"user"},"github":{"url":"https://github.com/shiyou00/knowledge"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"line-heightvertical-align学习总结.md","mtime":"2019-05-28T10:41:54.167Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-28T10:45:57.335Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
