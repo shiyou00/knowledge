@@ -37,7 +37,7 @@ https://github.com/camsong/blog/issues/9
 
 ## HTML目录
 【基础】
-- [HTML 基础语法（HTML简介，HTML文档声明）](https://www.kancloud.cn/frankshi/lion-know/1084702)
+- [HTML 基础语法（HTML简介，HTML文档声明）](HTML基础语法（HTML简介，HTML文档声明）.md)
 - [HTML 元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）](https://www.kancloud.cn/frankshi/lion-know/1084703)
 - [HTML 属性](https://www.kancloud.cn/frankshi/lion-know/1084704)
 - [HTML 常用标签（a，img）](https://www.kancloud.cn/frankshi/lion-know/1084705)
