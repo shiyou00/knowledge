@@ -1,8 +1,9 @@
 ### 周计划 5.27日 ~ 6.2日
-- 看云搬家到gitbook(每日10篇)
-- Angular 依赖注入
+- 看云搬家到gitbook(每日10篇，替换图片)
+- Angular 依赖注入 以及 service
+- 尝试使用rxjs进行开发
 - @Inject 和 @Input的区别
-- redux 以及 Angular中的应用
+- redux 原理学习
 - SVG图案
 - SVG裁切和蒙版
 - call，apply，bind 方法详解
@@ -12,7 +13,6 @@
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 
 ### 学习池
-- 将文章中博客园的图片给替换了
 - react 技术栈
 - Web Components
 - svg 慕课视频
