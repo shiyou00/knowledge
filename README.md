@@ -1,5 +1,6 @@
 ### 周计划 5.27日 ~ 6.2日
-- Anuglar 依赖注入
+- 看云搬家到gitbook
+- Angular 依赖注入
 - @Inject 和 @Input的区别
 - redux 以及 Angular中的应用
 - SVG图案

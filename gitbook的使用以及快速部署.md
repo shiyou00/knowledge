@@ -65,3 +65,5 @@ sudo npm install -g gh-pages
 
 好了已经成功部署到github pages中托管了，以后可以直接线上访问了，非常方便。
 
+## gitbook的使用教程
+- [gitbook的使用教程](http://gitbook.zhangjikai.com/)
