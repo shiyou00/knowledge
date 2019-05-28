@@ -1,4 +1,4 @@
-# for lion
+# lion
 
 * [knowledge](README.md)
     * [core](core.md)
