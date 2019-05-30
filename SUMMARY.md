@@ -174,7 +174,7 @@
         * [[表单]自定义表单验证器](自定义表单验证器.md)
         * [[表单]自定义表单控件]([表单]自定义表单控件.md)
         * [[重难]@Input() or @Inject()](InputorInjectable.md)
-        * [[原创]Angular依赖注入(DI)与服务service详解](Angular依赖注入(DI)与服务service详解.md)
+        * [[原创]Angular依赖注入(DI)与服务service详解](Angular依赖注入与服务service详解.md)
     * [AngularJs](AngularJs.md)
         * [AngularJS基础](AngularJS基础.md)
     * [vue](vue.md)
