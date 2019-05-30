@@ -1,18 +1,16 @@
 ### 周计划 5.27日 ~ 6.2日
-- 看云搬家到gitbook([html])
-- [ing]@Inject 和 @Input的区别
-- 创建模型的方式让JS代码更加优雅
-- rxJs系列学习(3)
-- @Input的get,set以及ngOnChanges()
+- [ing]rxjs
+- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
+- 看云搬家到gitbook([html][])
 - HttpClient
 
 ### 学习池
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
+- 写 ChangeDetectorRef
 - es6
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
-- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - redux理论及应用
 - SVG图案
 - SVG裁切和蒙版
@@ -38,6 +36,7 @@ https://github.com/camsong/blog/issues/9
 	- 历史上的图片优化方案：雪碧图，文件格式，压缩
 	- 区分可控图片和不可控图片
 	- 该如何优化呢？
+- Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
 
 ## HTML目录
 【基础】
@@ -567,7 +566,11 @@ https://github.com/camsong/blog/issues/9
     - [[表单]自定义表单控件](https://www.kancloud.cn/frankshi/lion-know/1087087)
 - 重难点
     - [@Input() or @Inject() 该如何选择](InputorInjectable.md)
-
+    - [@Input()的set or ngOnChanges()](Input的set还是ngOnChanges.md)
+ 
+ 【rxjs】
+ - [rxjs简介](rxjs简介.md)
+    
 【路由】
 - [UI-Router基础](https://www.kancloud.cn/frankshi/lion-know/1087009)
 
@@ -649,6 +652,8 @@ https://github.com/camsong/blog/issues/9
 
 ## 发布
 - 使用jenkins进行前端项目自动部署
+
+## [写的更优雅](优雅的代码.md)
 
 ------------------------------------------------
 

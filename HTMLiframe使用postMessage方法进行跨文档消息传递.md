@@ -15,7 +15,7 @@
 
 ## 同源策略
 > 同源政策由 Netscape 公司引入浏览器。目前，所有浏览器都实行这个政策。
-﻿
+
 ```
 协议相同: http https ftp 指的是协议
 域名相同: www.baidu.com www.taobao.com 指的是域名
