@@ -54,11 +54,11 @@ git push
 sudo npm install -g gh-pages
 ```
 
-3、执行`gitbook build` 把书籍打包到_book目录下
+3、执行`gitbook build` 把书籍打包到_book目录下  
 
-4、执行命令`gh-pages -d _book`
+4、执行命令`gh-pages -d _book`  
 
-至此就发布成立可以打开相应的链接：
+至此就发布成立可以打开相应的链接：  
 `Your site is published at https://shiyou00.github.io/book/`
 
 ![](./image/5.png)

@@ -1,25 +1,29 @@
 ### 周计划 5.27日 ~ 6.2日
-- 看云搬家到gitbook(每日10篇，替换图片)
-- Angular 依赖注入 以及 service
-- 尝试使用rxjs进行开发
-- @Inject 和 @Input的区别
-- redux 原理学习
-- SVG图案
-- SVG裁切和蒙版
-- call，apply，bind 方法详解
-- underscore源码5
-- lerna 进阶学习(包含项目实战)
-- vim学习
-- [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
+- 看云搬家到gitbook([html])
+- [ing]@Inject 和 @Input的区别
+- 创建模型的方式让JS代码更加优雅
+- rxJs系列学习(3)
+- @Input的get,set以及ngOnChanges()
+- HttpClient
 
 ### 学习池
+- Angular文档阅读：DI 实战
+- Angular文档阅读：浏览组件树
+- es6
+- [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
+- [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
+- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
+- redux理论及应用
+- SVG图案
+- SVG裁切和蒙版
+- lerna 进阶学习(包含项目实战)
+- vim学习
 - react 技术栈
 - Web Components
 - svg 慕课视频
 - css动画
 - js运动
-- [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
-- es6
+- call，apply，bind 方法详解
 - 单元测试
 - underscore源码阅读
 - mQuery
@@ -28,7 +32,6 @@
 - 如何使用n管理node.js版本
 - JavaScript 浮点数陷阱及解法
 https://github.com/camsong/blog/issues/9
-- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - 常见的开源协议：MIT等等
 - 图片的原理和优化方案
 	- 什么是图片，计算机是如何表示和理解图片的
@@ -39,19 +42,19 @@ https://github.com/camsong/blog/issues/9
 ## HTML目录
 【基础】
 - [HTML 基础语法（HTML简介，HTML文档声明）](HTML基础语法（HTML简介，HTML文档声明）.md)
-- [HTML 元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）](https://www.kancloud.cn/frankshi/lion-know/1084703)
-- [HTML 属性](https://www.kancloud.cn/frankshi/lion-know/1084704)
-- [HTML 常用标签（a，img）](https://www.kancloud.cn/frankshi/lion-know/1084705)
-- [HTML 表格](https://www.kancloud.cn/frankshi/lion-know/1084706)
-- [HTML iframe 使用postMessage方法进行跨文档消息传递](https://www.kancloud.cn/frankshi/lion-know/1084707)
-- [HTML 表单(form元素介绍，input元素的常用type类型，input元素的常用属性)](https://www.kancloud.cn/frankshi/lion-know/1084708)
-- [HTML meta标签&base标签](https://www.kancloud.cn/frankshi/lion-know/1084709)
-- [HTML 条件注释规范](https://www.kancloud.cn/frankshi/lion-know/1084710)
+- [HTML 元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）](HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）.md)
+- [HTML 属性](HTML属性.md)
+- [HTML 常用标签（a，img）](HTML常用标签（a，img）.md)
+- [HTML 表格](HTML表格.md)
+- [HTML iframe 使用postMessage方法进行跨文档消息传递](HTMLiframe使用postMessage方法进行跨文档消息传递.md)
+- [HTML 表单(form元素介绍，input元素的常用type类型，input元素的常用属性)](HTML表单form元素介绍，input元素的常用type类型，input元素的常用属性.md)
+- [HTML meta标签&base标签](HTMLmeta标签,base标签.md)
+- [HTML 条件注释规范](HTML条件注释规范.md)
 
 【重难】
-- [attribute和property的区别](https://www.kancloud.cn/frankshi/lion-know/1084712)
-- [深入理解HTML表格](https://www.kancloud.cn/frankshi/lion-know/1084711)
-- [table单元格中文字过长如何进行省略](https://www.kancloud.cn/frankshi/lion-know/1084713)
+- [attribute和property的区别](JavaScript中attribute和property的区别以及最佳实践.md)
+- [深入理解HTML表格](【重难】深入理解HTML表格.md)
+- [table单元格中文字过长如何进行省略](【重难】table单元格中文字过长如何进行省略table-layout.md)
 
 ## CSS目录
 【CSS2 基础】
@@ -556,13 +559,14 @@ https://github.com/camsong/blog/issues/9
 - [Angular管道](https://www.kancloud.cn/frankshi/lion-know/1087064)
 - [Angular事件处理](https://www.kancloud.cn/frankshi/lion-know/1087065)
 - [NgModule ](https://www.kancloud.cn/frankshi/lion-know/1087070)
+- [Angular依赖注入(DI)与服务service详解](Angular依赖注入(DI)与服务service详解.md)
 - 表单
     - [模板驱动表单](https://www.kancloud.cn/frankshi/lion-know/1087071)
     - [wip:[表单]响应式表单](https://www.kancloud.cn/frankshi/lion-know/1087078)
     - [自定义表单验证器](https://www.kancloud.cn/frankshi/lion-know/1087079)
     - [[表单]自定义表单控件](https://www.kancloud.cn/frankshi/lion-know/1087087)
 - 重难点
-    - @Inpupt() or @Injectable
+    - [@Input() or @Inject() 该如何选择](InputorInjectable.md)
 
 【路由】
 - [UI-Router基础](https://www.kancloud.cn/frankshi/lion-know/1087009)

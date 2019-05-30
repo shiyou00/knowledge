@@ -12,25 +12,24 @@ table{
 }
 ```
 
-【属性】
-1、border(在html5中，border只能为"1"或" ")(html5已废弃)
+【属性】  
+1、border(在html5中，border只能为"1"或" ")(html5已废弃)  
 ```
 border="0"//没有边框
 border="8"//8像素宽的边框
 ```
 
-2、cellpadding(px/%)(html5已废弃)
-规定单元边界与单元内容之间的间距
+2、cellpadding(px/%)(html5已废弃)  
+规定单元边界与单元内容之间的间距  
 
-3、cellspacing(px/%)(html5已废弃)
-规定单元格之间的间距
+3、cellspacing(px/%)(html5已废弃)  
+规定单元格之间的间距  
 
-4、summary(html5已废弃)
-表格内容的摘要
+4、summary(html5已废弃)  
+表格内容的摘要  
 
-5、width(html5已废弃)
-表格宽度
-
+5、width(html5已废弃)  
+表格宽度  
 ```
 <table border="2" cellpadding="5" cellspacing="3" summary="测试表格" width="300">
     <tr>
@@ -43,6 +42,7 @@ border="8"//8像素宽的边框
     </tr>
 </table> 
 ```
+
 6、frame(IE7-浏览器不能正常显示)(html5已废弃)
 ```
 void	不显示外侧边框。
@@ -65,8 +65,8 @@ cols	位于列之间的线条。
 all	位于行和列之间的线条。
 ```
 
-【样式】
-1、border-spacing 可替代HTML属性cellspaing(IE7-不支持)
+【样式】  
+1、border-spacing 可替代HTML属性cellspaing(IE7-不支持)  
 [注意]只有当border-collapse值为separate时，该样式才有效
 ```
 border-spacing: x y
@@ -83,22 +83,19 @@ empty-cells: show(默认) 在空单元格周围绘制边框和背景
 ```
 border-collapse:separate;
 ```
+
 [注意]在分隔边框模型中，不能为行、行组、列和列组设置边框。
 ```
 border-collapse:collapse;
 ```
 　　在合并边框模型中，表格无法设置内边距padding，且单元格边框之间也没有间距。单元格之间的边框会在单元格间的假想表格线上居中，且表格宽度只包含表格边框的一半
 
-【边框合并的规则】
-　　a、某个合并边框的border-style为hidden，它会优先于所有其他合并边框。这个位置上的所有边框都隐藏
-
-　　b、某个合并边框的border-style为none，它的优先级最低
-
-　　c、宽边框优先于窄边框
-
-　　d、若宽度相同，double\solid\dashed\dotted\ridge\outset\groove\inset，优先级逐渐降低
-
-　　e、若样式也相同，cell\row\row group\column\column group\table，优先级逐渐降级
+【边框合并的规则】  
+　　a、某个合并边框的border-style为hidden，它会优先于所有其他合并边框。这个位置上的所有边框都隐藏  
+　　b、某个合并边框的border-style为none，它的优先级最低  
+　　c、宽边框优先于窄边框  
+　　d、若宽度相同，double\solid\dashed\dotted\ridge\outset\groove\inset，优先级逐渐降低  
+　　e、若样式也相同，cell\row\row group\column\column group\table，优先级逐渐降级  
 
 4、table-layout
 ```
@@ -146,6 +143,7 @@ vertical-align: baseline(默认);//基线对齐
   <th>表头 table head
   <td>表格数据 table data
 ```
+
 【默认样式】
 ```
 th{
@@ -158,11 +156,11 @@ td{
 }
 ```
 
-【属性】
-1、colspan
+【属性】  
+1、colspan  
 　　规定单元格可纵跨的列数
 
-2、rowspan
+2、rowspan  
 　　规定单元格可横跨的行数
 
 　　[注意]关于行的表格元素生成矩形框，这些框有内容、内边距和边框，但是没有外边距margin。表头呈现为居中的粗体文本
@@ -188,30 +186,30 @@ td{
 ![](https://i.loli.net/2019/05/24/5ce7ee28e077f14290.png)
 
 ## 列 
-【`<col><colgroup>`】
-`<col>` -> column 列
+【`<col><colgroup>`】  
+`<col>` -> column 列  
 　　为表格中一个或多个列定义属性值
 
-`<colgroup>` -> column group 列组
+`<colgroup>` -> column group 列组  
 　　对表格中的列进行组合，以便对其进行格式化
 
-【属性】
-　　span
+【属性】  
+　　span  
 　　规定col元素应该横跨的列数
 
 
-【样式】
+【样式】  
 
-　　1、`visibility:collapse`
+　　1、`visibility:collapse`  
 　　该列或列组的所有单元格不显示(设置为其他值则无效)
 
-　　2、border
+　　2、border  
 　　只有当`border-collapse:collapse`时，才能设置border
 
-　　3、background
+　　3、background  
 　　只有当单元格及其行有透明背景时，列或列组的背景才可见
 
-　　4、width
+　　4、width  
 　　定义列或列组的最小宽度
   
 ```
@@ -247,7 +245,7 @@ td{
 ```
 　　[注意]它们的出现次序是：thead、tfoot、tbody，这样浏览器就可以在收到所有数据前呈现页脚 
 
-【`<caption>`表格标题】  
+【`<caption>`表格标题】   
 
 【默认样式】
 ```
@@ -308,7 +306,7 @@ caption{display: table-caption;}
 [注意]IE7-浏览器不支持为HTML元素设置与表格有关的display值
 
 
-匿名表格对象
+匿名表格对象  
 　　CSS定义了一种机制，将遗漏的组件作为匿名对象插入。详细插入规则如下：
 
 　　1、如果table-cell元素的父元素不是table-row元素，则插入匿名table-row对象
@@ -324,7 +322,7 @@ caption{display: table-caption;}
 　　6、如果table-row-group、table-header-group、table-footer-group元素的子元素不是table-row元素，则插入匿名table-row元素
 
 　　7、如果table-row元素的子元素不是table-cell元素，则插入匿名tabel-cell元素
-  
+
 插入一段不合符规范的代码
 ```
 <table>
@@ -333,7 +331,7 @@ caption{display: table-caption;}
 </table>
 ```
 
-看下浏览器的HTML效果：
+看下浏览器的HTML效果：  
 ![](https://i.loli.net/2019/05/24/5ce7ed6e94ed456818.png)
 
 浏览器自动补上了tr
@@ -364,15 +362,15 @@ caption{display: table-caption;}
 ![](https://i.loli.net/2019/05/24/5ce7ed27e4c2b20616.png)
 
 ## 边距设置
-【`<table>`】
-　　若处于分隔边框模型，margin和padding都可设置
+【`<table>`】  
+　　若处于分隔边框模型，margin和padding都可设置  
 　　若处于合并边框模型，只可设置margin
 
-【`<thead><tbody><tfoot><tr><col><colgroup>`】
+【`<thead><tbody><tfoot><tr><col><colgroup>`】  
 　　margin和padding都不可设置
 
-【`<td><th>`】
+【`<td><th>`】  
 　　不可设置margin，但可以设置padding
 
-【`<caption>`】
+【`<caption>`】  
 　　margin和padding都可设置
