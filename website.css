@@ -2,3 +2,6 @@
     width:100%;
     height: 100%;
 }
+/* 文本重点颜色设置 */
+.pri{ color: #1890ff }
+.danger{ color: #f5222d }

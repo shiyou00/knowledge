@@ -1,24 +1,25 @@
 ## 前言
 CSS的伪类和伪元素在平时的代码中经常会出现，可是一旦别人问你，什么是伪类，什么是伪元素，可能还是不能完整的表述出来，下面我们来一探究竟。
-﻿
+
 ## 伪类和伪元素定义
 > 伪类用于在页面中的元素处于某个状态时，为其添加指定的样式。
-﻿
+
 > 伪元素会创建一个抽象的伪元素，这个元素不是DOM中的真实元素，但是会存在于最终的渲染树中，我们可以为其添加样式。
-﻿
+
 [重点]最常规的区分伪类和伪元素的方法是：实现伪类的效果可以通过添加类来实现，但是想要实现伪元素的等价效果只能创建实际的DOM节点。
-﻿
+
 [注意]伪类使用单冒号 “:”  ; 伪元素使用双冒号 “::”
-﻿
+
 ## 伪元素
 > 伪元素可以分为排版伪元素、突出显示伪元素、树中伪元素三类。
-﻿
+
 ### 排版伪元素
-﻿
-【::first-line】
+
+【::first-line】 
 > 设置元素中第一行文本的样式
-﻿
-[注意]::first-line伪元素只有应用在块级容器上才有效，且必须出现在相同流中的块级子孙元素中（即没有定位和浮动）。
+
+[注意]`::first-line`伪元素只有应用在块级容器上才有效，且必须出现在相同流中的块级子孙元素中（即没有定位和浮动）。  
+
 [注意]只有当选择器部分和左大括号之间有空格时，IE6-浏览器才支持。因为first-line中存在连接符的原因
 ﻿
 ```
@@ -29,17 +30,17 @@ CSS的伪类和伪元素在平时的代码中经常会出现，可是一旦别�
  }
 <p class="firstLine">hello world hello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello worldhello world </p>
 ```
-虽然在DOM中看不到，但实际上，上面的这段HTML代码会通过添加虚拟标签的方式进行修改。
-﻿
-【::first-letter】
+虽然在DOM中看不到，但实际上，上面的这段HTML代码会通过添加虚拟标签的方式进行修改。  
+
+【::first-letter】 
 > 指定一个元素第一个字母的样式
-﻿
+
 [注意1]所有前导标点符号应与第一个字母一同应用该样式
-﻿
+
 [注意2]只能与块级元素关联
-﻿
+
 [注意3]只有当选择器部分和左大括号之间有空格时，IE6-浏览器才支持。因为first-letter中存在连接符的原因
-﻿
+
 ```
 <style>
 .letter{
@@ -55,17 +56,17 @@ CSS的伪类和伪元素在平时的代码中经常会出现，可是一旦别�
 ﻿
 <div class="letter">测试首字母下层，测试首字母下层测试首字母下层测试首字母下层测试首字母下层测试首字母下层测试首字母下层测试首字母下层测试首字母下层</div>
 ```
-﻿
+
 ### 突出显示伪元素
 > 突出显示伪元素表示文档中特定状态的部分，通常采用不同的样式展示该状态。如页面内容的选中。突出显示伪元素不需要在元素树中有体现，并且可以任意跨越元素边界而不考虑其嵌套结构。
-﻿
-【::selection】
+
+【::selection】  
 > 匹配被用户选择的部分
-﻿
-[注意1]firefox浏览器需要添加-moz-前缀
-[注意2]只支持双冒号写法
+
+[注意1]firefox浏览器需要添加-moz-前缀  
+[注意2]只支持双冒号写法  
 [注意3]只支持颜色和背景颜色两个样式
-﻿
+
 ```
 div::selection{color: red;}
 ```
@@ -74,16 +75,16 @@ p::selection{
     color:#fff;
 }
 </style>
-﻿
+
 ﻿
 ### 树中伪元素
-﻿
+
 【::before & ::after】
 > ::before是在源元素的实际内容前添加伪元素。::after是在源元素的实际内容后添加伪元素。当::before/::after伪元素的content属性不为'none'时，这两类伪元素就会生成一个元素，作为源元素的子元素，可以和DOM树中的元素一样定义样式。
-﻿
-[兼容]IE7-浏览器不支持
+
+[兼容]IE7-浏览器不支持  
 [注意]默认这个伪元素是行内元素，且继承元素可继承的属性；IE7-浏览器中必须声明!DOCTYPE，否则不起作用
-﻿
+
 ```
 // content = 字符串
 .box:after{content:"后缀"}
@@ -100,10 +101,10 @@ div:before{
 }
 ```
 [特] content的内容可以直接使用 url() 引入图片
-﻿
+
 【::marker】
 > ::markder可以用于定义列表项标记的样式。
-﻿
+
 ```
 <style>
     .item::marker{
@@ -118,16 +119,16 @@ div:before{
  </ul>
 ```
 该伪元素暂时只有safari支持，尝试的话请使用safari。可以用于该伪元素的属性也有限
-﻿
+
 【::placeholder】
 > 表示输入框内占位提示文字。可以定义其样式。
-﻿
+
 ```
 ::placeholder {
  color: blue;
 }
 ```
-﻿
+
 ## 伪元素速查表
 ```
     /* Typographic Pseudo-elements */
@@ -152,10 +153,10 @@ div:before{
     /* Fullscreen API */
     ::backdrop              /* 匹配全屏模式下的背景 */
 ```
-﻿
+
 ## 伪类
 > 伪类经常与伪元素混淆，伪元素的效果类似于通过添加一个实际的元素才能达到，而伪类的效果类似于通过添加一个实际的类来达到。实际上css3为了区分两者，已经明确规定了伪类用一个冒号来表示，而伪元素则用两个冒号来表示。
-﻿
+
 ### 锚点
 关于锚点`<a>`，有常见的5个伪类，分别是:link,:hover,:active,:focus,:visited
 ```
@@ -166,22 +167,22 @@ a:focus{background-color:lightgrey;}/*浅灰，拥有焦点*/
 a:visited{color:orange;}/*字体颜色为橙色，已被访问*/
 /*[注意]visited伪类只能设置字体颜色、边框颜色、outline颜色的样式*/
 ```
-﻿
+
 ### 伪类顺序
 对于伪类顺序，有一个口诀是love-hate，代表着伪类的顺序是link、visited、focus、hover、active。但是否伪类的顺序只能如此呢？为什么是这个顺序呢？
-﻿
+
 CSS层叠中有一条法则十分重要，就是后面覆盖前面，所以伪类的顺序是需要精心考虑的。
-﻿
+
 【1】link和visited必须在最前面，且没有先后顺序，否则link或visited的效果将覆盖 hover active focus
-﻿
+
 [注意]link和visited称为静态伪类，只能应用于超链接
-﻿
+
 【2】hover、active、focus这三个伪类必须是focus、hover、active的顺序，因为在focus状态下，也需要触发hover和active，而要触发active一定要先触发hover，所以active要放在hover后面
-﻿
+
 [注意]hover、active、focus称为动态伪类，可应用于任何元素，但IE7-浏览器不支持:focus，:hover和:active在IE6-浏览器下只支持给\<a>设置
-﻿
+
 所以最终的顺序只有两种:link、visited、focus、hover、active或visited、link、focus、hover、active
-﻿
+
 ```
 a:link{background-color:pink;}/*品红，未访问*/
 a:visited{color:orange;}/*字体颜色为橙色，已被访问*/
@@ -189,10 +190,10 @@ a:focus{background-color:lightgrey;}/*浅灰，拥有焦点*/
 a:hover{background-color:lightblue;}/*浅蓝，鼠标悬停*/
 a:active{background-color:lightgreen;}/*浅绿，正被点击*/
 ```
-﻿
+
 ### UI元素伪类
 > UI元素伪类包括:enabled、:disabled、:checked三个，主要针对于HTML中的form元素，IE8-浏览器不支持
-﻿
+
 ```
 :enabled    可用状态
 :disabled   不可用状态
@@ -216,10 +217,10 @@ input:checked{
 <label>Male<input type="radio" name="sex" /></label>
 <label>Female<input type="radio" name="sex"  /></label>
 ```
-﻿
+
 ### 结构伪类
 > 结构伪类可分为以下3种情况，IE8-浏览器不支持
-﻿
+
 【1】:nth-child(n)、:nth-last-child(n)、first-child、last-child、:only-child
 ```
 E F:nth-child(n)           选择父元素的第n个子元素
@@ -233,7 +234,7 @@ p > i:first-child    匹配所有<p>元素中的第一个<i>元素
 p:first-child i 　　  匹配所有作为第一个子元素的<p>元素中的所有<i>元素
 ```
 [注]n可以是整数(从1开始)，也可以是公式，也可以是关键字(even、odd)
-﻿
+
 【2】:nth-of-type(n)、:nth-last-of-type(n)、:first-of-type、:last-of-type、:only-of-type
 ```
 E F:nth-of-type(n)          选择父元素的具有指定类型的第n个子元素
@@ -248,7 +249,7 @@ E F:only-of-type        　　 选择父元素中只包含一个同类型的子�
 .box p:last-of-type{color: yellow;}
 .box div:only-of-type{color: pink;}
 ```
-﻿
+
 【3】:root、:not、:empty、:target
 ```
 :root        　选择文档的根元素
@@ -263,20 +264,19 @@ div:not{background-color: lightgrey;}
 p:empty{height:30px;width:30px;background:pink;}
 :target{color:blue;} // 当点击页面上面的锚点时，锚点到的目标元素会采用这个样式
 ```
-﻿
-【其它】
+
+【其它】  
 1、:lang()  匹配某个语言，IE7-浏览器不支持
 ```
 p:lang(en) 匹配语言为"en"的<p>
 ```
-﻿
-2、不仅可以使用单一伪类，也可以伪类结合使用
+
+2、不仅可以使用单一伪类，也可以伪类结合使用  
 [注意]顺序无关
 ```
 div:hover:first-child{background-color: lightgreen;}
 div:last-of-type:active{background-color: lightblue;}  
 ```
-﻿
 ﻿
 ## 伪类速查表
 ```

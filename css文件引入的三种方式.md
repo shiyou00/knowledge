@@ -23,9 +23,10 @@ body{
 ```
 ﻿
 [注意]文档中可出现多个style标签，且样式规则与层叠样式规则一致
-﻿
-【使用@import指令】
-@import指令用于指示Web浏览器加载一个外部样式表，并在表现HTML文档时使用其样式。唯一的区别在于命令的具体语法和位置。
+
+【使用@import指令】  
+@import指令用于指示Web浏览器加载一个外部样式表，并在表现HTML文档时使用其样式。唯一的区别在于命令的具体语法和位置。  
+
 @import指令常用于样式表需要使用另一个样式表中的样式的情况。
 ```
 <style>
@@ -36,13 +37,12 @@ body{
 </style>
 ```
 [注意]@import必须出现在style元素中，且要放在其他CSS规则之前，否则将根本不起作用。
-﻿
+
 ## 行间样式
 如果只是想为单个元素指定一些样式，可以使用HTML的style属性来设置一个行间样式。
 ```
 <body style="background-color: red; height: 100px; border: 10px solid black;" style="background-color: red;">
 ```
 [注意]行间样式若存在多个style属性，只能识别第一个
-﻿
-﻿
+
 [注意]`<style>`标签和`<link>`标签可以写在`<body>`标签里面

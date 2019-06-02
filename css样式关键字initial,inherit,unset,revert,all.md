@@ -1,18 +1,18 @@
 ## 关键字
 在CSS中，有4个关键字理论上可以应用于任何的CSS属性，它们是initial(初始)、inherit(继承)、unset(未设置)、revert(还原)。而all的取值只能是以上这4个关键字。本文将介绍initial、inherit、unset、revert和all
-﻿
+
 ## initial
-表示元素属性的初始默认值(该默认值由官方CSS规范定义)
+表示元素属性的初始默认值(该默认值由官方CSS规范定义)  
 兼容性: IE不支持
-﻿
+
 ```
 div{display: initial;} // display初始默认值为inline
 ```
 ﻿
 ## inherit
-表示元素的直接父元素对应属性的计算值
+表示元素的直接父元素对应属性的计算值  
 兼容性: IE7-不支持
-﻿
+
 ```
 <style>
 .box_css1{
@@ -31,17 +31,17 @@ div{display: initial;} // display初始默认值为inline
 ```
 ﻿
 ## unset
-unset相对于initial和inherit而言，相对复杂一点。表示如果该属性默认可继承，则值为inherit；否则值为initial。实际上，设置unset相当于不设置
+unset相对于initial和inherit而言，相对复杂一点。表示如果该属性默认可继承，则值为inherit；否则值为initial。实际上，设置unset相当于不设置  
 兼容性: IE不支持，safari9-不支持，ios9.2-不支持，android4.4.4-不支持
-﻿
+
 ## revert
-表示样式表中定义的元素属性的默认值。若用户定义样式表中显式设置，则按此设置；否则，按照浏览器定义样式表中的样式设置；否则，等价于unset
+表示样式表中定义的元素属性的默认值。若用户定义样式表中显式设置，则按此设置；否则，按照浏览器定义样式表中的样式设置；否则，等价于unset  
 兼容性: 只有safari9.1+和ios9.3+支持
-﻿
+
 ## all
-表示重设除unicode-bidi和direction之外的所有CSS属性的属性值，取值只能是initial、inherit、unset和revert
+表示重设除unicode-bidi和direction之外的所有CSS属性的属性值，取值只能是initial、inherit、unset和revert  
 兼容性: IE不支持，safari9-不支持，ios9.2-不支持，android4.4-不支持
-﻿
+
 ```
 <style>
 .test{

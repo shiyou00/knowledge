@@ -1,4 +1,5 @@
 ### 周计划 5.27日 ~ 6.2日
+- es5 对象
 - [ing]rxjs
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - 看云搬家到gitbook([html][])
@@ -8,13 +9,15 @@
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
+- es5 函数
 - es6
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - redux理论及应用
+- lerna 进阶学习(包含项目实战)
+- 单元测试
 - SVG图案
 - SVG裁切和蒙版
-- lerna 进阶学习(包含项目实战)
 - vim学习
 - react 技术栈
 - Web Components
@@ -22,11 +25,9 @@
 - css动画
 - js运动
 - call，apply，bind 方法详解
-- 单元测试
 - underscore源码阅读
 - mQuery
 - 算法
-- 函数相关知识
 - 如何使用n管理node.js版本
 - JavaScript 浮点数陷阱及解法
 https://github.com/camsong/blog/issues/9
@@ -202,14 +203,18 @@ https://github.com/camsong/blog/issues/9
 
 【面向对象】
 - [Object类型基础知识](https://www.kancloud.cn/frankshi/lion-know/1086377)
-- 对象的属性
+- 对象的属性操作
+- 对象的属性描述
+- 彻底理解prototype、proto和constructor的三角关系
+- 构造函数和原型对象
 - 创建对象的几种方式
 - 对象继承的几种方式
+- 面向对象的6个概念
 - 对象的深复制浅复制
-- Object.defineProperty介绍
 
 【函数表达式】
-- JavaScript Function类型
+- 函数概述
+- 函数参数
 - 函数的属性和方法
 - [JavaScript 函数递归](https://www.kancloud.cn/frankshi/lion-know/1086382)
 - [JavaScript IIEF 模仿块级作用域](https://www.kancloud.cn/frankshi/lion-know/1086380)
@@ -640,7 +645,6 @@ https://github.com/camsong/blog/issues/9
 ### 插件库
 - [chart.js 实战配置、插件编写](https://www.kancloud.cn/frankshi/lion-know/1087195)
 - lodash
-- rxjs
 
 ## 源码阅读
 
