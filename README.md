@@ -1,8 +1,8 @@
 ### 周计划 5.27日 ~ 6.2日
-- es5 对象
 - [ing]rxjs
+- es5 对象
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
-- 看云搬家到gitbook([html][])
+- 看云搬家到gitbook()
 - HttpClient
 
 ### 学习池
