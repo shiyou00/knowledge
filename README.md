@@ -2,7 +2,6 @@
 - [ing]rxjs
 - es5 对象
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
-- 看云搬家到gitbook()
 - HttpClient
 
 ### 学习池
@@ -11,6 +10,7 @@
 - 写 ChangeDetectorRef
 - es5 函数
 - es6
+- ui-router
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - redux理论及应用
