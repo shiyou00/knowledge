@@ -1,0 +1,4251 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AngularJS基础 · lion</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="frankshi">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vue.html" />
+    
+    
+    <link rel="prev" href="AngularJs.html" />
+    
+
+    
+        <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"shiyou00/knowledge","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.cnblogs.com/shiyou00/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    knowledge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="core.html">
+            
+                <a href="core.html">
+            
+                    
+                    core
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="该如何进行学习.html">
+            
+                <a href="该如何进行学习.html">
+            
+                    
+                    该如何进行学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="博客使用方法.html">
+            
+                <a href="博客使用方法.html">
+            
+                    
+                    博客使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="学习资源收藏.html">
+            
+                <a href="学习资源收藏.html">
+            
+                    
+                    学习资源收藏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="gitbook的使用以及快速部署.html">
+            
+                <a href="gitbook的使用以及快速部署.html">
+            
+                    
+                    gitbook的使用以及快速部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="timeLine.html">
+            
+                <a href="timeLine.html">
+            
+                    
+                    文章时间线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="HTML.html">
+            
+                <a href="HTML.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="HTML基础语法（HTML简介，HTML文档声明）.html">
+            
+                <a href="HTML基础语法（HTML简介，HTML文档声明）.html">
+            
+                    
+                    HTML 基础语法（HTML简介，HTML文档声明）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）.html">
+            
+                <a href="HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）.html">
+            
+                    
+                    HTML元素（整体结构，块级元素，内联元素，结构元素，交互元素，元素嵌套规则）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="HTML属性.html">
+            
+                <a href="HTML属性.html">
+            
+                    
+                    HTML 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="HTML常用标签（a，img）.html">
+            
+                <a href="HTML常用标签（a，img）.html">
+            
+                    
+                    HTML 常用标签（a，img）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="HTML表格.html">
+            
+                <a href="HTML表格.html">
+            
+                    
+                    HTML 表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="HTMLiframe使用postMessage方法进行跨文档消息传递.html">
+            
+                <a href="HTMLiframe使用postMessage方法进行跨文档消息传递.html">
+            
+                    
+                    HTML iframe 使用postMessage方法进行跨文档消息传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="HTML表单form元素介绍，input元素的常用type类型，input元素的常用属性.html">
+            
+                <a href="HTML表单form元素介绍，input元素的常用type类型，input元素的常用属性.html">
+            
+                    
+                    HTML 表单(form元素介绍，input元素的常用type类型，input元素的常用属性)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="HTMLmeta标签,base标签.html">
+            
+                <a href="HTMLmeta标签,base标签.html">
+            
+                    
+                    HTML meta标签,base标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="HTML条件注释规范.html">
+            
+                <a href="HTML条件注释规范.html">
+            
+                    
+                    HTML 条件注释规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="【重难】深入理解HTML表格.html">
+            
+                <a href="【重难】深入理解HTML表格.html">
+            
+                    
+                    [重难] 深入理解HTML表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="JavaScript中attribute和property的区别以及最佳实践.html">
+            
+                <a href="JavaScript中attribute和property的区别以及最佳实践.html">
+            
+                    
+                    [重难] JavaScript中attribute和property的区别以及最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="【重难】table单元格中文字过长如何进行省略table-layout.html">
+            
+                <a href="【重难】table单元格中文字过长如何进行省略table-layout.html">
+            
+                    
+                    [重难] table单元格中文字过长如何进行省略 table-layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="css基础.html">
+            
+                <a href="css基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="css文件引入的三种方式.html">
+            
+                <a href="css文件引入的三种方式.html">
+            
+                    
+                    css文件引入的三种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="css选择器常规选择器，伪类选择器，伪元素选择器，根元素选择器.html">
+            
+                <a href="css选择器常规选择器，伪类选择器，伪元素选择器，根元素选择器.html">
+            
+                    
+                    css选择器(常规选择器，伪类选择器，伪元素选择器，根元素选择器)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="css层叠规则,优先级算法.html">
+            
+                <a href="css层叠规则,优先级算法.html">
+            
+                    
+                    css层叠规则,优先级算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="css长度单位学习em,rem,px,vw,vh.html">
+            
+                <a href="css长度单位学习em,rem,px,vw,vh.html">
+            
+                    
+                    css长度单位学习(em,rem,px,vw,vh)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="css样式关键字initial,inherit,unset,revert,all.html">
+            
+                <a href="css样式关键字initial,inherit,unset,revert,all.html">
+            
+                    
+                    css样式关键字(initial,inherit,unset,revert,all)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="css伪类和伪元素.html">
+            
+                <a href="css伪类和伪元素.html">
+            
+                    
+                    css伪类和伪元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="CSS盒模型深入理解.html">
+            
+                <a href="CSS盒模型深入理解.html">
+            
+                    
+                    CSS盒模型深入理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.html">
+            
+                <a href="CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.html">
+            
+                    
+                    * CSS 视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="line-heightvertical-align学习总结.html">
+            
+                <a href="line-heightvertical-align学习总结.html">
+            
+                    
+                    line-height && vertical-align 学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="深入学习CSS外边距margin重叠效果，margin传递效果，marginauto实现块级元素.html">
+            
+                <a href="深入学习CSS外边距margin重叠效果，margin传递效果，marginauto实现块级元素.html">
+            
+                    
+                    深入学习CSS外边距margin（重叠效果，margin传递效果，margin:auto实现块级元素）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.11" data-path="CSSmargin负值学习及实际应用.html">
+            
+                <a href="CSSmargin负值学习及实际应用.html">
+            
+                    
+                    CSS margin负值学习及实际应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.12" data-path="css浮动float全方位案例解析.html">
+            
+                <a href="css浮动float全方位案例解析.html">
+            
+                    
+                    css浮动(float)全方位案例解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.13" data-path="css清除浮动.html">
+            
+                <a href="css清除浮动.html">
+            
+                    
+                    css清除浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="定位.html">
+            
+                <a href="定位.html">
+            
+                    
+                    定位
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="CSS定位深入理解定位position的偏移.html">
+            
+                <a href="CSS定位深入理解定位position的偏移.html">
+            
+                    
+                    CSS定位 深入理解定位(position)的偏移
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="字体.html">
+            
+                <a href="字体.html">
+            
+                    
+                    字体和文本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="CSSfont字体知识学习.html">
+            
+                <a href="CSSfont字体知识学习.html">
+            
+                    
+                    CSS font字体知识学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="CSSiconfont阿里巴巴矢量图库在开发中实战使用.html">
+            
+                <a href="CSSiconfont阿里巴巴矢量图库在开发中实战使用.html">
+            
+                    
+                    CSS iconfont阿里巴巴矢量图库在开发中实战使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="布局.html">
+            
+                <a href="布局.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="CSSGrid基于网格的二维布局系统详细教程.html">
+            
+                <a href="CSSGrid基于网格的二维布局系统详细教程.html">
+            
+                    
+                    CSS Grid基于网格的二维布局系统(详细教程)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="CSS布局flex布局.html">
+            
+                <a href="CSS布局flex布局.html">
+            
+                    
+                    CSS布局-flex布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="CSS水平垂直居中的几种实现方法.html">
+            
+                <a href="CSS水平垂直居中的几种实现方法.html">
+            
+                    
+                    CSS 水平垂直居中的几种实现方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="CSS布局两列布局之单列定宽,单列自适应布局思路.html">
+            
+                <a href="CSS布局两列布局之单列定宽,单列自适应布局思路.html">
+            
+                    
+                    CSS布局 两列布局之单列定宽,单列自适应布局思路
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="css编程.html">
+            
+                <a href="css编程.html">
+            
+                    
+                    css编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="sass和scss.html">
+            
+                <a href="sass和scss.html">
+            
+                    
+                    sass 和 scss
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="动画.html">
+            
+                <a href="动画.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="规范.html">
+            
+                <a href="规范.html">
+            
+                    
+                    规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="重难.html">
+            
+                <a href="重难.html">
+            
+                    
+                    重难
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="CSSBFC（格式化上下文）深入理解.html">
+            
+                <a href="CSSBFC（格式化上下文）深入理解.html">
+            
+                    
+                    CSS BFC（格式化上下文）深入理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.2" data-path="css中font-size为0的妙用（消除内联元素间的间隔）.html">
+            
+                <a href="css中font-size为0的妙用（消除内联元素间的间隔）.html">
+            
+                    
+                    css中font-size为0的妙用（消除内联元素间的间隔）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.3" data-path="css-modules.html">
+            
+                <a href="css-modules.html">
+            
+                    
+                    css-modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.4" data-path="css中的数学表达式calc.html">
+            
+                <a href="css中的数学表达式calc.html">
+            
+                    
+                    css中的数学表达式calc()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.5" data-path="CSS难点为什么height设置100会失效，分栏目等高布局高度自适用布局的实现方案.html">
+            
+                <a href="CSS难点为什么height设置100会失效，分栏目等高布局高度自适用布局的实现方案.html">
+            
+                    
+                    CSS难点 为什么height设置100%会失效，分栏目等高布局(高度自适用布局)的实现方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ES6.html">
+            
+                <a href="ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="【基础】ES6Class语法学习.html">
+            
+                <a href="【基础】ES6Class语法学习.html">
+            
+                    
+                    【基础】 ES6 Class语法学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="【重难】ES6数组遍历方法的实战用法总结（forEach，every，some，map，filter）.html">
+            
+                <a href="【重难】ES6数组遍历方法的实战用法总结（forEach，every，some，map，filter）.html">
+            
+                    
+                    【重难】 ES6数组遍历方法的实战用法总结（forEach，every，some，map，filter）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="JavaScript.html">
+            
+                <a href="JavaScript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="基础语法.html">
+            
+                <a href="基础语法.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="JavaScript基础基础语法、关键字和保留字、变量.html">
+            
+                <a href="JavaScript基础基础语法、关键字和保留字、变量.html">
+            
+                    
+                    JavaScript 基础(基础语法、关键字和保留字、变量)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="JavaScript基础表达式.html">
+            
+                <a href="JavaScript基础表达式.html">
+            
+                    
+                    JavaScript 基础(表达式)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="JavaScript基础usestrict严格模式下的规则.html">
+            
+                <a href="JavaScript基础usestrict严格模式下的规则.html">
+            
+                    
+                    JavaScript 基础 'use strict'严格模式下的规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="变量作用域.html">
+            
+                <a href="变量作用域.html">
+            
+                    
+                    变量、作用域和内存
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="JavaScript基本类型和引用类型.html">
+            
+                <a href="JavaScript基本类型和引用类型.html">
+            
+                    
+                    JavaScript 基本类型和引用类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="JavaScript执行环境、作用域、内存管理及垃圾回收机制.html">
+            
+                <a href="JavaScript执行环境、作用域、内存管理及垃圾回收机制.html">
+            
+                    
+                    JavaScript 执行环境、作用域、内存管理及垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="数据类型.html">
+            
+                <a href="数据类型.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="JavaScript基本包装类型,包装对象.html">
+            
+                <a href="JavaScript基本包装类型,包装对象.html">
+            
+                    
+                    JavaScript 基本包装类型,包装对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="JavaScriptnull和undefined的区别.html">
+            
+                <a href="JavaScriptnull和undefined的区别.html">
+            
+                    
+                    JavaScript null和undefined的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="JavaScript数据类型Boolean布尔类型.html">
+            
+                <a href="JavaScript数据类型Boolean布尔类型.html">
+            
+                    
+                    JavaScript数据类型 Boolean布尔类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="JavaScript数据类型Math对象详解.html">
+            
+                <a href="JavaScript数据类型Math对象详解.html">
+            
+                    
+                    JavaScript数据类型 Math对象详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="JavaScript数据类型String字符串类型.html">
+            
+                <a href="JavaScript数据类型String字符串类型.html">
+            
+                    
+                    JavaScript数据类型 String字符串类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="JavaScript数据类型String字符串类型的属性和方法.html">
+            
+                <a href="JavaScript数据类型String字符串类型的属性和方法.html">
+            
+                    
+                    JavaScript数据类型 String字符串类型的属性和方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="void0与undefined.html">
+            
+                <a href="void0与undefined.html">
+            
+                    
+                    (void 0) 与 undefined
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="数组.html">
+            
+                <a href="数组.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="JavaScript数据类型检测数组Array检测方式.html">
+            
+                <a href="JavaScript数据类型检测数组Array检测方式.html">
+            
+                    
+                    JavaScript数据类型检测 数组(Array)检测方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="Date.html">
+            
+                <a href="Date.html">
+            
+                    
+                    Date
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="JavaScript日期和时间基础知识.html">
+            
+                <a href="JavaScript日期和时间基础知识.html">
+            
+                    
+                    JavaScript 日期和时间基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="JavaScriptDate日期对象以及日期格式化方法.html">
+            
+                <a href="JavaScriptDate日期对象以及日期格式化方法.html">
+            
+                    
+                    JavaScript Date日期对象以及日期格式化方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="RegExp.html">
+            
+                <a href="RegExp.html">
+            
+                    
+                    RegExp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="JavaScript正则表达式基础语法.html">
+            
+                <a href="JavaScript正则表达式基础语法.html">
+            
+                    
+                    JavaScript 正则表达式基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2" data-path="JavaScript数据类型正则表达式RegExp类型.html">
+            
+                <a href="JavaScript数据类型正则表达式RegExp类型.html">
+            
+                    
+                    JavaScript数据类型 正则表达式RegExp类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="类型转换.html">
+            
+                <a href="类型转换.html">
+            
+                    
+                    类型转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.1" data-path="JavaScript类型判断详解（Object.prototype.toString.call方法）.html">
+            
+                <a href="JavaScript类型判断详解（Object.prototype.toString.call方法）.html">
+            
+                    
+                    JavaScript类型判断详解（Object.prototype.toString.call()方法）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="对象.html">
+            
+                <a href="对象.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.1" data-path="JavaScript对象Object类型基础.html">
+            
+                <a href="JavaScript对象Object类型基础.html">
+            
+                    
+                    JavaScript对象 Object类型基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="函数.html">
+            
+                <a href="函数.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.1" data-path="深入学习javaScript闭包闭包的原理，闭包的作用，闭包与内存管理.html">
+            
+                <a href="深入学习javaScript闭包闭包的原理，闭包的作用，闭包与内存管理.html">
+            
+                    
+                    深入学习javaScript闭包(闭包的原理，闭包的作用，闭包与内存管理)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.2" data-path="JavaScriptIIEF模仿块级作用域.html">
+            
+                <a href="JavaScriptIIEF模仿块级作用域.html">
+            
+                    
+                    JavaScript IIEF 模仿块级作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.3" data-path="JavaScript函数递归.html">
+            
+                <a href="JavaScript函数递归.html">
+            
+                    
+                    JavaScript 函数递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="事件.html">
+            
+                <a href="事件.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.10.1" data-path="javaScript事件机制深入学习事件冒泡，事件捕获，事件绑定方式，移除事件方式，阻止浏览器默认.html">
+            
+                <a href="javaScript事件机制深入学习事件冒泡，事件捕获，事件绑定方式，移除事件方式，阻止浏览器默认.html">
+            
+                    
+                    javaScript事件机制深入学习(事件冒泡，事件捕获，事件绑定方式，移除事件方式，阻止浏览器默认
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.2" data-path="[浏览器事件循环]javaScript事件循环EventLoop.html">
+            
+                <a href="[浏览器事件循环]javaScript事件循环EventLoop.html">
+            
+                    
+                    [浏览器事件循环] javaScript事件循环 EventLoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="BOM.html">
+            
+                <a href="BOM.html">
+            
+                    
+                    BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="客户端检测.html">
+            
+                <a href="客户端检测.html">
+            
+                    
+                    客户端检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="DOM.html">
+            
+                <a href="DOM.html">
+            
+                    
+                    DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="元素尺寸.html">
+            
+                <a href="元素尺寸.html">
+            
+                    
+                    元素尺寸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="表单脚本.html">
+            
+                <a href="表单脚本.html">
+            
+                    
+                    表单脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="校本化css.html">
+            
+                <a href="校本化css.html">
+            
+                    
+                    校本化css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="HTML5新特性.html">
+            
+                <a href="HTML5新特性.html">
+            
+                    
+                    HTML5新特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.17.1" data-path="javaScriptdrag对象进行拖拽使用详解.html">
+            
+                <a href="javaScriptdrag对象进行拖拽使用详解.html">
+            
+                    
+                    javaScript drag对象进行拖拽使用详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="错误处理与调试.html">
+            
+                <a href="错误处理与调试.html">
+            
+                    
+                    错误处理与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="数据传递与格式.html">
+            
+                <a href="数据传递与格式.html">
+            
+                    
+                    数据传递与格式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.19.1" data-path="Fetch入门教程.html">
+            
+                <a href="Fetch入门教程.html">
+            
+                    
+                    Fetch 入门教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19.2" data-path="js文件上传原理（form表单，FormData+XHR2+FileReader+canvas）.html">
+            
+                <a href="js文件上传原理（form表单，FormData+XHR2+FileReader+canvas）.html">
+            
+                    
+                    js文件上传原理（form表单 ，FormData + XHR2 + FileReader + canvas）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19.3" data-path="axios入门教程.html">
+            
+                <a href="axios入门教程.html">
+            
+                    
+                    axios 入门教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="存储.html">
+            
+                <a href="存储.html">
+            
+                    
+                    存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="模块化.html">
+            
+                <a href="模块化.html">
+            
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="高级技巧.html">
+            
+                <a href="高级技巧.html">
+            
+                    
+                    高级技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="JS动画.html">
+            
+                <a href="JS动画.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="JS性能规范.html">
+            
+                <a href="JS性能规范.html">
+            
+                    
+                    性能&规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.25" data-path="JS重点难点.html">
+            
+                <a href="JS重点难点.html">
+            
+                    
+                    重点难点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26" data-path="JS其它.html">
+            
+                <a href="JS其它.html">
+            
+                    
+                    其它
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.26.1" data-path="JavaScript判断数组和对象是否为空的方法.html">
+            
+                <a href="JavaScript判断数组和对象是否为空的方法.html">
+            
+                    
+                    JavaScript 判断数组和对象是否为空的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Node.html">
+            
+                <a href="Node.html">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="包管理.html">
+            
+                <a href="包管理.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="semver规范（语义化版本）.html">
+            
+                <a href="semver规范（语义化版本）.html">
+            
+                    
+                    semver规范（语义化版本）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="npm常用命令学习.html">
+            
+                <a href="npm常用命令学习.html">
+            
+                    
+                    npm常用命令学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="npmscripts脚本基础指南.html">
+            
+                <a href="npmscripts脚本基础指南.html">
+            
+                    
+                    npm scripts 脚本基础指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="mac如何升级node.js以及npm.html">
+            
+                <a href="mac如何升级node.js以及npm.html">
+            
+                    
+                    mac如何升级node.js以及npm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="npm发线上包npmpublish.html">
+            
+                <a href="npm发线上包npmpublish.html">
+            
+                    
+                    npm发线上包(npm publish)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="node基础.html">
+            
+                <a href="node基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="Node.js实战项目学习系列1初识Node.js.html">
+            
+                <a href="Node.js实战项目学习系列1初识Node.js.html">
+            
+                    
+                    Node.js实战项目学习系列(1) 初识Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="Node.js实战项目学习系列2开发环境和调试工具.html">
+            
+                <a href="Node.js实战项目学习系列2开发环境和调试工具.html">
+            
+                    
+                    Node.js实战项目学习系列(2) 开发环境和调试工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="Node.js实战项目学习系列3CommonJS模块化规范.html">
+            
+                <a href="Node.js实战项目学习系列3CommonJS模块化规范.html">
+            
+                    
+                    Node.js实战项目学习系列(3) CommonJS 模块化规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="Node.js实战项目学习系列4node对象global、process进程、debug调试.html">
+            
+                <a href="Node.js实战项目学习系列4node对象global、process进程、debug调试.html">
+            
+                    
+                    Node.js实战项目学习系列(4) node 对象(global、process进程、debug调试)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="Node.js实战项目学习系列5node基础模块path.html">
+            
+                <a href="Node.js实战项目学习系列5node基础模块path.html">
+            
+                    
+                    Node.js实战项目学习系列(5) node基础模块 path
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="nodehttp.html">
+            
+                <a href="nodehttp.html">
+            
+                    
+                    http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="数据库.html">
+            
+                <a href="数据库.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="登录功能.html">
+            
+                <a href="登录功能.html">
+            
+                    
+                    登录功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="日志功能.html">
+            
+                <a href="日志功能.html">
+            
+                    
+                    日志功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="安全.html">
+            
+                <a href="安全.html">
+            
+                    
+                    安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="框架.html">
+            
+                <a href="框架.html">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="上线配置.html">
+            
+                <a href="上线配置.html">
+            
+                    
+                    上线配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="实战.html">
+            
+                <a href="实战.html">
+            
+                    
+                    实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="网络协议.html">
+            
+                <a href="网络协议.html">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="HTTP入门学习.html">
+            
+                <a href="HTTP入门学习.html">
+            
+                    
+                    HTTP入门学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="网络基础.html">
+            
+                <a href="网络基础.html">
+            
+                    
+                    网络基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="websocket.html">
+            
+                <a href="websocket.html">
+            
+                    
+                    websocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="nginx.html">
+            
+                <a href="nginx.html">
+            
+                    
+                    Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="TypeScript.html">
+            
+                <a href="TypeScript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ydd.html">
+            
+                <a href="ydd.html">
+            
+                    
+                    移动端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="【移动端】300ms延迟以及点透事件原因以及解决方案.html">
+            
+                <a href="【移动端】300ms延迟以及点透事件原因以及解决方案.html">
+            
+                    
+                    【移动端】300ms延迟以及点透事件原因以及解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="数据结构.html">
+            
+                <a href="数据结构.html">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="设计模式.html">
+            
+                <a href="设计模式.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="算法.html">
+            
+                <a href="算法.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="代码管理.html">
+            
+                <a href="代码管理.html">
+            
+                    
+                    代码管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="git个人学习总结.html">
+            
+                <a href="git个人学习总结.html">
+            
+                    
+                    git个人学习总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="git多人协作式开发时分支管理策略.html">
+            
+                <a href="git多人协作式开发时分支管理策略.html">
+            
+                    
+                    git多人协作式开发时分支管理策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="浏览器.html">
+            
+                <a href="浏览器.html">
+            
+                    
+                    浏览器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="计算机基础.html">
+            
+                <a href="计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="Linux.html">
+            
+                <a href="Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1.1" data-path="Linux系统中用户组、文件权限浅解.html">
+            
+                <a href="Linux系统中用户组、文件权限浅解.html">
+            
+                    
+                    Linux系统中用户组、文件权限浅解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.1.2" data-path="Linux常用bash命令.html">
+            
+                <a href="Linux常用bash命令.html">
+            
+                    
+                    Linux常用bash命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="前端框架.html">
+            
+                <a href="前端框架.html">
+            
+                    
+                    前端框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                    react
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1.1" data-path="react实战项目开发1搭建react开发环境初始化项目（Create-react-app）.html">
+            
+                <a href="react实战项目开发1搭建react开发环境初始化项目（Create-react-app）.html">
+            
+                    
+                    react实战项目开发(1) 搭建react开发环境初始化项目（Create-react-app）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.1.2" data-path="react实战项目开发2react几个重要概念以及JSX语法.html">
+            
+                <a href="react实战项目开发2react几个重要概念以及JSX语法.html">
+            
+                    
+                    react实战项目开发(2) react几个重要概念以及JSX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2" data-path="angular.html">
+            
+                <a href="angular.html">
+            
+                    
+                    angular
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.2.1" data-path="Angular项目初始化.html">
+            
+                <a href="Angular项目初始化.html">
+            
+                    
+                    Angular项目初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.2" data-path="ng常用命令.html">
+            
+                <a href="ng常用命令.html">
+            
+                    
+                    ng常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.3" data-path="Angular模板语法.html">
+            
+                <a href="Angular模板语法.html">
+            
+                    
+                    Angular模板语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.4" data-path="Angular生命周期.html">
+            
+                <a href="Angular生命周期.html">
+            
+                    
+                    Angular生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.5" data-path="Angular组件交互.html">
+            
+                <a href="Angular组件交互.html">
+            
+                    
+                    Angular组件交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.6" data-path="Angular样式.html">
+            
+                <a href="Angular样式.html">
+            
+                    
+                    Angular样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.7" data-path="Angular指令.html">
+            
+                <a href="Angular指令.html">
+            
+                    
+                    Angular指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.8" data-path="Angular管道.html">
+            
+                <a href="Angular管道.html">
+            
+                    
+                    Angular管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.9" data-path="Angular事件处理.html">
+            
+                <a href="Angular事件处理.html">
+            
+                    
+                    Angular事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.10" data-path="NgModule.html">
+            
+                <a href="NgModule.html">
+            
+                    
+                    NgModule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.11" data-path="模板驱动表单.html">
+            
+                <a href="模板驱动表单.html">
+            
+                    
+                    [表单]模板驱动表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.12" data-path="响应式表单.html">
+            
+                <a href="响应式表单.html">
+            
+                    
+                    wip:[表单]响应式表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.13" data-path="自定义表单验证器.html">
+            
+                <a href="自定义表单验证器.html">
+            
+                    
+                    [表单]自定义表单验证器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.14" data-path="自定义表单控件.html">
+            
+                <a href="自定义表单控件.html">
+            
+                    
+                    [表单]自定义表单控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.15" data-path="InputorInjectable.html">
+            
+                <a href="InputorInjectable.html">
+            
+                    
+                    [重难]@Input() or @Inject()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.16" data-path="Angular依赖注入与服务service详解.html">
+            
+                <a href="Angular依赖注入与服务service详解.html">
+            
+                    
+                    [原创]Angular依赖注入(DI)与服务service详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.2.17" data-path="Input的set还是ngOnChanges.html">
+            
+                <a href="Input的set还是ngOnChanges.html">
+            
+                    
+                    [重难]@Input()的set or ngOnChanges()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3" data-path="rxjs.html">
+            
+                <a href="rxjs.html">
+            
+                    
+                    rxjs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.3.1" data-path="rxjs简介.html">
+            
+                <a href="rxjs简介.html">
+            
+                    
+                    rxjs简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3.2" data-path="FunctionalProgramming.html">
+            
+                <a href="FunctionalProgramming.html">
+            
+                    
+                    JavaScript 函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.3.3" data-path="Observable.html">
+            
+                <a href="Observable.html">
+            
+                    
+                    Observable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.4" data-path="AngularJs.html">
+            
+                <a href="AngularJs.html">
+            
+                    
+                    AngularJs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.17.4.1" data-path="AngularJS基础.html">
+            
+                <a href="AngularJS基础.html">
+            
+                    
+                    AngularJS基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.5" data-path="vue.html">
+            
+                <a href="vue.html">
+            
+                    
+                    vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.6" data-path="路由.html">
+            
+                <a href="路由.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.6.1" data-path="UI-Router基础.html">
+            
+                <a href="UI-Router基础.html">
+            
+                    
+                    UI-Router基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.7" data-path="状态管理.html">
+            
+                <a href="状态管理.html">
+            
+                    
+                    状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17.8" data-path="重难.html">
+            
+                <a href="重难.html">
+            
+                    
+                    重难
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.8.1" data-path="JavaScript实现一个简单的MVVM前端框架ES6语法.html">
+            
+                <a href="JavaScript实现一个简单的MVVM前端框架ES6语法.html">
+            
+                    
+                    JavaScript 实现一个简单的MVVM前端框架(ES6语法)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="webComponent.html">
+            
+                <a href="webComponent.html">
+            
+                    
+                    webComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="单元测试.html">
+            
+                <a href="单元测试.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="前端构建.html">
+            
+                <a href="前端构建.html">
+            
+                    
+                    前端构建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.1" data-path="gulp.html">
+            
+                <a href="gulp.html">
+            
+                    
+                    gulp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.2" data-path="webpack.html">
+            
+                <a href="webpack.html">
+            
+                    
+                    webpack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.20.2.1" data-path="webpack入门学习.html">
+            
+                <a href="webpack入门学习.html">
+            
+                    
+                    webpack入门学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20.3" data-path="rollup.html">
+            
+                <a href="rollup.html">
+            
+                    
+                    rollup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="前端安全.html">
+            
+                <a href="前端安全.html">
+            
+                    
+                    前端安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="性能优化.html">
+            
+                <a href="性能优化.html">
+            
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="前端监控.html">
+            
+                <a href="前端监控.html">
+            
+                    
+                    前端监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="计算机图形.html">
+            
+                <a href="计算机图形.html">
+            
+                    
+                    计算机图形
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="canvas.html">
+            
+                <a href="canvas.html">
+            
+                    
+                    canvas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="svg.html">
+            
+                <a href="svg.html">
+            
+                    
+                    svg
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.2.1" data-path="SVG基本形状及样式设置.html">
+            
+                <a href="SVG基本形状及样式设置.html">
+            
+                    
+                    svg 基本形状及样式设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2.2" data-path="svg文本.html">
+            
+                <a href="svg文本.html">
+            
+                    
+                    svg 文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2.3" data-path="SVG路径.html">
+            
+                <a href="SVG路径.html">
+            
+                    
+                    svg 路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2.4" data-path="SVG辅助标签.html">
+            
+                <a href="SVG辅助标签.html">
+            
+                    
+                    svg 辅助标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2.5" data-path="svg视野.html">
+            
+                <a href="svg视野.html">
+            
+                    
+                    svg 视野
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2.6" data-path="SVG坐标系统及图形变换.html">
+            
+                <a href="SVG坐标系统及图形变换.html">
+            
+                    
+                    svg 坐标系统及图形变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2.7" data-path="SVG渐变.html">
+            
+                <a href="SVG渐变.html">
+            
+                    
+                    svg 渐变
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="前端工具.html">
+            
+                <a href="前端工具.html">
+            
+                    
+                    前端工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.25.1" data-path="yarn教程.html">
+            
+                <a href="yarn教程.html">
+            
+                    
+                    yarn 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.2" data-path="Homebrew使用教程.html">
+            
+                <a href="Homebrew使用教程.html">
+            
+                    
+                    Homebrew 使用教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25.3" data-path="lerna教程.html">
+            
+                <a href="lerna教程.html">
+            
+                    
+                    lerna 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="插件库.html">
+            
+                <a href="插件库.html">
+            
+                    
+                    插件库应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.26.1" data-path="chart.jsangular组件封装ng6、实战配置、插件编写.html">
+            
+                <a href="chart.jsangular组件封装ng6、实战配置、插件编写.html">
+            
+                    
+                    chart.js angular组件封装(ng6)、实战配置、插件编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="源码.html">
+            
+                <a href="源码.html">
+            
+                    
+                    源码阅读
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.27.1" data-path="underscore源码-内部方法.html">
+            
+                <a href="underscore源码-内部方法.html">
+            
+                    
+                    underscore源码-内部方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27.2" data-path="underscore源码-外部方法.html">
+            
+                <a href="underscore源码-外部方法.html">
+            
+                    
+                    underscore源码-外部方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="优雅的代码.html">
+            
+                <a href="优雅的代码.html">
+            
+                    
+                    写的更优雅
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >AngularJS基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="angularjs&#x662F;&#x4EC0;&#x4E48;"><a name="angularjs&#x662F;&#x4EC0;&#x4E48;" class="anchor-navigation-ex-anchor" href="#angularjs&#x662F;&#x4EC0;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>AngularJS&#x662F;&#x4EC0;&#x4E48;</h2>
+<blockquote>
+<p>&#x5B8C;&#x5168;&#x4F7F;&#x7528;js&#x7F16;&#x5199;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6280;&#x672F;&#x3002;&#x540C;&#x5176;&#x4ED6;&#x5386;&#x53F2;&#x60A0;&#x4E45;&#x7684;web&#x6280;&#x672F;(HTML&#x3001;CSS)&#x914D;&#x5408;&#x4F7F;&#x7528;,&#x4F7F;web&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x6BD4;&#x4EE5;&#x5F80;&#x66F4;&#x7B80;&#x5355;&#x3001;&#x66F4;&#x5FEB;&#x6377;&#x3002;AngularJS&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x5355;&#x9875;&#x9762;Web&#x5E94;&#x7528;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x548C;&#x5E38;&#x89C1;Web&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x4EFB;&#x52A1;&#x4E4B;&#x95F4;&#x7684;&#x62BD;&#x8C61;&#x7EA7;&#x522B;&#xFF0C;&#x4F7F;&#x6784;&#x5EFA;&#x4EA4;&#x4E92;&#x5F0F;&#x7684;&#x73B0;&#x4EE3;Web&#x5E94;&#x7528;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3002;</p>
+</blockquote>
+<p>&#x9AD8;&#x7EA7;&#x529F;&#x80FD;</p>
+<ul>
+<li>&#x89E3;&#x8026;&#x5E94;&#x7528;&#x903B;&#x8F91;&#x3001;&#x6570;&#x636E;&#x6A21;&#x578B;&#x548C;&#x89C6;&#x56FE;</li>
+<li>Ajax&#x670D;&#x52A1;</li>
+<li>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</li>
+<li>&#x6D4F;&#x89C8;&#x5386;&#x53F2;</li>
+<li>&#x6D4B;&#x8BD5;</li>
+</ul>
+<h2 id="&#x5BB9;&#x6613;&#x72AF;&#x9519;&#x7684;&#x5730;&#x65B9;"><a name="&#x5BB9;&#x6613;&#x72AF;&#x9519;&#x7684;&#x5730;&#x65B9;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x6613;&#x72AF;&#x9519;&#x7684;&#x5730;&#x65B9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BB9;&#x6613;&#x72AF;&#x9519;&#x7684;&#x5730;&#x65B9;</h2>
+<p>&#x3010;ng-model&#x3011;<br>AngularJS&#x4E2D;&#x7684; ng-model &#x5FC5;&#x987B;&#x5F97;&#x653E;&#x5230;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#xFF0C;&#x4E0D;&#x7136;&#x5728;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x8BED;&#x53E5;&#x91CC;&#x9762;&#x4F1A;&#x5931;&#x6548;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>obj.name<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><h2 id="&#x5E38;&#x7528;&#x6982;&#x5FF5;&#x96C6;&#x5408;"><a name="&#x5E38;&#x7528;&#x6982;&#x5FF5;&#x96C6;&#x5408;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x6982;&#x5FF5;&#x96C6;&#x5408;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x6982;&#x5FF5;&#x96C6;&#x5408;</h2>
+<p>&#x3010;&#x6307;&#x4EE4;&#x3011;&#xFF1A;&#x5C06;DOM&#x5143;&#x7D20;&#x589E;&#x5F3A;&#x4E3A;&#x53EF;&#x590D;&#x7528;&#x7684;DOM&#x7EC4;&#x4EF6;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x5143;&#x7D20;</p>
+<p>&#x3010;&#x503C;&#x7ED1;&#x5B9A;&#x3011;&#xFF1A;&#x6A21;&#x677F;&#x8BED;&#x6CD5;<code>{{}}</code>&#x53EF;&#x4EE5;&#x5C06;&#x8868;&#x8FBE;&#x5F0F;&#x7ED1;&#x5B9A;&#x5230;&#x89C6;&#x56FE;&#x4E0A;</p>
+<p>&#x3010;&#x8FC7;&#x6EE4;&#x5668;&#x3011;&#xFF1A;&#x53EF;&#x4EE5;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;</p>
+<p>&#x3010;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x3011;&#xFF1A;&#x7528;&#x6765;&#x68C0;&#x9A8C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x63A7;&#x4EF6;</p>
+<p>&#x3010;ng-app&#x3011;<br>ng-app&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x6240;&#x6709;&#x88AB;&#x5176;&#x5305;&#x542B;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;AngularJS&#x5E94;&#x7528;</p>
+<p>&#x3010;ng-controller&#x3011;<br>ng-controller DOM&#x5143;&#x7D20;&#x4E0A;&#x7684;controller&#x5C5E;&#x6027;&#x58F0;&#x660E;&#x6240;&#x6709;&#x88AB;&#x5B83;&#x5305;&#x542B;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x63A7;&#x5236;&#x5668;</p>
+<p>&#x3010;$&#x3011;<br>Angular&#x4F7F;&#x7528;$&#x9884;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;</p>
+<p>&#x3010;$rootScope&#x3011;<br>$rootScope&#x662F;&#x6240;&#x6709;$scope&#x5BF9;&#x8C61;&#x7684;&#x6700;&#x4E0A;&#x5C42;</p>
+<p>&#x662F;AngularJS&#x4E2D;&#x6700;&#x63A5;&#x8FD1;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5728;$rootScope&#x4E0A;&#x9644;&#x52A0;&#x592A;&#x591A;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5E76;&#x4E0D;&#x662F;&#x597D;&#x4E3B;&#x610F;&#xFF0C;&#x8FD9;&#x4E0E;&#x6C61;&#x67D3;JavaScript&#x7684;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4E00;&#x6837;&#x7684;</p>
+<p>&#x3010;$scope&#x3011;<br>$scope&#x5BF9;&#x8C61;&#xFF1A;&#x662F;&#x4E00;&#x4E2A;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x7684;JavaScript&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x88AB;&#x89C6;&#x56FE;&#x8BBF;&#x95EE;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x63A7;&#x5236;&#x5668;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;</p>
+<p>$scope&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x88AB;&#x89C6;&#x56FE;&#x8BBF;&#x95EE;&#x5230;</p>
+<p>&#x3010;angular.module()&#x51FD;&#x6570;&#x3011;<br>angular.module(&apos;myApp&apos;,[]) &#x6211;&#x4EEC;&#x544A;&#x8BC9;Angular&#x5E0C;&#x671B;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;myApp&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6A21;&#x5757;</p>
+<p>&#x3010;controller&#x51FD;&#x6570;&#x3011;<br>&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;&#x5B83;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;<br>&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x5B9A;&#x4E49;&#x4E86;&#x63A7;&#x5236;&#x5668;&#x7684;&#x540D;&#x79F0;<br>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x5C06;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;</p>
+<h2 id="&#x5E38;&#x7528;&#x6307;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x6307;&#x4EE4;</h2>
+<ul>
+<li>ng-model &#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x6307;&#x4EE4;</li>
+</ul>
+<h2 id="&#x5E38;&#x7528;&#x5BF9;&#x8C61;"><a name="&#x5E38;&#x7528;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x5BF9;&#x8C61;</h2>
+<p>&#x3010;$scope&#x3011;<br>&#x5B58;&#x50A8;&#x6570;&#x636E;&#x5BF9;&#x8C61;</p>
+<p>&#x3010;$timeout&#x3011;<br>&#x5B9A;&#x65F6;&#x5668;&#x5BF9;&#x8C61;</p>
+<h2 id="&#x6700;&#x4F73;&#x5B9E;&#x8DF5;"><a name="&#x6700;&#x4F73;&#x5B9E;&#x8DF5;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x4F73;&#x5B9E;&#x8DF5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h2>
+<p>&#x3010;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF0C;&#x4F18;&#x4E8E;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x3011;</p>
+<p>&#x7531;&#x4E8E;JavaScript&#x81EA;&#x8EAB;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x5728;&#x4F20;&#x9012;&#x503C;&#x548C;&#x5F15;&#x7528;&#x65F6;&#x7684;&#x4E0D;&#x540C;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF0C;&#x901A;&#x5E38;&#x8BA4;&#x4E3A;&#xFF0C;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x800C;&#x975E;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x6765;&#x8FDB;&#x884C;&#x5F15;&#x7528;&#x7ED1;&#x5B9A;&#xFF0C;&#x662F;Angular&#x4E2D;&#x7684;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello {{ clock.now }}!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span> // &#x8FD9;&#x6837;&#x66F4;&#x597D;
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello {{ clock }}!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span> // &#x8FD9;&#x6837;&#x6CA1;&#x6709;&#x4E0A;&#x9762;&#x597D;
+</code></pre><ul>
+<li>&#x5C06;&#x63A7;&#x5236;&#x5668;&#x547D;&#x540D;&#x4E3A;[Name]Controller&#x800C;&#x4E0D;&#x662F;[Name]Ctrl&#x662F;&#x4E00;&#x4E2A;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x3002;</li>
+</ul>
+<h2 id="angularjs&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"><a name="angularjs&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#angularjs&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>AngularJS&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;</h2>
+<pre class="language-"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">ng-app</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Hello World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Your name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>--1</span>
+<span class="token attr-name">&lt;h1</span><span class="token punctuation">&gt;</span></span>Hello {{ name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>../angular.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>1) &#x4F7F;&#x7528;ng-modal&#x6307;&#x4EE4;&#x5C06;&#x5185;&#x90E8;&#x6570;&#x636E;&#x6A21;&#x578B;&#x5BF9;&#x8C61;$scope&#x4E2D;&#x7684;name&#x5C5E;&#x6027;(property)&#x7ED1;&#x5B9A;&#x5230;&#x4E86;&#x6587;&#x672C;&#x8F93;&#x5165;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<p>AngularJS&#x5219;&#x91C7;&#x7528;&#x4E86;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x5B83;&#x521B;&#x5EFA;&#x5B9E;&#x65F6;&#x6A21;&#x677F;&#x6765;&#x4EE3;&#x66FF;&#x89C6;&#x56FE;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5C06;&#x6570;&#x636E;&#x5408;&#x5E76;&#x8FDB;&#x6A21;&#x677F;&#x4E4B;&#x540E;&#x66F4;&#x65B0;DOM</p>
+<p>AngularJS&#x4F1A;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6240;&#x5305;&#x542B;&#x7684;&#x6570;&#x636E;&#x5728;&#x4EFB;&#x4F55;&#x7279;&#x5B9A;&#x65F6;&#x95F4;&#x70B9;&#x7684;&#x503C;&#xFF08;&#x5728;Hello World&#x4F8B;&#x5B50;&#x4E2D;&#x5C31;&#x662F;name&#x7684;&#x503C;&#xFF09;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x539F;&#x59CB;&#x503C;&#x3002;</p>
+<p>&#x5F53;AngularJS&#x8BA4;&#x4E3A;&#x67D0;&#x4E2A;&#x503C;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x8FD0;&#x884C;&#x81EA;&#x5DF1;&#x7684;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6765;&#x68C0;&#x67E5;&#x8FD9;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x53D8;&#x201C;&#x810F;&#x201D;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x503C;&#x4ECE;&#x4E0A;&#x6B21;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x8FD0;&#x884C;&#x4E4B;&#x540E;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x201C;&#x810F;&#x201D;&#x503C;&#x3002;&#x8FD9;&#x4E5F;&#x662F;Angular&#x53EF;&#x4EE5;&#x8DDF;&#x8E2A;&#x548C;&#x54CD;&#x5E94;&#x5E94;&#x7528;&#x53D8;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x5728;&#x6E38;&#x620F;&#x5F00;&#x53D1;&#x4E2D;&#x5C31;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x810F;&#x68C0;&#x67E5;&#x6280;&#x672F;</p>
+<h2 id="&#x6A21;&#x5757;"><a name="&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x5757;</h2>
+<p>&#x4F7F;&#x7528;&#x6A21;&#x5757;&#x80FD;&#x7ED9;&#x6211;&#x4EEC;&#x5E26;&#x6765;&#x8BB8;&#x591A;&#x597D;&#x5904;</p>
+<ul>
+<li>&#x4FDD;&#x6301;&#x5168;&#x5C40;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;&#x6E05;&#x6D01;</li>
+<li>&#x7F16;&#x5199;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x66F4;&#x5BB9;&#x6613;&#xFF0C;&#x5E76;&#x80FD;&#x4FDD;&#x6301;&#x5176;&#x6E05;&#x6D01;&#xFF0C;&#x4EE5;&#x4FBF;&#x66F4;&#x5BB9;&#x6613;&#x627E;&#x5230;&#x4E92;&#x76F8;&#x9694;&#x79BB;&#x7684;&#x529F;&#x80FD;</li>
+<li>&#x6613;&#x4E8E;&#x5728;&#x4E0D;&#x540C;&#x5E94;&#x7528;&#x590D;&#x7528;&#x4EE3;&#x7801;</li>
+<li>&#x4F7F;&#x5E94;&#x7528;&#x80FD;&#x591F;&#x4EE5;&#x4EFB;&#x610F;&#x987A;&#x5E8F;&#x52A0;&#x8F7D;&#x4EE3;&#x7801;&#x7684;&#x5404;&#x4E2A;&#x90E8;&#x5206;</li>
+</ul>
+<p>&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6A21;&#x5757;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, []);
+</code></pre><p>&#x53C2;&#x6570;1&#xFF1A;&#x6A21;&#x5757;&#x540D;&#x79F0;<br>&#x53C2;&#x6570;2&#xFF1A;&#x4F9D;&#x8D56;&#x5217;&#x8868;</p>
+<p>** &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x4E8E;AngularJS&#x6A21;&#x5757;&#x7684;setter&#x65B9;&#x6CD5;&#xFF0C;&#x662F;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x6A21;&#x5757;&#x7684;&#x3002;</p>
+<p>angular.module(&apos;myApp&apos;) &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x4E8E;getter&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x5BF9;&#x6A21;&#x5757;&#x7684;&#x5F15;&#x7528;</p>
+<h2 id="&#x4F5C;&#x7528;&#x57DF;"><a name="&#x4F5C;&#x7528;&#x57DF;" class="anchor-navigation-ex-anchor" href="#&#x4F5C;&#x7528;&#x57DF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F5C;&#x7528;&#x57DF;</h2>
+<blockquote>
+<p>&#x4F5C;&#x7528;&#x57DF;(scope)&#x662F;&#x6784;&#x6210;AngularJS&#x5E94;&#x7528;&#x7684;&#x6838;&#x5FC3;&#x57FA;&#x7840;&#xFF0C;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x89C6;&#x56FE;&#x548C;&#x63A7;&#x5236;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x80F6;&#x6C34;&#x3002;&#x89C6;&#x56FE;&#x4E2D;&#x7684;&#x6A21;&#x677F;&#x4F1A;&#x548C;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x8FDE;&#x63A5;&#xFF0C;&#x7136;&#x540E;&#x5E94;&#x7528;&#x4F1A;&#x5BF9;DOM&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x4EE5;&#x4FBF;&#x5C06;&#x5C5E;&#x6027;&#x53D8;&#x5316;&#x901A;&#x77E5;&#x7ED9;AngularJS.</p>
+</blockquote>
+<p>&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x5E94;&#x7528;&#x72B6;&#x6001;&#x7684;&#x57FA;&#x7840;&#x3002;&#x57FA;&#x4E8E;&#x52A8;&#x6001;&#x7ED1;&#x5B9A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F9D;&#x8D56;&#x89C6;&#x56FE;&#x5728;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x65F6;&#x7ACB;&#x523B;&#x66F4;&#x65B0;$scope&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F9D;&#x8D56;$scope&#x5728;&#x5176;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x7ACB;&#x523B;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x89C6;&#x56FE;</p>
+<p>AngularJS&#x5C06;$scope&#x8BBE;&#x8BA1;&#x6210;&#x548C;DOM&#x7C7B;&#x4F3C;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x56E0;&#x6B64;$scope&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5D4C;&#x5957;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F15;&#x7528;&#x7236;&#x7EA7;$scope&#x4E2D;&#x7684;&#x5C5E;&#x6027;</p>
+<p>$scope&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x88AB;&#x89C6;&#x56FE;&#x8BBF;&#x95EE;&#x5230;</p>
+<h3 id="scope&#x751F;&#x547D;&#x5468;&#x671F;"><a name="scope&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#scope&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>$scope&#x751F;&#x547D;&#x5468;&#x671F;</h3>
+<p>&#x3010;&#x521B;&#x5EFA;&#x3011;  </p>
+<blockquote>
+<p>&#x5728;&#x521B;&#x5EFA;&#x63A7;&#x5236;&#x5668;&#x6216;&#x6307;&#x4EE4;&#x65F6;&#xFF0C;AngularJS&#x4F1A;&#x7528;$injector&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5E76;&#x5728;&#x8FD9;&#x4E2A;&#x65B0;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;&#x6216;&#x6307;&#x4EE4;&#x8FD0;&#x884C;&#x65F6;&#x5C06;&#x4F5C;&#x7528;&#x57DF;&#x4F20;&#x9012;&#x8FDB;&#x53BB;</p>
+</blockquote>
+<p>&#x3010;&#x94FE;&#x63A5;&#x3011;<br>&#x5F53;Angular&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x7684;$scope&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x9644;&#x52A0;&#x6216;&#x8005;&#x94FE;&#x63A5;&#x5230;&#x89C6;&#x56FE;&#x4E2D;&#x3002;&#x6240;&#x6709;&#x521B;&#x5EFA;$scope&#x5BF9;&#x8C61;&#x7684;&#x51FD;&#x6570;&#x4E5F;&#x4F1A;&#x5C06;&#x81EA;&#x8EAB;&#x9644;&#x52A0;&#x5230;&#x89C6;&#x56FE;&#x4E2D;&#x3002;&#x8FD9;&#x4E9B;&#x4F5C;&#x7528;&#x57DF;&#x5C06;&#x4F1A;&#x6CE8;&#x518C;&#x5F53;Angular&#x5E94;&#x7528;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x9700;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;</p>
+<p>&#x3010;&#x66F4;&#x65B0;&#x3011;<br>&#x5F53;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x6267;&#x884C;&#x5728;&#x9876;&#x5C42;$scope&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B50;&#x4F5C;&#x7528;&#x57DF;&#x90FD;&#x6267;&#x884C;&#x81EA;&#x5DF1;&#x7684;&#x810F;&#x503C;&#x68C0;&#x6D4B;&#xFF0C;&#x6BCF;&#x4E2A;&#x76D1;&#x63A7;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x68C0;&#x67E5;&#x53D8;&#x5316;&#x3002;&#x5982;&#x679C;&#x68C0;&#x6D4B;&#x5230;&#x4EFB;&#x610F;&#x53D8;&#x5316;&#xFF0C;$scope&#x5BF9;&#x8C61;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</p>
+<p>&#x3010;&#x9500;&#x6BC1;&#x3011;<br>&#x5F53;&#x4E00;&#x4E2A;$scope&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x5C06;&#x4F1A;&#x6E05;&#x7406;&#x548C;&#x9500;&#x6BC1;&#x81EA;&#x5DF1;</p>
+<h2 id="&#x63A7;&#x5236;&#x5668;"><a name="&#x63A7;&#x5236;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x63A7;&#x5236;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A7;&#x5236;&#x5668;</h2>
+<blockquote>
+<p>&#x63A7;&#x5236;&#x5668;&#x5728;AngularJS&#x4E2D;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x589E;&#x5F3A;&#x89C6;&#x56FE;&#x3002;AngularJS&#x4E2D;&#x7684;&#x63A7;&#x5236;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x5411;&#x89C6;&#x56FE;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x7684;&#x529F;&#x80FD;&#x3002;&#x6211;&#x4EEC;&#x7528;&#x5B83;&#x6765;&#x7ED9;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#x8BBE;&#x7F6E;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x884C;&#x4E3A;</p>
+</blockquote>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code>app.controller(&apos;FirstController&apos;, function($scope) { 
+    $scope.counter = 0;
+    $scope.add = function(amount) { $scope.counter += amount; }; 
+    $scope.subtract = function(amount) { $scope.counter -= amount;  };
+});
+</code></pre><h3 id="&#x63A7;&#x5236;&#x5668;&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#x5305;&#x542B;&#x4F5C;&#x7528;&#x57DF;"><a name="&#x63A7;&#x5236;&#x5668;&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#x5305;&#x542B;&#x4F5C;&#x7528;&#x57DF;" class="anchor-navigation-ex-anchor" href="#&#x63A7;&#x5236;&#x5668;&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#x5305;&#x542B;&#x4F5C;&#x7528;&#x57DF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A7;&#x5236;&#x5668;&#x5D4C;&#x5957;(&#x4F5C;&#x7528;&#x57DF;&#x5305;&#x542B;&#x4F5C;&#x7528;&#x57DF;)</h3>
+<blockquote>
+<p>AngularJS&#x5E94;&#x7528;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x65E0;&#x8BBA;&#x5B83;&#x6E32;&#x67D3;&#x5728;&#x54EA;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#xFF0C;&#x90FD;&#x6709;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x5B58;&#x5728;&#x3002;&#x5BF9;&#x4E8E;ng-app&#x6240;&#x5904;&#x7684;&#x5C42;&#x7EA7;&#x6765;&#x8BB2;&#xFF0C;&#x5B83;&#x7684;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x5C31;&#x662F;$rootScope</p>
+</blockquote>
+<p><strong>&#x6709;&#x4E00;&#x4E2A;&#x4F8B;&#x5916;&#xFF1A;&#x5728;&#x6307;&#x4EE4;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x88AB;&#x79F0;&#x4F5C;&#x5B64;&#x7ACB;&#x4F5C;&#x7528;&#x57DF;</strong>
+&#x9664;&#x4E86;&#x5B64;&#x7ACB;&#x4F5C;&#x7528;&#x57DF;&#x5916;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x90FD;&#x901A;&#x8FC7;&#x539F;&#x578B;&#x7EE7;&#x627F;&#x800C;&#x6765;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5B83;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<h2 id="&#x8868;&#x8FBE;&#x5F0F;"><a name="&#x8868;&#x8FBE;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x8FBE;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8868;&#x8FBE;&#x5F0F;</h2>
+<p>&#x8868;&#x8FBE;&#x5F0F;&#x548C;eval(javascript:;)&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x8868;&#x8FBE;&#x5F0F;&#x7531;AngularJS&#x6765;&#x5904;&#x7406;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4EE5;&#x4E0B;&#x663E;&#x8457;&#x4E0D;&#x540C;&#x7684;&#x7279;&#x6027;&#xFF1A;</p>
+<ul>
+<li>&#x6240;&#x6709;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x5728;&#x5176;&#x6240;&#x5C5E;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x90E8;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x6709;&#x8BBF;&#x95EE;&#x672C;&#x5730;$scope&#x7684;&#x6743;&#x9650;</li>
+<li>&#x5982;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x53D1;&#x751F;&#x4E86;TypeError&#x548C;ReferenceError&#x5E76;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</li>
+<li>&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x529F;&#x80FD;(&#x6761;&#x4EF6;&#x63A7;&#x5236;&#xFF0C;&#x4F8B;&#x5982;if/else)&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E09;&#x76EE;</li>
+<li>&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x8FC7;&#x6EE4;&#x5668;&#x548C;&#x8FC7;&#x6EE4;&#x5668;&#x94FE;</li>
+</ul>
+<pre class="language-"><code>{{ expression }}
+</code></pre><p>&#x5F53;&#x4F7F;&#x7528; <code>{{ }}</code> &#x8868;&#x793A;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4FBF;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;$watch&#x3002;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x8FD9;&#x4E2A;$watch&#x51FD;&#x6570;&#x4F1A;&#x76D1;&#x63A7;$scope&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x5F53;&#x5C5E;&#x6027;&#x4EE5;&#x4EFB;&#x4F55;&#x65B9;&#x5F0F;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x76F8;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;$scope&#x4E0A;&#x7684;&#x4EFB;&#x610F;&#x5C5E;&#x6027;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x7528;$watch&#x51FD;&#x6570;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x67D0;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="&#x624B;&#x52A8;&#x89E3;&#x6790;angularjs&#x8868;&#x8FBE;&#x5F0F;"><a name="&#x624B;&#x52A8;&#x89E3;&#x6790;angularjs&#x8868;&#x8FBE;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x624B;&#x52A8;&#x89E3;&#x6790;angularjs&#x8868;&#x8FBE;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x624B;&#x52A8;&#x89E3;&#x6790;AngularJS&#x8868;&#x8FBE;&#x5F0F;</h3>
+<blockquote>
+<p>AngularJS&#x901A;&#x8FC7;$parse&#x8FD9;&#x4E2A;&#x5185;&#x90E8;&#x670D;&#x52A1;&#x6765;&#x8FDB;&#x884C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FD0;&#x7B97;&#xFF0C;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x5F53;&#x524D;&#x6240;&#x5904;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x8BBF;&#x95EE;&#x5B9A;&#x4E49;&#x5728;$scope&#x4E0A;&#x7684;&#x539F;&#x59CB;JavaScript&#x6570;&#x636E;&#x548C;&#x51FD;&#x6570;&#x3002;</p>
+</blockquote>
+<p>&#x4EE3;&#x7801;&#x5C55;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MyController<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>expr<span class="token punctuation">&quot;</span></span>
+           <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span>
+           <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Enter an expression<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>{{ parsedValue }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+angular.module(&quot;myApp&quot;, [])
+.controller(&apos;MyController&apos;, function($scope,$parse) {
+    $scope.$watch(&apos;expr&apos;, function(newVal, oldVal, scope) {
+        console.log(scope);
+        if (newVal !== oldVal) {
+            // &#x7528;&#x8BE5;&#x8868;&#x8FBE;&#x5F0F;&#x8BBE;&#x7F6E;parseFun
+            var parseFun = $parse(&apos;expr&apos;);
+            // &#x83B7;&#x53D6;&#x7ECF;&#x8FC7;&#x89E3;&#x6790;&#x540E;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;
+            $scope.parsedValue = parseFun(scope);
+        }
+    });
+});
+</code></pre><h2 id="&#x8FC7;&#x6EE4;&#x5668;"><a name="&#x8FC7;&#x6EE4;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x8FC7;&#x6EE4;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FC7;&#x6EE4;&#x5668;</h2>
+<p>&#x57FA;&#x7840;&#x4F7F;&#x7528;</p>
+<pre class="language-"><code>{{ name | uppercase }}
+</code></pre><p>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;$filter&#x6765;&#x8C03;&#x7528;&#x8FC7;&#x6EE4;&#x5668;</p>
+<pre class="language-"><code>app.controller(&apos;DemoController&apos;, [&apos;$scope&apos;, &apos;$filter&apos;,
+  function($scope, $filter) {
+
+    $scope.name = $filter(&apos;lowercase&apos;)(&apos;Ari&apos;);
+}]);
+</code></pre><p>&#x8FC7;&#x6EE4;&#x5668;&#x589E;&#x52A0;&#x53C2;&#x6570;</p>
+<pre class="language-"><code><span class="token comment">&lt;!-- &#x663E;&#x793A;&#xFF1A;123.46 --&gt;</span>
+{{ 123.456789 | number:2 }}
+</code></pre><p>&#x3010;&#x5E38;&#x7528;&#x8FC7;&#x6EE4;&#x5668;&#x3011;<br>currency:&#x8D27;&#x5E01;&#x8FC7;&#x6EE4;&#x5668;<br>date:&#x65E5;&#x671F;&#x8FC7;&#x6EE4;<br>filter&#xFF1A;&#x7ED9;&#x5B9A;&#x6570;&#x7EC4;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5B50;&#x96C6;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;&#x8FD4;&#x56DE;&#x3002;&#x7ECF;&#x5E38;&#x5728;&#x641C;&#x7D22;&#x4E2D;&#x4F7F;&#x7528;&#xFF1B;<br>&#x540C;&#x65F6;&#x4E5F;&#x652F;&#x6301;&#x5BF9;&#x8C61;&#x8FC7;&#x6EE4;<br>&#x4E5F;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x8FC7;&#x6EE4;<br>json&#xFF1A;&#x5C06;&#x4E00;&#x4E2A;JSON&#x6216;JavaScript&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8FD9;&#x79CD;&#x8F6C;&#x6362;&#x5BF9;&#x8C03;&#x8BD5;&#x975E;&#x5E38;&#x6709;&#x5E2E;&#x52A9;<br>limitTo&#xFF1A;&#x9650;&#x5236;&#x6570;&#x7EC4;&#x6216;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;<br>lowercase&#xFF1A;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;<br>number&#xFF1A;&#x8FC7;&#x6EE4;&#x5668;&#x5C06;&#x6570;&#x5B57;&#x683C;&#x5F0F;&#x5316;&#x6210;&#x6587;&#x672C;&#x3002;&#x5B83;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5C0F;&#x6570;&#x70B9;&#x540E;&#x622A;&#x53D6;&#x7684;&#x4F4D;&#x6570;<br>orderBy&#xFF1A;&#x8FC7;&#x6EE4;&#x5668;&#x53EF;&#x4EE5;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#x5BF9;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;<br>uppercase&#xFF1A;&#x5B57;&#x6BCD;&#x8F6C;&#x5927;&#x5199;</p>
+<p>&#x3010;&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;&#x3011;</p>
+<pre class="language-"><code>angular.module(&apos;myApp.filters&apos;, [])
+.filter(&apos;capitalize&apos;, function() {
+  return function(input) {
+    // input&#x662F;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+    if (input) {
+      return input[0].toUpperCase() + input.slice(1);
+    }
+  }
+});
+</code></pre><h2 id="&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#xFF08;&#x7B2C;&#x4E03;&#x7AE0;&#xFF09;"><a name="&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#xFF08;&#x7B2C;&#x4E03;&#x7AE0;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#xFF08;&#x7B2C;&#x4E03;&#x7AE0;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#xFF08;&#x7B2C;&#x4E03;&#x7AE0;&#xFF09;</h2>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>email<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Your email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>email<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>email<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>email<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Email Address<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>novalidate&#xFF1A;&#x5C4F;&#x853D;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x8868;&#x5355;&#x7684;&#x9ED8;&#x8BA4;&#x9A8C;&#x8BC1;&#x884C;&#x4E3A;</p>
+<p>&#x3010;&#x5FC5;&#x586B;&#x9879;&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">required</span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><p>&#x3010;&#x6700;&#x5C0F;&#x957F;&#x5EA6;&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-minlength</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>5<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><p>&#x3010;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-maxlength</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>20<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><p>&#x3010;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x3011;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-pattern</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[a-zA-Z]<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><p>&#x3010;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>email<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>email<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.email<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><p>&#x3010;&#x6570;&#x5B57;&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>number<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>age<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.age<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><p>&#x3010;URL&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>url<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>homepage<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user.facebook_url<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre><h3 id="&#x5728;&#x8868;&#x5355;&#x4E2D;&#x63A7;&#x5236;&#x53D8;&#x91CF;"><a name="&#x5728;&#x8868;&#x5355;&#x4E2D;&#x63A7;&#x5236;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x8868;&#x5355;&#x4E2D;&#x63A7;&#x5236;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x8868;&#x5355;&#x4E2D;&#x63A7;&#x5236;&#x53D8;&#x91CF;</h3>
+<pre class="language-"><code>formName.inputFieldName.property : &#x8BBF;&#x95EE;&#x8868;&#x5355;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;
+
+formName.inputFieldName.$pristine : &#x672A;&#x4FEE;&#x6539;&#x7684;&#x8868;&#x5355;
+
+formName.inputFieldName.$dirty : &#x4FEE;&#x6539;&#x8FC7;&#x7684;&#x8868;&#x5355;
+
+formName.inputFieldName.$valid : &#x5408;&#x6CD5;&#x7684;&#x8868;&#x5355;
+
+formName.inputFieldName.$invalid : &#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x8868;&#x5355;
+</code></pre><p>&#x3010;&#x9519;&#x8BEF;&#x3011;<br>$error&#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x5305;&#x542B;&#x5F53;&#x524D;&#x8868;&#x5355;&#x7684;&#x6240;&#x6709;&#x9A8C;&#x8BC1;&#x5185;&#x5BB9;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x662F;&#x5426;&#x5408;&#x6CD5;&#x7684;&#x4FE1;&#x606F;</p>
+<pre class="language-"><code>formName.inputfieldName.$error
+</code></pre><h3 id="&#x8868;&#x5355;css&#x6837;&#x5F0F;"><a name="&#x8868;&#x5355;css&#x6837;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x5355;css&#x6837;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8868;&#x5355;css&#x6837;&#x5F0F;</h3>
+<p>AngularJS&#x5904;&#x7406;&#x8868;&#x5355;&#x65F6;&#xFF0C;&#x4F1A;&#x6839;&#x636E;&#x8868;&#x5355;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;CSS&#x7C7B;</p>
+<pre class="language-"><code>.ng-pristine {}
+.ng-dirty {}
+.ng-valid {}
+.ng-invalid {}
+</code></pre><p>&#x3010;$parsers&#x3011;<br>&#x4F7F;&#x7528;$parsers&#x6570;&#x7EC4;&#x662F;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x9A8C;&#x8BC1;&#x7684;&#x9014;&#x5F84;&#x4E4B;&#x4E00;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;)
+.directive(&apos;oneToTen&apos;, function() {
+return {
+ require: &apos;?ngModel&apos;,
+ link: function(scope, ele, attrs, ngModel) {
+   if (!ngModel) return;
+     ngModel.$parsers.unshift(
+       function(viewValue) {
+         var i = parseInt(viewValue);
+
+         if (i &gt;= 0 &amp;&amp; i &lt; 10) {
+           ngModel.$setValidity(&apos;oneToTen&apos;, true);
+           return viewValue;
+         } else {
+             ngModel.$setValidity(&apos;oneToTen&apos;, false);
+             return undefined;
+         }
+     });
+  }
+};
+});
+</code></pre><h2 id="&#x6307;&#x4EE4;"><a name="&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6307;&#x4EE4;</h2>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x6307;&#x4EE4;</p>
+<p>HTML&#x4F7F;&#x7528;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-directive</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-directive</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>&#x6307;&#x4EE4;&#x4EE3;&#x7801;</p>
+<pre class="language-"><code>angular.module(&quot;myApp&quot;, [])
+    .directive(&apos;myDirective&apos;,function () {
+        return {
+            restrict: &apos;E&apos;, // &#x5143;&#x7D20;&#xFF08;E&#xFF09;&#x3001;&#x5C5E;&#x6027;&#xFF08;A&#xFF09;&#x3001;&#x7C7B;&#xFF08;C&#xFF09;&#x6216;&#x6CE8;&#x91CA;&#xFF08;M&#xFF09;
+            replace: true, // &#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x4ECE;DOM&#x4E2D;&#x79FB;&#x9664;
+            template: &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://google.com<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> Click me to go to Google<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>&apos; // &#x81EA;&#x5B9A;&#x4E49;HTML
+        }
+    });
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;<br>&#x6307;&#x4EE4;&#x547D;&#x540D;&#x5E94;&#x8BE5;&#x9075;&#x5FAA;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#xFF0C;HTML&#x4E2D;&#x53EF;&#x4EE5;&#x7F8A;&#x8089;&#x4E32;&#x7684;&#x5199;&#x6CD5;</p>
+<p>&#x5411;&#x6307;&#x4EE4;&#x4E2D;&#x4F20;&#x9012;&#x6570;&#x636E;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">my-directive</span>
+    <span class="token attr-name">my-url</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>http://google.com<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">my-link-text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Click me to go to Google<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+angular.module(&quot;myApp&quot;, [])
+    .directive(&apos;myDirective&apos;,function () {
+        return {
+            restrict: &apos;E&apos;, // &#x5143;&#x7D20;&#xFF08;E&#xFF09;&#x3001;&#x5C5E;&#x6027;&#xFF08;A&#xFF09;&#x3001;&#x7C7B;&#xFF08;C&#xFF09;&#x6216;&#x6CE8;&#x91CA;&#xFF08;M&#xFF09;
+            replace: true, // &#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x4ECE;DOM&#x4E2D;&#x79FB;&#x9664;
+            scope:{
+                myUrl: &apos;@&apos;, // &#x7ED1;&#x5B9A;&#x7B56;&#x7565;
+                myLinkText: &apos;@&apos; // &#x6211;&#x4EEC;&#x7528;&#x5C5E;&#x6027;&#x5C06;&#x6570;&#x636E;&#x4ECE;DOM&#x4E2D;&#x590D;&#x5236;&#x5230;&#x6307;&#x4EE4;&#x7684;&#x9694;&#x79BB;&#x4F5C;&#x7528;&#x57DF;
+            },
+            template: &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{ myUrl }}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> {{myLinkText}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>&apos; // &#x81EA;&#x5B9A;&#x4E49;HTML
+        }
+    });
+</code></pre><h3 id="&#x5185;&#x7F6E;&#x6307;&#x4EE4;"><a name="&#x5185;&#x7F6E;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5185;&#x7F6E;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5185;&#x7F6E;&#x6307;&#x4EE4;</h3>
+<p>&#x3010;&#x57FA;&#x7840;ng&#x5C5E;&#x6027;&#x6307;&#x4EE4;&#x3011;</p>
+<ul>
+<li>ng-href &#x521B;&#x5EFA;&#x52A8;&#x6001;&#x7684;URL</li>
+<li>ng-src</li>
+<li>ng-disabled &#x7981;&#x7528;&#xFF0C;&#x5E38;&#x7528;&#x5728;&#x8868;&#x5355;&#x4E0A;&#x9762;</li>
+<li>ng-checked &#x662F;&#x5426;&#x9009;&#x4E2D;</li>
+<li>ng-readonly &#x662F;&#x5426;&#x53EA;&#x8BFB;</li>
+<li>ng-selected option&#x9009;&#x4E2D;&#x7684;&#x503C;</li>
+<li>ng-class</li>
+<li>ng-style</li>
+</ul>
+<p>&#x3010;&#x5728;&#x6307;&#x4EE4;&#x4E2D;&#x4F7F;&#x7528;&#x5B50;&#x4F5C;&#x7528;&#x57DF;&#x3011;<br>ng-app&#x548C;ng-controller&#x662F;&#x7279;&#x6B8A;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4F1A;&#x4FEE;&#x6539;&#x5D4C;&#x5957;&#x5728;&#x5B83;&#x4EEC;&#x5185;&#x90E8;&#x7684;&#x6307;&#x4EE4;&#x7684;&#x4F5C;&#x7528;&#x57DF;</p>
+<p>ng-app&#x4E3A;AngularJS&#x5E94;&#x7528;&#x521B;&#x5EFA;$rootScope&#xFF0C;ng-controller&#x5219;&#x4F1A;&#x4EE5;$rootScope&#x6216;&#x53E6;&#x5916;&#x4E00;&#x4E2A;ng-controller&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E3A;&#x539F;&#x578B;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5B50;&#x4F5C;&#x7528;&#x57DF;</p>
+<p>&#x3010;ng-include&#x3011;<br>&#x4F7F;&#x7528;ng-include&#x53EF;&#x4EE5;&#x52A0;&#x8F7D;&#x3001;&#x7F16;&#x8BD1;&#x5E76;&#x5305;&#x542B;&#x5916;&#x90E8;HTML&#x7247;&#x6BB5;&#x5230;&#x5F53;&#x524D;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x3002;</p>
+<p>&#x8981;&#x8BB0;&#x4F4F;&#xFF0C;&#x4F7F;&#x7528;ng-include&#x65F6;AngularJS&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B50;&#x4F5C;&#x7528;&#x57DF;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4F8B;&#x5982;ControllerA&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x540C;&#x4E00;&#x4E2A;DOM&#x5143;&#x7D20;&#x4E0A;&#x6DFB;&#x52A0;ng-controller=&quot;ControllerA&quot;&#x6307;&#x4EE4;&#xFF0C;&#x8FD9;&#x6837;&#x5F53;&#x6A21;&#x677F;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4E0D;&#x4F1A;&#x50CF;&#x5F80;&#x5E38;&#x4E00;&#x6837;&#x4ECE;&#x5916;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7EE7;&#x627F;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5B50;&#x4F5C;&#x7528;&#x57DF;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-include</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&apos;</span>/myTemplateName.html&apos;<span class="token punctuation">&quot;</span></span>
+     <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MyController<span class="token punctuation">&quot;</span></span>
+     <span class="token attr-name">ng-init</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name = &apos;World&apos;<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    Hello {{ name }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>&#x3010;ng-view&#x3011;<br>&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x5C06;&#x88AB;&#x8DEF;&#x7531;&#x7BA1;&#x7406;&#x548C;&#x653E;&#x7F6E;&#x5728;HTML&#x4E2D;&#x7684;&#x89C6;&#x56FE;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p>&#x3010;ng-if&#x3011;<br>&#x4F7F;&#x7528;ng-if&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x6839;&#x636E;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x5728;DOM&#x4E2D;&#x751F;&#x6210;&#x6216;&#x79FB;&#x9664;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x5982;&#x679C;&#x8D4B;&#x503C;&#x7ED9;ng-if&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x662F;false&#xFF0C;&#x90A3;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x5C06;&#x4F1A;&#x4ECE;DOM&#x4E2D;&#x79FB;&#x9664;&#xFF0C;&#x5426;&#x5219;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x4E2A;&#x514B;&#x9686;&#x5C06;&#x88AB;&#x91CD;&#x65B0;&#x63D2;&#x5165;DOM&#x4E2D;&#x3002;</p>
+<p>&#x3010;ng-repeat&#x3011;<br>ng-repeat&#x7528;&#x6765;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x6216;&#x4E3A;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6A21;&#x677F;&#x5B9E;&#x4F8B;  </p>
+<ul>
+<li>$index&#xFF1A;&#x904D;&#x5386;&#x7684;&#x8FDB;&#x5EA6;&#xFF08;0...length-1&#xFF09;&#x3002;</li>
+<li>$first&#xFF1A;&#x5F53;&#x5143;&#x7D20;&#x662F;&#x904D;&#x5386;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x65F6;&#x503C;&#x4E3A;true&#x3002;</li>
+<li>$middle&#xFF1A;&#x5F53;&#x5143;&#x7D20;&#x5904;&#x4E8E;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x6700;&#x540E;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x65F6;&#x503C;&#x4E3A;true&#x3002;</li>
+<li>$last&#xFF1A;&#x5F53;&#x5143;&#x7D20;&#x662F;&#x904D;&#x5386;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x65F6;&#x503C;&#x4E3A;true&#x3002;</li>
+<li>$even&#xFF1A;&#x5F53;$index&#x503C;&#x662F;&#x5076;&#x6570;&#x65F6;&#x503C;&#x4E3A;true&#x3002;</li>
+<li>$odd&#xFF1A;&#x5F53;$index&#x503C;&#x662F;&#x5947;&#x6570;&#x65F6;&#x503C;&#x4E3A;true&#x3002;</li>
+</ul>
+<p>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>PeopleController<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">ng-repeat</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>person in people<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{even: !$even, odd: !$odd}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        {{person.name}} lives in {{person.city}}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+
+.odd {
+    background-color: blue;
+}
+.even {
+    background-color: red;
+}
+
+angular.module(&apos;myApp&apos;,[])
+.controller(&apos;PeopleController&apos;,function($scope) {
+    $scope.people = [
+        {name: &quot;Ari&quot;, city: &quot;San Francisco&quot;},
+        {name: &quot;Erik&quot;, city: &quot;Seattle&quot;}
+    ];
+})
+</code></pre><p>&#x3010;ng-init&#x3011;<br>ng-init&#x6307;&#x4EE4;&#x7528;&#x6765;&#x5728;&#x6307;&#x4EE4;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x8BBE;&#x7F6E;&#x5185;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x3010;ng-bind&#x3011;<br>&#x5C3D;&#x7BA1;&#x53EF;&#x4EE5;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x4F7F;&#x7528;<code>{{}}</code>&#x6A21;&#x677F;&#x8BED;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;ng-bind&#x6307;&#x4EE4;&#x5B9E;&#x73B0;&#x540C;&#x6837;&#x7684;&#x884C;&#x4E3A;</p>
+<p>&#x3010;ng-cloak&#x3011;<br>&#x9664;&#x4F7F;&#x7528;ng-bind&#x6765;&#x907F;&#x514D;&#x672A;&#x6E32;&#x67D3;&#x5143;&#x7D20;&#x95EA;&#x70C1;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x542B;&#x6709;<code>{{}}</code>&#x7684;&#x5143;&#x7D20;&#x4E0A;&#x4F7F;&#x7528;ng-cloak&#x6307;&#x4EE4;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">ng-init</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>greeting=&apos;HelloWorld&apos;<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">ng-cloak</span><span class="token punctuation">&gt;</span></span>{{ greeting }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>&#x3010;ng-bind-template&#x3011;<br>&#x540C;ng-bind&#x6307;&#x4EE4;&#x7C7B;&#x4F3C;&#xFF0C;ng-bind-template&#x7528;&#x6765;&#x5728;&#x89C6;&#x56FE;&#x4E2D;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-bind-template</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{message}}{{name}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>&#x3010;ng-model&#x3011;<br>ng-model&#x6307;&#x4EE4;&#x7528;&#x6765;&#x5C06;input&#x3001;select&#x3001;textarea&#x6216;&#x81EA;&#x5B9A;&#x4E49;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x540C;&#x5305;&#x542B;&#x5B83;&#x4EEC;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#x3002;</p>
+<p>&#x3010;ng-show&#x3011;&#x3010;ng-hide&#x3011;<br>&#x6839;&#x636E;&#x6240;&#x7ED9;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x6765;&#x663E;&#x793A;&#x6216;&#x9690;&#x85CF;HTML&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x3010;ng-change&#x3011;<br>&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x4F1A;&#x5728;&#x8868;&#x5355;&#x8F93;&#x5165;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x8BA1;&#x7B97;&#x7ED9;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x503C;&#x3002;&#x56E0;&#x4E3A;&#x8981;&#x5904;&#x7406;&#x8868;&#x5355;&#x8F93;&#x5165;&#xFF0C;&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x8981;&#x548C;ngModel&#x8054;&#x5408;&#x8D77;&#x6765;&#x4F7F;&#x7528;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>EquationController<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>equation.x<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">ng-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>change()<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>{{ equation.output }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+
+angular.module(&apos;myApp&apos;,[])
+.controller(&apos;EquationController&apos;,function($scope) {
+    $scope.equation = {};
+    $scope.change = function() {
+        $scope.equation.output
+            = parseInt($scope.equation.x) + 2;
+    };
+});
+</code></pre><p>&#x3010;ng-form&#x3011;<br>&#x7528;&#x6765;&#x5728;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x5185;&#x90E8;&#x5D4C;&#x5957;&#x53E6;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x3002;&#x666E;&#x901A;&#x7684;HTML <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span></code>&#x6807;&#x7B7E;&#x4E0D;&#x5141;&#x8BB8;&#x5D4C;&#x5957;&#xFF0C;&#x4F46;ng-form&#x53EF;&#x4EE5;</p>
+<p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5185;&#x90E8;&#x6240;&#x6709;&#x7684;&#x5B50;&#x8868;&#x5355;&#x90FD;&#x5408;&#x6CD5;&#x65F6;&#xFF0C;&#x5916;&#x90E8;&#x7684;&#x8868;&#x5355;&#x624D;&#x4F1A;&#x5408;&#x6CD5;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x7528;ng-repeat&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x8868;&#x5355;&#x662F;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;</p>
+<p>&#x3010;ng-click&#x3011;<br>&#x7528;&#x6765;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x88AB;&#x70B9;&#x51FB;&#x65F6;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x8868;&#x8FBE;&#x5F0F;</p>
+<p>&#x3010;ng-select&#x3011;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>CityController<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>city<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">ng-options</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>city.name for city in cities<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Choose City<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+    Best City: {{ city.name }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+angular.module(&apos;myApp&apos;,[])
+.controller(&apos;CityController&apos;,function($scope) {
+    $scope.cities = [
+      {name: &apos;Seattle&apos;},
+      {name: &apos;San Francisco&apos;},
+      {name: &apos;Chicago&apos;},
+      {name: &apos;New York&apos;},
+      {name: &apos;Boston&apos;}
+    ];
+});
+</code></pre><p>&#x3010;ng-submit&#x3011;<br>ng-submit&#x7528;&#x6765;&#x5C06;&#x8868;&#x8FBE;&#x5F0F;&#x540C;onsubmit&#x4E8B;&#x4EF6;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#x3002;&#x8FD9;&#x4E2A;&#x6307;&#x4EE4;&#x540C;&#x65F6;&#x4F1A;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF08;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5E76;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF09;&#xFF0C;&#x4F46;&#x524D;&#x63D0;&#x662F;&#x8868;&#x5355;&#x4E0D;&#x542B;&#x6709;action&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x3010;ng-class&#x3011;<br>&#x4F7F;&#x7528;ng-class &#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x7684;&#x7C7B;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>LotteryController<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{red: x &gt; 5}<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">ng-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>x &gt; 5<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+        You won!
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">ng-click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>x = generateNumber()<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">ng-init</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>x = 0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        Draw Number
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Number is: {{ x }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+.red {
+    background-color: red;
+}
+
+angular.module(&apos;myApp&apos;,[])
+.controller(&apos;LotteryController&apos;, function($scope) {
+    $scope.generateNumber = function() {
+        return Math.floor((Math.random()*10)+1);
+    };
+});
+</code></pre><h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;"><a name="&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;</h3>
+<p>&#x57FA;&#x7840;&#x6846;&#x67B6;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [])
+.directive(&apos;myDirective&apos;, function ($timeout, UserDefinedService) {
+    // &#x6307;&#x4EE4;&#x5B9A;&#x4E49;&#x653E;&#x5728;&#x8FD9;&#x91CC;
+    return {
+        // &#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x9879;&#x6765;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;
+    }
+});
+</code></pre><p>myDirective &#xFF1A; &#x6307;&#x4EE4;&#x540D;&#x5B57;<br>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x6307;&#x4EE4;&#x7684;&#x5168;&#x90E8;&#x884C;&#x4E3A;&#x3002;$compile&#x670D;&#x52A1;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;DOM&#x8C03;&#x7528;&#x6307;&#x4EE4;&#x65F6;&#x6765;&#x6784;&#x9020;&#x6307;&#x4EE4;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x5168;&#x90E8;&#x8BBE;&#x7F6E;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [])
+.directive(&apos;myDirective&apos;, function() {
+    return {
+        restrict: String, // &#x5143;&#x7D20;&#x8FD8;&#x662F;&#x5C5E;&#x6027; E&#xFF08;&#x5143;&#x7D20;&#xFF09;A&#xFF08;&#x5C5E;&#x6027;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;C&#xFF08;&#x7C7B;&#x540D;&#xFF09;M&#xFF08;&#x6CE8;&#x91CA;&#xFF09;&#x53EF;&#x4EE5;&#x590D;&#x9009;&#x2018;EA&#x2019;
+        priority: Number, // &#x4F18;&#x5148;&#x7EA7;&#xFF08;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E0A;&#x5177;&#x6709;&#x4E24;&#x4E2A;&#x4F18;&#x5148;&#x7EA7;&#x76F8;&#x540C;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x58F0;&#x660E;&#x5728;&#x524D;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x4F1A;&#x88AB;&#x4F18;&#x5148;&#x8C03;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x7684;&#x5148;&#x6267;&#x884C;&#xFF09; &#x9ED8;&#x8BA4;&#x503C;0
+        terminal: Boolean, // &#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x6765;&#x544A;&#x8BC9;AngularJS&#x505C;&#x6B62;&#x8FD0;&#x884C;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x4E0A;&#x6BD4;&#x672C;&#x6307;&#x4EE4;&#x4F18;&#x5148;&#x7EA7;&#x4F4E;&#x7684;&#x6307;&#x4EE4;&#x3002;&#x4F46;&#x540C;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4F18;&#x5148;&#x7EA7;&#x76F8;&#x540C;&#x7684;&#x6307;&#x4EE4;&#x8FD8;&#x662F;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;
+        template: String or Template Function: &#x6A21;&#x677F;
+        function(tElement, tAttrs) (...},
+        templateUrl: String, // &#x4E00;&#x4E2A;&#x4EE3;&#x8868;&#x5916;&#x90E8;HTML&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+        replace: Boolean or String, // &#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x4ECE;DOM&#x4E2D;&#x79FB;&#x9664; 
+        scope: Boolean or Object, // &#x5F53;scope&#x8BBE;&#x7F6E;&#x4E3A;true&#x65F6;&#xFF0C;&#x4F1A;&#x4ECE;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#x7EE7;&#x627F;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5BF9;&#x8C61;&#x3002;&#x4F20;&#x4E00;&#x4E2A;{}&#x7A7A;&#x5BF9;&#x8C61;&#x7684;&#x8BDD;&#x5C31;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9694;&#x79BB;&#x4F5C;&#x7528;&#x57DF;
+        transclude: Boolean,
+        controller: String or function(scope, element, attrs, transclude, otherInjectables) { ... },  // controller&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x4F1A;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x4E3A;&#x540D;&#x5B57;&#xFF0C;&#x6765;&#x67E5;&#x627E;&#x6CE8;&#x518C;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x63A7;&#x5236;&#x5668;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;.&#x6216;&#x8005;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x5185;&#x8054;&#x63A7;&#x5236;&#x5668;
+        controllerAs: String, // &#x63A7;&#x5236;&#x5668;&#x522B;&#x540D;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x770B;&#x8D77;&#x6765;&#x597D;&#x50CF;&#x6CA1;&#x4EC0;&#x4E48;&#x5927;&#x7528;&#xFF0C;&#x4F46;&#x5B83;&#x7ED9;&#x4E86;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x8DEF;&#x7531;&#x548C;&#x6307;&#x4EE4;&#x4E2D;&#x521B;&#x5EFA;&#x533F;&#x540D;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5F3A;&#x5927;&#x80FD;&#x529B;&#x3002;&#x8FD9;&#x79CD;&#x80FD;&#x529B;&#x53EF;&#x4EE5;&#x5C06;&#x52A8;&#x6001;&#x7684;&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x6210;&#x4E3A;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x9694;&#x79BB;&#x7684;&#x3001;&#x6613;&#x4E8E;&#x6D4B;&#x8BD5;&#x7684;&#x3002;
+        require: String,
+        link: function(scope, iElement, iAttrs) { ... }, // &#x94FE;&#x63A5;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5C06;&#x4F5C;&#x7528;&#x57DF;&#x548C;DOM&#x8FDB;&#x884C;&#x94FE;&#x63A5;&#x3002;&#x7528;link&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;DOM&#x7684;&#x6307;&#x4EE4;&#x3002;
+        compile: // &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6216;&#x8FDE;&#x63A5;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A; // &#x7F16;&#x8BD1;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5BF9;&#x6A21;&#x677F;DOM&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#x3002;
+            function(tElement, tAttrs, transclude) {
+                return {
+                    pre: function(scope, iElement, iAttrs, controller) { ... },
+                    post: function(scope, iElement, iAttrs, controller) { ... }
+                }
+                // &#x6216;&#x8005;
+                return function postLink(...) { ... }
+            }
+    };
+});
+</code></pre><h3 id="&#x6307;&#x4EE4;&#x7ED1;&#x5B9A;&#x7B56;&#x7565;"><a name="&#x6307;&#x4EE4;&#x7ED1;&#x5B9A;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;&#x7ED1;&#x5B9A;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6307;&#x4EE4;&#x7ED1;&#x5B9A;&#x7B56;&#x7565;</h3>
+<p>&#x3010;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x5C5E;&#x6027;@ (or @attr)&#x3011;<br>&#x4F7F;&#x7528;@&#x7B26;&#x53F7;&#x5C06;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x540C;DOM&#x5C5E;&#x6027;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#x3002;&#x6307;&#x4EE4;&#x5185;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x53D8;&#x91CF;</p>
+<p>&#x3010;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;= (or =attr)&#x3011;<br>&#x901A;&#x8FC7;=&#x53EF;&#x4EE5;&#x5C06;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x540C;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x53CC;&#x5411;&#x7684;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x3002;</p>
+<p>&#x3010;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7ED1;&#x5B9A;&amp; (or &amp;attr)&#x3011;<br>&#x901A;&#x8FC7;&amp;&#x7B26;&#x53F7;&#x53EF;&#x4EE5;&#x5BF9;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x7ED1;&#x5B9A;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x5176;&#x4E2D;&#x8FD0;&#x884C;&#x51FD;&#x6570;&#x3002;&#x610F;&#x5473;&#x7740;&#x5BF9;&#x8FD9;&#x4E2A;&#x503C;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x65F6;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x7236;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x5305;&#x88C5;&#x51FD;&#x6570;&#x3002;</p>
+<pre class="language-"><code>scope: {
+    ngModel: &apos;=&apos;, // &#x5C06;ngModel&#x540C;&#x6307;&#x5B9A;&#x5BF9;&#x8C61;&#x7ED1;&#x5B9A;
+    onSend: &apos;&amp;&apos;,  // &#x5C06;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;
+    fromName: &apos;@&apos; // &#x50A8;&#x5B58;&#x4E0E;fromName&#x76F8;&#x5173;&#x8054;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+}
+</code></pre><h3 id="&#x6307;&#x4EE4;&#x5185;&#x90E8;controller"><a name="&#x6307;&#x4EE4;&#x5185;&#x90E8;controller" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;&#x5185;&#x90E8;controller"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6307;&#x4EE4;&#x5185;&#x90E8;controller</h3>
+<p>controller&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x5F53;&#x8BBE;&#x7F6E;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x4F1A;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;&#x4E3A;&#x540D;&#x5B57;&#xFF0C;&#x6765;&#x67E5;&#x627E;&#x6CE8;&#x518C;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x63A7;&#x5236;&#x5668;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [])
+.directive(&apos;myDirective&apos;,  function() {
+    restrict: &apos;A&apos;, // &#x59CB;&#x7EC8;&#x9700;&#x8981;
+    controller: &apos;SomeController&apos;
+})
+
+// &#x5E94;&#x7528;&#x4E2D;&#x5176;&#x4ED6;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x88AB;index.html&#x5305;&#x542B;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;
+angular.module(&apos;myApp&apos;)
+.controller(&apos;SomeController&apos;, function($scope, $element, $attrs, $transclude) {
+    // &#x63A7;&#x5236;&#x5668;&#x903B;&#x8F91;&#x653E;&#x5728;&#x8FD9;&#x91CC;
+});
+</code></pre><p>&#x53EF;&#x4EE5;&#x5728;&#x6307;&#x4EE4;&#x5185;&#x90E8;&#x901A;&#x8FC7;&#x533F;&#x540D;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5185;&#x8054;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF1A;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;,[])
+.directive(&apos;myDirective&apos;, function() {
+    restrict: &apos;A&apos;,
+    controller: function($scope, $element, $attrs, $transclude) {
+        // &#x63A7;&#x5236;&#x5668;&#x903B;&#x8F91;&#x653E;&#x5728;&#x8FD9;&#x91CC;
+    }
+});
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x4EFB;&#x610F;&#x53EF;&#x4EE5;&#x88AB;&#x6CE8;&#x5165;&#x7684;AngularJS&#x670D;&#x52A1;&#x4F20;&#x9012;&#x7ED9;&#x63A7;&#x5236;&#x5668;&#x3002;</p>
+<p>&#x3010;$scope&#x3011;<br>&#x4E0E;&#x6307;&#x4EE4;&#x5143;&#x7D20;&#x76F8;&#x5173;&#x8054;&#x7684;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;</p>
+<p>&#x3010;$element&#x3011;<br>&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;</p>
+<p>&#x3010;$attrs&#x3011;<br>&#x7531;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;&#x7EC4;&#x6210;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x5143;&#x7D20;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>aDiv<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+&#x5177;&#x6709;&#x5982;&#x4E0B;&#x7684;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#xFF1A;
+{
+    id:&quot;aDiv&quot;,
+    class:&quot;box&quot;
+}
+</code></pre><p>&#x3010;$transclude&#x3011;<br>&#x5D4C;&#x5165;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x4F1A;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x5D4C;&#x5165;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x9884;&#x7ED1;&#x5B9A;&#x3002;<br>transclude&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x5F0F;&#x5B9E;&#x9645;&#x88AB;&#x6267;&#x884C;&#x4F5C;&#x7528;&#x6765;&#x514B;&#x9686;&#x5143;&#x7D20;&#x548C;&#x64CD;&#x7EB5;DOM&#x51FD;&#x6570;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;)
+.directive(&apos;link&apos;, function() {
+    return {
+        restrict: &apos;EA&apos;,
+        transclude: true,
+        controller: function($scope, $element, $transclude, $log) {
+            $transclude(function(clone) {
+                var a = angular.element(&apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">&gt;</span></span>&apos;);
+                a.attr(&apos;href&apos;, clone.text());
+                a.text(clone.text());
+                $log.info(&quot;Created new a tag in link directive&quot;);
+                $element.append(a);
+            });
+        }
+    };
+});
+</code></pre><p>&#x6307;&#x4EE4;&#x7684;&#x63A7;&#x5236;&#x5668;&#x548C;link&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4E92;&#x6362;&#x3002;&#x63A7;&#x5236;&#x5668;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x63D0;&#x4F9B;&#x53EF;&#x5728;&#x6307;&#x4EE4;&#x95F4;&#x590D;&#x7528;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x5728;&#x5F53;&#x524D;&#x5185;&#x90E8;&#x6307;&#x4EE4;&#x4E2D;&#x5B9A;&#x4E49;&#x884C;&#x4E3A;&#xFF0C;&#x4E14;&#x65E0;&#x6CD5;&#x5728;&#x6307;&#x4EE4;&#x95F4;&#x590D;&#x7528;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;require&#x5176;&#x4ED6;&#x6307;&#x4EE4;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x56E0;&#x6B64;&#x63A7;&#x5236;&#x5668;&#x5E38;&#x88AB;&#x7528;&#x6765;&#x653E;&#x7F6E;&#x5728;&#x591A;&#x4E2A;&#x6307;&#x4EE4;&#x95F4;&#x5171;&#x4EAB;&#x7684;&#x52A8;&#x4F5C;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5C06;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;API&#x66B4;&#x9732;&#x7ED9;&#x5176;&#x4ED6;&#x6307;&#x4EE4;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;controller&#x53C2;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;link&#x6765;&#x6784;&#x9020;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x5143;&#x7D20;&#x7684;&#x529F;&#x80FD;&#x6027;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;scope.$watch()&#x6216;&#x8005;&#x60F3;&#x8981;&#x4E0E;DOM&#x5143;&#x7D20;&#x505A;&#x5B9E;&#x65F6;&#x7684;&#x4EA4;&#x4E92;&#xFF0C;&#x4F7F;&#x7528;&#x94FE;&#x63A5;&#x4F1A;&#x662F;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+<p>&#x3010;require&#x3011;</p>
+<p>require&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6570;&#x7EC4;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x4EE3;&#x8868;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x7684;&#x540D;&#x5B57;&#x3002;require&#x4F1A;&#x5C06;&#x63A7;&#x5236;&#x5668;&#x6CE8;&#x5165;&#x5230;&#x5176;&#x503C;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x6307;&#x4EE4;&#x4E2D;&#xFF0C;&#x5E76;&#x4F5C;&#x4E3A;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x503C;&#x662F;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6307;&#x4EE4;&#x540D;&#x79F0;</p>
+<p>&#x6307;&#x4EE4;&#x5B9A;&#x4E49;&#x53EA;&#x4F1A;&#x67E5;&#x627E;&#x5B9A;&#x4E49;&#x5728;&#x6307;&#x4EE4;&#x5F53;&#x524D;&#x7528;&#x57DF;&#x4E2D;&#x7684;ng-model=&quot;&quot;&#x3002;</p>
+<pre class="language-"><code>//...
+restrict: &apos;EA&apos;,
+require: &apos;ngModel&apos;
+//...
+
+<span class="token comment">&lt;!-- &#x6307;&#x4EE4;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x4F5C;&#x7528;&#x57DF;&#x67E5;&#x627E;ng-model --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">my-directive</span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>object<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>require&#x53C2;&#x6570;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x524D;&#x7F00;&#x8FDB;&#x884C;&#x4FEE;&#x9970;&#xFF0C;&#x8FD9;&#x4F1A;&#x6539;&#x53D8;&#x67E5;&#x627E;&#x63A7;&#x5236;&#x5668;&#x65F6;&#x7684;&#x884C;&#x4E3A;&#xFF1A;</p>
+<p>&#xFF1F;&#x5982;&#x679C;&#x5728;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x4E2D;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x6240;&#x9700;&#x8981;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x4F1A;&#x5C06;null&#x4F5C;&#x4E3A;&#x4F20;&#x7ED9;link&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>^ &#x5982;&#x679C;&#x6DFB;&#x52A0;&#x4E86;^&#x524D;&#x7F00;&#xFF0C;&#x6307;&#x4EE4;&#x4F1A;&#x5728;&#x4E0A;&#x6E38;&#x7684;&#x6307;&#x4EE4;&#x94FE;&#x4E2D;&#x67E5;&#x627E;require&#x53C2;&#x6570;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;</p>
+<p>?^ &#x5C06;&#x524D;&#x9762;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#x7684;&#x884C;&#x4E3A;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x9009;&#x62E9;&#x5730;&#x52A0;&#x8F7D;&#x9700;&#x8981;&#x7684;&#x6307;&#x4EE4;&#x5E76;&#x5728;&#x7236;&#x6307;&#x4EE4;&#x94FE;&#x4E2D;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x3002;</p>
+<p>&#x6CA1;&#x6709;&#x524D;&#x7F00; &#x5982;&#x679C;&#x6CA1;&#x6709;&#x524D;&#x7F00;&#xFF0C;&#x6307;&#x4EE4;&#x5C06;&#x4F1A;&#x5728;&#x81EA;&#x8EAB;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x4EFB;&#x4F55;&#x63A7;&#x5236;&#x5668;&#xFF08;&#x6216;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x540D;&#x5B57;&#x7684;&#x6307;&#x4EE4;&#xFF09;&#x5C31;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;</p>
+<p>&#x3010;link&#x3011;</p>
+<pre class="language-"><code>// require &apos;SomeController&apos;,
+link: function(scope, element, attrs, SomeController) {
+    // &#x5728;&#x8FD9;&#x91CC;&#x64CD;&#x4F5C;DOM&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4F9D;&#x8D56;&#x6307;&#x4EE4;&#x7684;&#x63A7;&#x5236;&#x5668;
+}
+</code></pre><p>&#x5982;&#x679C;&#x6307;&#x4EE4;&#x5B9A;&#x4E49;&#x4E2D;&#x6709;require&#x9009;&#x9879;&#xFF0C;&#x51FD;&#x6570;&#x7B7E;&#x540D;&#x4E2D;&#x4F1A;&#x6709;&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4EE3;&#x8868;&#x63A7;&#x5236;&#x5668;&#x6216;&#x8005;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6307;&#x4EE4;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;</p>
+<p>&#x5982;&#x679C;require&#x9009;&#x9879;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x6570;&#x7EC4;&#xFF0C;&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x6BCF;&#x4E2A;&#x6307;&#x4EE4;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x5236;&#x5668;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<p>scope &#x6307;&#x4EE4;&#x7528;&#x6765;&#x5728;&#x5176;&#x5185;&#x90E8;&#x6CE8;&#x518C;&#x76D1;&#x542C;&#x5668;&#x7684;&#x4F5C;&#x7528;&#x57DF;</p>
+<p>iElement iElement&#x53C2;&#x6570;&#x4EE3;&#x8868;&#x5B9E;&#x4F8B;&#x5143;&#x7D20;&#xFF0C;&#x6307;&#x4F7F;&#x7528;&#x6B64;&#x6307;&#x4EE4;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5728;postLink&#x51FD;&#x6570;&#x4E2D;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x53EA;&#x64CD;&#x4F5C;&#x6B64;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x56E0;&#x4E3A;&#x5B50;&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x88AB;&#x94FE;&#x63A5;&#x8FC7;&#x4E86;&#x3002;</p>
+<p>iAttrs iAttrs&#x53C2;&#x6570;&#x4EE3;&#x8868;&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x7531;&#x5B9A;&#x4E49;&#x5728;&#x5143;&#x7D20;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x7EC4;&#x6210;&#x7684;&#x6807;&#x51C6;&#x5316;&#x5217;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6240;&#x6709;&#x6307;&#x4EE4;&#x7684;&#x94FE;&#x63A5;&#x51FD;&#x6570;&#x95F4;&#x5171;&#x4EAB;&#x3002;&#x4F1A;&#x4EE5;JavaScript&#x5BF9;&#x8C61;&#x7684;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#x4F20;&#x9012;&#x3002;</p>
+<p>controller controller&#x53C2;&#x6570;&#x6307;&#x5411;require&#x9009;&#x9879;&#x5B9A;&#x4E49;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;require&#x9009;&#x9879;&#xFF0C;&#x90A3;&#x4E48;controller&#x53C2;&#x6570;&#x7684;&#x503C;&#x4E3A;undefined&#x3002;</p>
+<p>&#x3010;&#x81EA;&#x5B9A;&#x4E49;&#x9A8C;&#x8BC1;&#x5668;&#x3011;</p>
+<pre class="language-"><code>angular.module(&apos;validationExample&apos;, [])
+.directive(&apos;ensureUnique&apos;,function($http) {
+    return {
+        require: &apos;ngModel&apos;,
+        link: function(scope, ele, attrs, c) {
+            scope.$watch(attrs.ngModel, function() {
+                $http({
+                    method: &apos;POST&apos;,
+                    url: &apos;/api/check/&apos; + attrs.ensureUnique,
+                    data: {
+                    field&apos;: attrs.ensureUnique
+                }).success(function(data,status,headers,cfg) {
+                    c.$setValidity(&apos;unique&apos;, data.isUnique);
+                }).error(function(data,status,headers,cfg) {
+                    c.$setValidity(&apos;unique&apos;, false);
+                });
+            });
+        }
+    };
+});
+</code></pre><h2 id="angularjs&#x6A21;&#x5757;&#x52A0;&#x8F7D;"><a name="angularjs&#x6A21;&#x5757;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#angularjs&#x6A21;&#x5757;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>AngularJS&#x6A21;&#x5757;&#x52A0;&#x8F7D;</h2>
+<p>AngularJS&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x5728;&#x88AB;&#x52A0;&#x8F7D;&#x548C;&#x6267;&#x884C;&#x4E4B;&#x524D;&#x5BF9;&#x5176;&#x81EA;&#x8EAB;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5E94;&#x7528;&#x7684;&#x52A0;&#x8F7D;&#x9636;&#x6BB5;&#x5E94;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x903B;&#x8F91;&#x7EC4;&#x3002;</p>
+<p>&#x3010;&#x914D;&#x7F6E;&#x3011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6765;&#x914D;&#x7F6E;&#x8DEF;&#x7531;<br>&#x5728;&#x6A21;&#x5757;&#x7684;&#x52A0;&#x8F7D;&#x9636;&#x6BB5;&#xFF0C;AngularJS&#x4F1A;&#x5728;&#x63D0;&#x4F9B;&#x8005;&#x6CE8;&#x518C;&#x548C;&#x914D;&#x7F6E;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5BF9;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;&#x5728;&#x6574;&#x4E2A;AngularJS&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x662F;&#x552F;&#x4E00;&#x80FD;&#x591F;&#x5728;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x524D;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [])
+  .config(function($provide) {
+  });
+</code></pre><p>&#x5F53;&#x5BF9;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x683C;&#x5916;&#x6CE8;&#x610F;&#x53EA;&#x6709;&#x5C11;&#x6570;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x88AB;&#x6CE8;&#x5165;&#x5230;config()&#x51FD;&#x6570;&#x4E2D;&#xFF1A;&#x63D0;&#x4F9B;&#x8005;&#x548C;&#x5E38;&#x91CF;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x6CE8;&#x5165;&#x8FDB;&#x53BB;&#xFF0C;&#x4F1A;&#x5728;&#x771F;&#x6B63;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x4E4B;&#x524D;&#x5C31;&#x610F;&#x5916;&#x5730;&#x628A;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x5316;&#x4E86;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x5BF9;&#x914D;&#x7F6E;&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x4E25;&#x683C;&#x9650;&#x5236;&#x7684;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x526F;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x6CE8;&#x5165;&#x7528;provider()&#x8BED;&#x6CD5;&#x6784;&#x5EFA;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x5176;&#x4ED6;&#x7684;&#x5219;&#x4E0D;&#x884C;&#x3002;</p>
+<p>&#x3010;&#x8FD0;&#x884C;&#x5757;&#x3011;<br>&#x548C;&#x914D;&#x7F6E;&#x5757;&#x4E0D;&#x540C;&#xFF0C;&#x8FD0;&#x884C;&#x5757;&#x5728;&#x6CE8;&#x5165;&#x5668;&#x521B;&#x5EFA;&#x4E4B;&#x540E;&#x88AB;&#x6267;&#x884C;,&#x5B83;&#x662F;&#x6240;&#x6709;AngularJS&#x5E94;&#x7528;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x88AB;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x8FD0;&#x884C;&#x5757;&#x662F;AngularJS&#x4E2D;&#x4E0E;main&#x65B9;&#x6CD5;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x5757;&#x901A;&#x5E38;&#x7528;&#x6765;&#x6CE8;&#x518C;&#x5168;&#x5C40;&#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;.run()&#x5757;&#x4E2D;&#x8BBE;&#x7F6E;&#x8DEF;&#x7531;&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5668;&#x4EE5;&#x53CA;&#x8FC7;&#x6EE4;&#x672A;&#x7ECF;&#x6388;&#x6743;&#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x6BCF;&#x6B21;&#x8DEF;&#x7531;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x90FD;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x653E;&#x7F6E;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x552F;&#x4E00;&#x5408;&#x7406;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;run&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [&apos;ngRoute&apos;])
+.run(function($rootScope, AuthService) {
+    $rootScope.$on(&apos;$routeChangeStart&apos;, function(evt, next, current) {
+        // &#x5982;&#x679C;&#x7528;&#x6237;&#x672A;&#x767B;&#x5F55;
+        if (!AuthService.userLoggedIn()) {
+            if (next.templateUrl === &quot;login.html&quot;) {
+                // &#x5DF2;&#x7ECF;&#x8F6C;&#x5411;&#x767B;&#x5F55;&#x8DEF;&#x7531;&#x56E0;&#x6B64;&#x65E0;&#x9700;&#x91CD;&#x5B9A;&#x5411;
+            } else {
+                $location.path(&apos;/login&apos;);
+            }
+        }
+    });
+});
+</code></pre><h2 id="&#x4F9D;&#x8D56;&#x6CE8;&#x5165;"><a name="&#x4F9D;&#x8D56;&#x6CE8;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x4F9D;&#x8D56;&#x6CE8;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;</h2>
+<p>&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x901A;&#x5E38;&#x6709;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x5BF9;&#x5176;&#x4F9D;&#x8D56;&#x7684;&#x63A7;&#x5236;&#x6743;</p>
+<ol>
+<li>&#x5728;&#x5185;&#x90E8;&#x521B;&#x5EFA;&#x4F9D;&#x8D56;</li>
+<li>&#x901A;&#x8FC7;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x5F15;&#x7528;</li>
+<li>&#x5728;&#x9700;&#x8981;&#x7684;&#x5730;&#x65B9;&#x901A;&#x8FC7;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x4F20;&#x9012;</li>
+</ol>
+<p>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x662F;&#x901A;&#x8FC7;&#x7B2C;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x53BB;&#x9664;&#x5BF9;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x786C;&#x7F16;&#x7801;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x6539;&#x53D8;&#x751A;&#x81F3;&#x79FB;&#x9664;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+<p>AngularJS&#x4F7F;&#x7528;$injetor&#xFF08;&#x6CE8;&#x5165;&#x5668;&#x670D;&#x52A1;&#xFF09;&#x6765;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x7684;&#x67E5;&#x8BE2;&#x548C;&#x5B9E;&#x4F8B;&#x5316;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;$injetor&#x8D1F;&#x8D23;&#x5B9E;&#x4F8B;&#x5316;AngularJS&#x4E2D;&#x6240;&#x6709;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x5305;&#x62EC;&#x5E94;&#x7528;&#x7684;&#x6A21;&#x5757;&#x3001;&#x6307;&#x4EE4;&#x548C;&#x63A7;&#x5236;&#x5668;&#x7B49;&#x3002;</p>
+<p>&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7B80;&#x5355;&#x793A;&#x4F8B;&#xFF1A;<br>1&#x3001;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x548C;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [])
+.factory(&apos;greeter&apos;, function() {
+    return {
+        greet: function(msg) {alert(msg);}
+    }
+})
+.controller(&apos;MyController&apos;,
+    function($scope, greeter) {
+        $scope.sayHello = function() {
+            greeter.greet(&quot;Hello!&quot;);
+        };
+});
+</code></pre><p>2&#x3001;&#x5F53;AngularJS&#x5B9E;&#x4F8B;&#x5316;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x4F1A;&#x67E5;&#x627E;greeter&#x5E76;&#x81EA;&#x7136;&#x800C;&#x7136;&#x5730;&#x628A;&#x5BF9;&#x5B83;&#x7684;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x8FDB;&#x53BB;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>myApp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>MyController<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">ng-click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sayHello()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>3&#x3001;&#x5185;&#x90E8;&#x7684;&#x5B9E;&#x73B0;&#x6D41;&#x7A0B;</p>
+<pre class="language-"><code>// &#x4F7F;&#x7528;&#x6CE8;&#x5165;&#x5668;&#x52A0;&#x8F7D;&#x5E94;&#x7528;
+var injector = angular.injector([&apos;ng&apos;, &apos;myApp&apos;]);
+// &#x901A;&#x8FC7;&#x6CE8;&#x5165;&#x5668;&#x52A0;&#x8F7D;$controller&#x670D;&#x52A1;&#xFF1A;var $controller = injector.get(&apos;$controller&apos;);
+var scope = injector.get(&apos;$rootScope&apos;).$new(); 
+// &#x52A0;&#x8F7D;&#x63A7;&#x5236;&#x5668;&#x5E76;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x540C;AngularJS&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x505A;&#x7684;&#x4E00;&#x6837;
+var MyController = $controller(&apos;MyController&apos;, {$scope: scope})
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5E76;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#x662F;&#x5982;&#x4F55;&#x627E;&#x5230;greeter&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7684;&#x786E;&#x80FD;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;$injector&#x4F1A;&#x8D1F;&#x8D23;&#x4E3A;&#x6211;&#x4EEC;&#x67E5;&#x627E;&#x5E76;&#x52A0;&#x8F7D;&#x5B83;&#x3002;</p>
+<p>&#x3010;&#x663E;&#x5F0F;&#x6CE8;&#x5165;&#x58F0;&#x660E;&#x3011;</p>
+<pre class="language-"><code>var aControllerFactory =
+function aController($scope, greeter) {
+    console.log(&quot;LOADED controller&quot;, greeter);
+    // ... &#x63A7;&#x5236;&#x5668;
+};
+aControllerFactory.$inject = [&apos;$scope&apos;, &apos;greeter&apos;]; 
+// Greeter&#x670D;&#x52A1;
+var greeterService = function () {
+  console.log(&quot;greeter service&quot;);
+}
+// &#x6211;&#x4EEC;&#x5E94;&#x7528;&#x7684;&#x63A7;&#x5236;&#x5668;
+angular.module(&apos;myApp&apos;, [])
+  .controller(&apos;MyController&apos;, aControllerFactory)
+  .factory(&apos;greeter&apos;, greeterService);
+// &#x83B7;&#x53D6;&#x6CE8;&#x5165;&#x5668;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4F5C;&#x7528;&#x57DF;
+var injector = angular.injector([&apos;ng&apos;, &apos;myApp&apos;]),
+    controller = injector.get(&apos;$controller&apos;),
+    rootScope = injector.get(&apos;$rootScope&apos;),
+    newScope = rootScope.$new();
+// &#x8C03;&#x7528;&#x63A7;&#x5236;&#x5668;
+controller(&apos;MyController&apos;, {$scope: newScope});
+</code></pre><p>&#x3010;&#x884C;&#x5185;&#x6CE8;&#x5165;&#x58F0;&#x660E;&#x3011;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;)
+.controller(&apos;MyController&apos;, [&apos;$scope&apos;, &apos;greeter&apos;, function($scope, greeter) {
+}]);
+</code></pre><h2 id="&#x670D;&#x52A1;"><a name="&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;</h2>
+<p>&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x80FD;&#x5728;&#x5E94;&#x7528;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x4FDD;&#x6301;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x80FD;&#x591F;&#x5728;&#x63A7;&#x5236;&#x5668;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x4E2D;&#x53EA;&#x4F1A;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x6B21;(&#x88AB;$injector&#x5B9E;&#x4F8B;&#x5316;)&#x5E76;&#x4E14;&#x662F;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;&#x7684;(&#x9700;&#x8981;&#x65F6;&#x624D;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;)</p>
+<p>&#x4EE5;AngularJS&#x7684;$http&#x670D;&#x52A1;&#x4E3A;&#x4F8B;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x7684;XMLHttpRequest&#x5BF9;&#x8C61;&#x7684;&#x5E95;&#x5C42;&#x8BBF;&#x95EE;&#x529F;&#x80FD;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;$http&#x7684;API&#x540C;XMLHttpRequest&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x56E0;&#x4E3A;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x5E95;&#x5C42;&#x4EE3;&#x7801;&#x800C;&#x6C61;&#x67D3;&#x5E94;&#x7528;</p>
+<pre class="language-"><code>// &#x793A;&#x4F8B;&#x670D;&#x52A1;&#xFF0C;&#x5728;&#x5E94;&#x7528;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x4FDD;&#x5B58;current_user
+angular.module(&apos;myApp&apos;, [])
+.factory(&apos;UserService&apos;, function($http) {
+    var current_user;
+
+    return {
+        getCurrentUser: function() {
+            return current_user;
+        },
+        setCurrentUser: function(user) {
+            current_user = user;
+        }
+    };
+});
+</code></pre><p>&#x3010;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x3011;
+&#x4F7F;&#x7528;angular.module&#x7684;factory API&#x521B;&#x5EFA;&#x670D;&#x52A1;&#xFF0C;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x4E5F;&#x662F;&#x6700;&#x7075;&#x6D3B;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code>angular.module(&apos;myApp.services&apos;, [])
+.factory(&apos;githubService&apos;, function() {
+    var serviceInstance = {}; 
+    // &#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#xFF0C;&#x8FD4;&#x56DE;serviceInstance;
+});
+</code></pre><p>&#x7F16;&#x5199;&#x7B2C;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5E94;&#x7528;</p>
+<pre class="language-"><code>angular.module(&apos;myApp.services&apos;, [])
+.factory(&apos;githubService&apos;, function($http) {
+    var githubUrl = &apos;https://api.github.com&apos;;
+
+    var runUserRequest = function(username, path) {
+        // &#x4ECE;&#x4F7F;&#x7528;JSONP&#x8C03;&#x7528; Github API&#x7684;$http&#x670D;&#x52A1;&#x4E2D;&#x8FD4;&#x56DE;promise
+        return $http({
+            method: &apos;JSONP&apos;,
+            url: githubUrl + &apos;/users/&apos; +
+                  username + &apos;/&apos; +
+                  path + &apos;?callback=JSON_CALLBACK&apos;
+        });
+    };
+    // &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;events&#x51FD;&#x6570;&#x7684;&#x670D;&#x52A1;&#x5BF9;&#x8C61;
+    return {
+        events: function(username) {
+            return runUserRequest(username, &apos;events&apos;);
+        }
+    };
+});
+</code></pre><p>&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x4F7F;&#x7528;&#x670D;&#x52A1;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [&apos;myApp.services&apos;])
+.controller(&apos;ServiceController&apos;, function($scope, githubService) {
+    // &#x53EF;&#x4EE5;&#x5728;&#x5BF9;&#x8C61;&#x4E0A;&#x8C03;&#x7528;events&#x51FD;&#x6570;
+    $scope.events = githubService.events(&apos;auser&apos;);
+});
+</code></pre><p>&#x3010;&#x521B;&#x5EFA;&#x670D;&#x52A1;&#x7684;&#x8BBE;&#x7F6E;&#x9879;&#x3011;<br>&#x5728;AngularJS&#x5E94;&#x7528;&#x4E2D;&#xFF0C;factory()&#x65B9;&#x6CD5;&#x662F;&#x7528;&#x6765;&#x6CE8;&#x518C;&#x670D;&#x52A1;&#x7684;&#x6700;&#x5E38;&#x89C4;&#x65B9;&#x5F0F;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;API&#x53EF;&#x4EE5;&#x5728;&#x7279;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x51CF;&#x5C11;&#x4EE3;&#x7801;&#x91CF;&#x3002;</p>
+<p>&#x5171;&#x6709;5&#x79CD;&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x670D;&#x52A1;&#xFF1A;</p>
+<ul>
+<li>factory()</li>
+<li>service()</li>
+<li>constant()</li>
+<li>value()</li>
+<li>provider()</li>
+</ul>
+<p>&#x3010;service&#x3011;<br>&#x4F7F;&#x7528;service()&#x53EF;&#x4EE5;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4E3A;&#x670D;&#x52A1;&#x5BF9;&#x8C61;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<p>service()&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<ul>
+<li>name&#xFF08;&#x5B57;&#x7B26;&#x4E32;&#xFF09;&#x8981;&#x6CE8;&#x518C;&#x7684;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x3002;</li>
+<li>constructor&#xFF08;&#x51FD;&#x6570;&#xFF09;</li>
+</ul>
+<pre class="language-"><code>var Person = function($http) {
+    this.getName = function() {
+        return $http({ method: &apos;GET&apos;, url: &apos;/api/user&apos;});
+     };
+};
+angular.service(&apos;personService&apos;, Person);
+</code></pre><p>&#x3010;constant&#x3011;<br>&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x53D8;&#x91CF;&#x503C;&#x6CE8;&#x518C;&#x4E3A;&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x6CE8;&#x5165;&#x5230;&#x5E94;&#x7528;&#x7684;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x5F53;&#x4E2D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7ED9;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x4E00;&#x4E2A;apiKey&#xFF0C;&#x53EF;&#x4EE5;&#x7528;constant()&#x5C06;&#x5176;&#x5F53;&#x4F5C;&#x5E38;&#x91CF;&#x4FDD;&#x5B58;&#x4E0B;&#x6765;&#x3002;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;) .constant(&apos;apiKey&apos;,&apos;123123123&apos;)
+
+angular.module(&apos;myApp&apos;)
+.controller(&apos;MyController&apos;, function($scope, apiKey) {
+    // &#x53EF;&#x4EE5;&#x50CF;&#x4E0A;&#x9762;&#x4E00;&#x6837;&#x7528;apiKey&#x4F5C;&#x4E3A;&#x5E38;&#x91CF;
+    //&#x7528;123123123&#x4F5C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x503C;
+    $scope.apiKey = apiKey;
+});
+</code></pre><p>&#x3010;value&#x3011;<br>&#x5982;&#x679C;&#x670D;&#x52A1;&#x7684;$get&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5E38;&#x91CF;&#xFF0C;&#x90A3;&#x5C31;&#x6CA1;&#x8981;&#x5FC5;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x590D;&#x6742;&#x529F;&#x80FD;&#x7684;&#x5B8C;&#x6574;&#x670D;&#x52A1;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;value()&#x51FD;&#x6570;&#x65B9;&#x4FBF;&#x5730;&#x6CE8;&#x518C;&#x670D;&#x52A1;&#x3002;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;)
+.value(&apos;apiKey&apos;,&apos;123123123&apos;);
+</code></pre><p>&#x3010;value()&#x548C;constant()&#x8BE5;&#x7528;&#x8C01;&#x3011;<br>value()&#x65B9;&#x6CD5;&#x548C;constant()&#x65B9;&#x6CD5;&#x4E4B;&#x95F4;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x533A;&#x522B;&#x662F;&#xFF0C;&#x5E38;&#x91CF;&#x53EF;&#x4EE5;&#x6CE8;&#x5165;&#x5230;&#x914D;&#x7F6E;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x800C;&#x503C;&#x4E0D;&#x884C;&#x3002;</p>
+<pre class="language-"><code>angular.module(&apos;myApp&apos;, [])
+.constant(&apos;apiKey&apos;, &apos;123123123&apos;)
+.config(function(apiKey) {
+    // &#x5728;&#x8FD9;&#x91CC;apiKey&#x5C06;&#x88AB;&#x8D4B;&#x503C;&#x4E3A;123123123
+    //&#x5C31;&#x50CF;&#x4E0A;&#x9762;&#x8BBE;&#x7F6E;&#x7684;&#x90A3;&#x6837;
+})
+.value(&apos;FBid&apos;,&apos;231231231&apos;)
+.config(function(FBid) {
+    // &#x8FD9;&#x5C06;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x672A;&#x77E5;&#x7684;provider: FBid
+    // &#x56E0;&#x4E3A;&#x5728;config&#x51FD;&#x6570;&#x5185;&#x90E8;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x503C;
+});
+</code></pre><p>&#x3010;decorator&#x3011;<br>$provide&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x65F6;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x62E6;&#x622A;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#xFF0C;&#x6216;&#x8005;&#x7528;&#x53E6;&#x5916;&#x7684;&#x5185;&#x5BB9;&#x5B8C;&#x5168;&#x4EE3;&#x66FF;&#x5B83;&#x3002;</p>
+<p>&#x88C5;&#x9970;&#x5668;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x5B83;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x5728;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x670D;&#x52A1;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5BF9;AngularJS&#x7684;&#x6838;&#x5FC3;&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x62E6;&#x622A;&#x3001;&#x4E2D;&#x65AD;&#x751A;&#x81F3;&#x66FF;&#x6362;&#x529F;&#x80FD;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;AngularJS&#x4E2D;&#x5F88;&#x591A;&#x529F;&#x80FD;&#x7684;&#x6D4B;&#x8BD5;&#x5C31;&#x662F;&#x501F;&#x52A9;$provide.decorator()&#x5EFA;&#x7ACB;&#x7684;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x7ED9;&#x4E4B;&#x524D;&#x5B9A;&#x4E49;&#x7684;githubService&#x670D;&#x52A1;&#x52A0;&#x5165;&#x65E5;&#x5FD7;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x501F;&#x52A9;decorator()&#x51FD;&#x6570;&#x65B9;&#x4FBF;&#x5730;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x5BF9;&#x539F;&#x59CB;&#x7684;&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p>
+<pre class="language-"><code>var githubDecorator = function($delegate,$log) {
+    var events = function(path) {
+        var startedAt = new Date();
+        var events = $delegate.events(path); 
+            // &#x4E8B;&#x4EF6;&#x662F;&#x4E00;&#x4E2A;promise
+            events.finally(function() {
+            $log.info(&quot;Fetching events&quot; +
+                &quot; took &quot; +
+                (new Date() - startedAt) + &quot;ms&quot;);
+         });
+         return events;
+    };
+
+    return {
+        events: events
+    };
+};
+
+angular.module(&apos;myApp&apos;)
+.config(function($provide) {
+    $provide.decorator(&apos;githubService&apos;,githubDecorator); //&#x5BF9;&#x670D;&#x52A1;&#x8FDB;&#x884C;&#x62E6;&#x622A;
+});
+</code></pre><h2 id="&#x4E8B;&#x4EF6;"><a name="&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8B;&#x4EF6;</h2>
+<p>Angular&#x5E94;&#x7528;&#x4E5F;&#x53EF;&#x4EE5;&#x54CD;&#x5E94;Angular&#x4E8B;&#x4EF6;&#x3002;&#x8FD9;&#x4F7F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x5D4C;&#x5957;&#x7684;&#x5404;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x5373;&#x4F7F;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x5728;&#x521B;&#x5EFA;&#x65F6;&#x5E76;&#x672A;&#x8003;&#x8651;&#x5230;&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF0C;Angular&#x4E8B;&#x4EF6;&#x7CFB;&#x7EDF;&#x5E76;&#x4E0D;&#x4E0E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4E8B;&#x4EF6;&#x7CFB;&#x7EDF;&#x76F8;&#x901A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x4E0A;&#x76D1;&#x542C;Angular&#x4E8B;&#x4EF6;&#x800C;&#x4E0D;&#x662F;DOM&#x4E8B;&#x4EF6;&#x3002;</p>
+</blockquote>
+<p>&#x3010;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x3011;  </p>
+<blockquote>
+<p>&#x56E0;&#x4E3A;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x6709;&#x5C42;&#x6B21;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#x4E0A;&#x4F20;&#x9012;&#x4E8B;&#x4EF6;&#x3002;</p>
+</blockquote>
+<p>&#x4F7F;&#x7528;$emit&#x6765;&#x5192;&#x6CE1;&#x4E8B;&#x4EF6;</p>
+<pre class="language-"><code>// &#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;
+//&#x6211;&#x4EEC;&#x7684;&#x7528;&#x6237;&#x4EE5;&#x5F53;&#x524D;user&#x767B;&#x5F55;&#x4E86;
+scope.$emit(&apos;user:logged_in&apos;, scope.user);
+</code></pre><p>&#x4F7F;&#x7528;$broadcast&#x5411;&#x4E0B;&#x4F20;&#x9012;&#x4E8B;&#x4EF6;</p>
+<pre class="language-"><code>// &#x7B49;&#x7B49;&#xFF0C;&#x8D2D;&#x7269;&#x8F66;&#x53BB;&#x7ED3;&#x8D26;&#x4E86;
+// &#x5F53;&#x8D2D;&#x7269;&#x8F66;&#x5728;&#x7ED3;&#x8D26;&#x7684;&#x65F6;&#x5019;
+// &#x4E0B;&#x9762;&#x6240;&#x6709;&#x7684;&#x6307;&#x4EE4;&#x90FD;&#x5E94;&#x5F53;&#x7981;&#x7528;&#x81EA;&#x5DF1;
+scope.$broadcast(&apos;cart:checking_out&apos;, scope.cart);
+</code></pre><p>&#x5728;$broadcast()&#x65B9;&#x6CD5;&#x4E0A;&#xFF0C;&#x6BCF;&#x4E2A;&#x6CE8;&#x518C;&#x4E86;&#x76D1;&#x542C;&#x5668;&#x7684;&#x5B50;&#x4F5C;&#x7528;&#x57DF;&#x90FD;&#x4F1A;&#x6536;&#x5230;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x3002;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x5230;&#x6240;&#x6709;&#x7684;&#x6307;&#x4EE4;&#x548C;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x95F4;&#x63A5;&#x4F5C;&#x7528;&#x57DF;&#x4E0A;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x8DEF;&#x5F80;&#x4E0B;&#x8C03;&#x7528;&#x6BCF;&#x4E2A;&#x76D1;&#x542C;&#x5668;&#x3002;</p>
+<p>&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;</p>
+<blockquote>
+<p>&#x8981;&#x76D1;&#x542C;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;$on()&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E3A;&#x5177;&#x6709;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x4E8B;&#x4EF6;&#x6CE8;&#x518C;&#x4E86;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x5668;&#x3002;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&#x5C31;&#x662F;&#x5728;Angular&#x4E2D;&#x89E6;&#x53D1;&#x7684;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code>scope.$on(&apos;$routeChangeStart&apos;,
+    function(evt, next, current) {
+        // &#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8DEF;&#x7531;&#x88AB;&#x89E6;&#x53D1;&#x4E86;
+});
+</code></pre><p>&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">ng-app</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>myApp<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fatherCtrl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nameOnChange()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Father: {{name}}!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">ng-controller</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sonCtrl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ng-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>nameOnChange()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+             <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Son: {{name}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+var app = angular.module (&apos;myApp&apos;, []);
+app.controller(&apos;fatherCtrl&apos;, function ($scope) {
+    $scope.name = &quot;father&quot;;
+    $scope.$on (&apos;test&apos;, function(e, newName) {
+        $scope.name = newName;
+    });
+});
+app.controller(&apos;sonCtrl&apos;, function ($scope) {
+    $scope.name = &quot;son&quot;;
+    $scope.nameOnChange = function () {
+        $scope.$emit (&apos;test&apos;, $scope.name);
+    }
+});
+
+var app = angular.module (&apos;myApp&apos;, []);
+app.controller(&apos;fatherCtrl&apos;, function ($scope) {
+    $scope.name = &quot;father&quot;;
+    $scope.nameOnChange = function () {
+        $scope.$broadcast (&apos;test&apos;, $scope.name);
+    }
+});
+app.controller(&apos;sonCtrl&apos;, function ($scope) {
+    $scope.name = &quot;son&quot;;
+    $scope.$on (&apos;test&apos;, function(e, newName) {
+        $scope.name = newName;
+    });
+    $scope.nameOnChange = function () {
+        // $scope.$emit (&apos;test&apos;, $scope.name);
+    }
+});
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; frankshi.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-06-04 17:47:38
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="AngularJs.html" class="navigation navigation-prev " aria-label="Previous page: AngularJs">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vue.html" class="navigation navigation-next " aria-label="Next page: vue">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AngularJS基础","level":"1.17.4.1","depth":3,"next":{"title":"vue","level":"1.17.5","depth":2,"path":"vue.md","ref":"vue.md","articles":[]},"previous":{"title":"AngularJs","level":"1.17.4","depth":2,"path":"AngularJs.md","ref":"AngularJs.md","articles":[{"title":"AngularJS基础","level":"1.17.4.1","depth":3,"path":"AngularJS基础.md","ref":"AngularJS基础.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2","expandable-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],"showLevel":false},"github":{"url":"https://github.com/shiyou00/knowledge"},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"AngularJS基础.md","mtime":"2019-06-04T09:47:38.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T09:47:42.181Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
