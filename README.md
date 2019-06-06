@@ -1,5 +1,7 @@
-### 周计划
+### 端午学习计划
 - [ing]rxjs
+
+### 周计划
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - HttpClient
 - ui-router: 按照英文官网一句一句进行翻译，并且自己构建一个简单的应用来实践（逃是逃不掉的）
@@ -7,13 +9,13 @@
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
 - lerna 进阶学习(包含项目实战)
-- 单元测试
 
 ### 学习池
 - es5 对象
 - es5 函数
 - es6
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
+- 单元测试
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - redux理论及应用
 - SVG图案
