@@ -185,7 +185,7 @@
         * [AngularJS基础](AngularJS基础.md)
     * [vue](vue.md)
     * [路由](路由.md)
-        * [UI-Router基础](UI-Router基础.md)
+        * [Angular2+项目中安装并初始化UI-Router](UI-Router基础.md)
     * [状态管理](状态管理.md)
     * [重难](重难.md)
         * [JavaScript 实现一个简单的MVVM前端框架(ES6语法)](JavaScript实现一个简单的MVVM前端框架ES6语法.md)
