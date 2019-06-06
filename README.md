@@ -1,21 +1,21 @@
-### 周计划 5.27日 ~ 6.2日
+### 周计划
 - [ing]rxjs
-- es5 对象
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - HttpClient
-
-### 学习池
+- ui-router: 按照英文官网一句一句进行翻译，并且自己构建一个简单的应用来实践（逃是逃不掉的）
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
+- lerna 进阶学习(包含项目实战)
+- 单元测试
+
+### 学习池
+- es5 对象
 - es5 函数
 - es6
-- ui-router
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - redux理论及应用
-- lerna 进阶学习(包含项目实战)
-- 单元测试
 - SVG图案
 - SVG裁切和蒙版
 - vim学习
@@ -32,6 +32,7 @@
 - JavaScript 浮点数陷阱及解法
 https://github.com/camsong/blog/issues/9
 - 常见的开源协议：MIT等等
+- javascript AOP的实现
 - 图片的原理和优化方案
 	- 什么是图片，计算机是如何表示和理解图片的
 	- 历史上的图片优化方案：雪碧图，文件格式，压缩
@@ -344,7 +345,7 @@ https://github.com/camsong/blog/issues/9
 - Iterator 和 for...of 循环
 - Generator 函数的语法
 - async
-- [Class 语法](基础】ES6Class语法学习.md)
+- [Class 语法](【基础】ES6Class语法学习.md)
 - Module 语法
 
 【ES6难点】
