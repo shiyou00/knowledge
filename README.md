@@ -1,5 +1,6 @@
 ### 端午学习计划
 - [ing]rxjs
+- 端午节听课
 
 ### 周计划
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/

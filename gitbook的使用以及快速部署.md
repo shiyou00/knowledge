@@ -8,6 +8,11 @@
 sudo npm install gitbook -g
 ```
 
+## 一键上传命令
+```
+gitbook build && git add . && git commit -m "message" && git push && gh-pages -d _book
+```
+
 ## 使用
 1、创建一个git仓库
 ![](./image/1.png)
