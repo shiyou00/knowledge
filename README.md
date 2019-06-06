@@ -58,53 +58,53 @@ https://github.com/camsong/blog/issues/9
 
 ## CSS目录
 【CSS2 基础】
-- [CSS文件引入](https://www.kancloud.cn/frankshi/lion-know/1084724)
-- [CSS 选择器(常规选择器，伪类选择器，伪元素选择器，根元素选择器)](https://www.kancloud.cn/frankshi/lion-know/1084725)
-- [层叠和结构](https://www.kancloud.cn/frankshi/lion-know/1084726)
-- [长度单位em,rem](https://www.kancloud.cn/frankshi/lion-know/1084727)
-- [CSS 样式关键字(initial,inherit,unset,revert,all)](https://www.kancloud.cn/frankshi/lion-know/1084728)
-- [伪类和伪元素](https://www.kancloud.cn/frankshi/lion-know/1084729)
-- [*CSS 盒模型](https://www.kancloud.cn/frankshi/lion-know/1084730)
-- [*CSS 视觉格式化](https://www.kancloud.cn/frankshi/lion-know/1084731)
-- [line-height && vertical-align](https://www.kancloud.cn/frankshi/lion-know/1084732)
+- [CSS文件引入](css文件引入的三种方式.md)
+- [CSS 选择器(常规选择器，伪类选择器，伪元素选择器，根元素选择器)](css选择器常规选择器，伪类选择器，伪元素选择器，根元素选择器.md)
+- [层叠和结构](css层叠规则,优先级算法.md)
+- [长度单位em,rem](css长度单位学习em,rem,px,vw,vh.md)
+- [CSS 样式关键字(initial,inherit,unset,revert,all)](css样式关键字initial,inherit,unset,revert,all.md)
+- [伪类和伪元素](css伪类和伪元素.md)
+- [*CSS 盒模型](CSS盒模型深入理解.md)
+- [*CSS 视觉格式化](CSS视觉格式化（基本框、包含块、盒模型、水平格式化、垂直格式化、行布局、em框、内容区、行间.md)
+- [line-height && vertical-align](line-heightvertical-align学习总结.md)
 - border
-- [CSS 外边距 margin](https://www.kancloud.cn/frankshi/lion-know/1084733)
-- [CSS margin负值](https://www.kancloud.cn/frankshi/lion-know/1084734)
+- [CSS 外边距 margin](深入学习CSS外边距margin重叠效果，margin传递效果，marginauto实现块级元素.md)
+- [CSS margin负值](CSSmargin负值学习及实际应用.md)
 - outline
 - overflow
 - css滚动条
 - display
 - visibility
-- [css浮动](https://www.kancloud.cn/frankshi/lion-know/1084735)
-- [css清除浮动](https://www.kancloud.cn/frankshi/lion-know/1084736)
+- [css浮动](css浮动float全方位案例解析.md)
+- [css清除浮动](css清除浮动.md)
 - 颜色color
 - 背景background
 - 透明度opacity
 - 光标cursor
 
 【定位】
-- [position 定位之距离偏移](https://www.kancloud.cn/frankshi/lion-know/1084737)
+- [position 定位之距离偏移](CSS定位深入理解定位position的偏移.md)
 - position 定位之层级z-index
 - 绝对定位
 - 绝对定位的应用
 - 相对定位和固定定位
 
 【字体和文本】
-- [font字体](https://www.kancloud.cn/frankshi/lion-know/1084738)
-- [iconfont字体应用实战](https://www.kancloud.cn/frankshi/lion-know/1084739)
+- [font字体](CSSfont字体知识学习.md)
+- [iconfont字体应用实战](CSSiconfont阿里巴巴矢量图库在开发中实战使用.md)
 - 文本样式
 - css文本方向
 - 空白符和换行
 - 文本溢出和文本阴影
 
 【布局】
-- wip:案例迁移到git上[grid栅格布局](https://www.kancloud.cn/frankshi/lion-know/1084747)
+- [grid栅格布局](CSSGrid基于网格的二维布局系统详细教程.md)
 - Media查询
-- [flex布局](https://www.kancloud.cn/frankshi/lion-know/1084748)
+- [flex布局](CSS布局flex布局.md)
 - 移动优先的响应式布局
-- [水平垂直居中](https://www.kancloud.cn/frankshi/lion-know/1084749)
+- [水平垂直居中](CSS水平垂直居中的几种实现方法.md)
 - 两端对齐布局
-- [单列定宽，单列自适应](https://www.kancloud.cn/frankshi/lion-know/1084750)
+- [单列定宽，单列自适应](CSS布局两列布局之单列定宽,单列自适应布局思路.md)
 - 两列自适应布局
 - 三列布局
 - 三栏式布局
@@ -115,7 +115,7 @@ https://github.com/camsong/blog/issues/9
 
 【CSS预处理语言】
 - less
-- [sass && scss](https://www.kancloud.cn/frankshi/lion-know/1084751)
+- [sass && scss](sass和scss.md)
 
 【动画】
 - 过渡transition
@@ -140,20 +140,20 @@ https://github.com/camsong/blog/issues/9
 - css变量variable
 
 【重点难点】
-- [BFC（格式化上下文）深入理解](https://www.kancloud.cn/frankshi/lion-know/1084752)
-- [font-size为0消除inline&&inline-block元素间隙](https://www.kancloud.cn/frankshi/lion-know/1084753)
-- [css中数学表达式calc](https://www.kancloud.cn/frankshi/lion-know/1084755)
-- [height设置100%失效 && 分栏高度自适应布局](https://www.kancloud.cn/frankshi/lion-know/1084756)
-- [css-modules](https://www.kancloud.cn/frankshi/lion-know/1084754)
+- [BFC（格式化上下文）深入理解](CSSBFC（格式化上下文）深入理解.md)
+- [font-size为0消除inline&&inline-block元素间隙](css中font-size为0的妙用（消除内联元素间的间隔）.md)
+- [css中数学表达式calc](css中的数学表达式calc.md)
+- [height设置100%失效 && 分栏高度自适应布局](CSS难点为什么height设置100会失效，分栏目等高布局高度自适用布局的实现方案.md)
+- [css-modules](css-modules.md)
 
 ## JavaScript目录
 【ES5】
 【基本概念】
-- [JavaScript 基础(语法、关键字和保留字、变量)](https://www.kancloud.cn/frankshi/lion-know/1086345)
-- [JavaScript 基础(表达式)](https://www.kancloud.cn/frankshi/lion-know/1086346)
+- [JavaScript 基础(语法、关键字和保留字、变量)](JavaScript基础基础语法、关键字和保留字、变量.md)
+- [JavaScript 基础(表达式)](JavaScript基础表达式.md)
 - JavaScript 基础(动态脚本)
-- [JavaScript 基础(严格模式)](https://www.kancloud.cn/frankshi/lion-know/1086347)
--  JavaScript 运算符(语法概述)
+- [JavaScript 基础(严格模式)](JavaScript基础usestrict严格模式下的规则.md)
+- JavaScript 运算符(语法概述)
 - JavaScript 运算符(算术运算符)
 - JavaScript 运算符(关系运算符)
 - JavaScript 运算符(逻辑运算符)
@@ -167,42 +167,42 @@ https://github.com/camsong/blog/issues/9
 - JavaScript 规范(JS代码检查工具ESLint)
 
 【变量、作用域和内存问题】
-- [JavaScript 基本类型和引用类型](https://www.kancloud.cn/frankshi/lion-know/1086349)
-- [JavaScript 执行环境、作用域、内存管理及垃圾回收机制](https://www.kancloud.cn/frankshi/lion-know/1086351)
+- [JavaScript 基本类型和引用类型](JavaScript基本类型和引用类型.md)
+- [JavaScript 执行环境、作用域、内存管理及垃圾回收机制](JavaScript执行环境、作用域、内存管理及垃圾回收机制.md)
 
 【数据类型】
-- [基本包装类型](https://www.kancloud.cn/frankshi/lion-know/1086353)
-- [null和undefined](https://www.kancloud.cn/frankshi/lion-know/1086355)
-- [(void 0) 与 undefined](https://www.kancloud.cn/frankshi/lion-know/1086364)
-- [Boolean布尔类型](https://www.kancloud.cn/frankshi/lion-know/1086357)
+- [基本包装类型](JavaScript基本包装类型,包装对象.md)
+- [null和undefined](JavaScriptnull和undefined的区别.md)
+- [(void 0) 与 undefined](void0与undefined.md)
+- [Boolean布尔类型](JavaScript数据类型Boolean布尔类型.md)
 - Number数字类型
-- [Math对象](https://www.kancloud.cn/frankshi/lion-know/1086358)
-- [String字符串类型](https://www.kancloud.cn/frankshi/lion-know/1086360)
-- [String字符串类型的属性和方法](https://www.kancloud.cn/frankshi/lion-know/1086362)
+- [Math对象](JavaScript数据类型Math对象详解.md)
+- [String字符串类型](JavaScript数据类型String字符串类型.md)
+- [String字符串类型的属性和方法](JavaScript数据类型String字符串类型的属性和方法.md)
 
 【数组】
 - Array基础
 - 数组方法总结
-- [数组检测方式](https://www.kancloud.cn/frankshi/lion-know/1086366)
+- [数组检测方式](JavaScript数据类型检测数组Array检测方式.md)
 
 【Date】
-- [日期和时间基础知识](https://www.kancloud.cn/frankshi/lion-know/1086369)
-- [Date日期对象](https://www.kancloud.cn/frankshi/lion-know/1086370)
+- [日期和时间基础知识](JavaScript日期和时间基础知识.md)
+- [Date日期对象](JavaScriptDate日期对象以及日期格式化方法.md)
 - 日历实现
 - moment.js库的应用
 
 【RegExp】
-- [正则表达式基础](https://www.kancloud.cn/frankshi/lion-know/1086372)
-- [RegExp类型](https://www.kancloud.cn/frankshi/lion-know/1086373)
+- [正则表达式基础](JavaScript正则表达式基础语法.md)
+- [RegExp类型](JavaScript数据类型正则表达式RegExp类型.md)
 - javaScript模版引擎原理解析
 
 【类型转换】
 - toString() && valueOf()
 - 数据类型转换
-- [JavaScript 有效的类型判断](https://www.kancloud.cn/frankshi/lion-know/1086375)
+- [JavaScript 有效的类型判断](JavaScript类型判断详解（Object.prototype.toString.call方法）.md)
 
 【面向对象】
-- [Object类型基础知识](https://www.kancloud.cn/frankshi/lion-know/1086377)
+- [Object类型基础知识](JavaScript对象Object类型基础.md)
 - 对象的属性操作
 - 对象的属性描述
 - 彻底理解prototype、proto和constructor的三角关系
@@ -216,9 +216,9 @@ https://github.com/camsong/blog/issues/9
 - 函数概述
 - 函数参数
 - 函数的属性和方法
-- [JavaScript 函数递归](https://www.kancloud.cn/frankshi/lion-know/1086382)
-- [JavaScript IIEF 模仿块级作用域](https://www.kancloud.cn/frankshi/lion-know/1086380)
-- [深入学习 JavaScript 闭包](https://www.kancloud.cn/frankshi/lion-know/1086379)
+- [JavaScript 函数递归](JavaScript函数递归.md)
+- [JavaScript IIEF 模仿块级作用域](JavaScriptIIEF模仿块级作用域.md)
+- [深入学习 JavaScript 闭包](深入学习javaScript闭包闭包的原理，闭包的作用，闭包与内存管理.md)
 - 函数式编程
 - 高阶函数
 - 函数柯里化
@@ -226,10 +226,10 @@ https://github.com/camsong/blog/issues/9
 - 惰性函数
 
 【事件】
-- [JavaScript 事件机制深入学习](https://www.kancloud.cn/frankshi/lion-know/1086384)
+- [JavaScript 事件机制深入学习](javaScript事件机制深入学习事件冒泡，事件捕获，事件绑定方式，移除事件方式，阻止浏览器默认.md)
 - JavaScript 事件类型汇总
 - 复制黏贴
-- [浏览器事件循环EventLoop](https://www.kancloud.cn/frankshi/lion-know/1086386)
+- [浏览器事件循环EventLoop]([浏览器事件循环]javaScript事件循环EventLoop.md)
 - node 事件循环 EventLoop
 
 【BOM】
@@ -270,7 +270,7 @@ https://github.com/camsong/blog/issues/9
 
 【HTML5新特性】
 - 跨文档消息传递
-- [drag对象进行拖拽](https://www.kancloud.cn/frankshi/lion-know/1086388)
+- [drag对象进行拖拽](javaScriptdrag对象进行拖拽使用详解.md)
 - 视频播放器audio
 - 音频播放器video
 - 历史状态管理
@@ -287,9 +287,9 @@ https://github.com/camsong/blog/issues/9
 - 图片Ping
 - JSONP
 - iframe跨域
-- [Fetch](https://www.kancloud.cn/frankshi/lion-know/1086391)
-- [axios](https://www.kancloud.cn/frankshi/lion-know/1090903)
-- [前端上传文件的理解](https://www.kancloud.cn/frankshi/lion-know/1086394)
+- [Fetch](Fetch入门教程.md)
+- [axios](axios入门教程.md)
+- [前端上传文件的理解](js文件上传原理（form表单，FormData+XHR2+FileReader+canvas）.md)
 
 【存储】
 - Cookie && sessionStorage && localStorage
@@ -326,7 +326,7 @@ https://github.com/camsong/blog/issues/9
 【ES5 其它】
 - js浮点运算不精确的解决方案
 - 如何实现中英文切换
-- [JavaScript 判断数组和对象是否为空的方法](https://www.kancloud.cn/frankshi/lion-know/1086397)
+- [JavaScript 判断数组和对象是否为空的方法](JavaScript判断数组和对象是否为空的方法.md)
 
 【ES6基础】
 - let 和 const 命令
@@ -344,27 +344,27 @@ https://github.com/camsong/blog/issues/9
 - Iterator 和 for...of 循环
 - Generator 函数的语法
 - async
-- [Class 语法](https://www.kancloud.cn/frankshi/lion-know/1084758)
+- [Class 语法](基础】ES6Class语法学习.md)
 - Module 语法
 
 【ES6难点】
 - Babel
-- [ES6 新增数组方法的实战用法](https://www.kancloud.cn/frankshi/lion-know/1084757)
+- [ES6 新增数组方法的实战用法](【重难】ES6数组遍历方法的实战用法总结（forEach，every，some，map，filter）.md)
 
 ## Node目录
 【相关学习】
-- [semver规范（语义化版本）](https://www.kancloud.cn/frankshi/lion-know/1086909)
-- [npm入门教程](https://www.kancloud.cn/frankshi/lion-know/1086913)
-- [npm scripts 脚本基础指南](https://www.kancloud.cn/frankshi/lion-know/1087110)
-- [mac中如何升级node,npm](https://www.kancloud.cn/frankshi/lion-know/1090887)
-- [npm publish 发布](https://www.kancloud.cn/frankshi/lion-know/1092873)
+- [semver规范（语义化版本）](semver规范（语义化版本）.md)
+- [npm入门教程](npm常用命令学习.md)
+- [npm scripts 脚本基础指南](npmscripts脚本基础指南.md)
+- [mac中如何升级node,npm](mac如何升级node.js以及npm.md)
+- [npm publish 发布](npm发线上包npmpublish.md)
 
 【基础】
-- [(1) 初识Node.js](https://www.kancloud.cn/frankshi/lion-know/1086918)
-- [(2) 开发环境和调试工具](https://www.kancloud.cn/frankshi/lion-know/1086922)
-- [(3) commonJs 规范](https://www.kancloud.cn/frankshi/lion-know/1086923)
-- [(4) node 概念(global、process进程、调试)](https://www.kancloud.cn/frankshi/lion-know/1086927)
-- [(5) node基础模块 path ](https://www.kancloud.cn/frankshi/lion-know/1086931)
+- [(1) 初识Node.js](Node.js实战项目学习系列1初识Node.js.md)
+- [(2) 开发环境和调试工具](Node.js实战项目学习系列2开发环境和调试工具.md)
+- [(3) commonJs 规范](Node.js实战项目学习系列3CommonJS模块化规范.md)
+- [(4) node 概念(global、process进程、调试)](Node.js实战项目学习系列4node对象global、process进程、debug调试.md)
+- [(5) node基础模块 path ](Node.js实战项目学习系列5node基础模块path.md)
 - node基础模块 Buffer
 - node基础模块 event
 - node基础模块 fs
@@ -413,8 +413,8 @@ https://github.com/camsong/blog/issues/9
 ## 网络协议目录
 ### HTTP
 【基础】
-- [HTTP入门学习](https://www.kancloud.cn/frankshi/lion-know/1086941)
-- [网络基础](https://www.kancloud.cn/frankshi/lion-know/1086945)
+- [HTTP入门学习](HTTP入门学习.md)
+- [网络基础](网络基础.md)
 - 数据传输
 - 网站架构演化
 - 连接管理
@@ -463,7 +463,7 @@ https://github.com/camsong/blog/issues/9
 ## 移动端
 - 移动端开发必须了解的知识
 - 移动端高清屏适配方案
-- [300ms以及点透事件产生的原因及处理方案](https://www.kancloud.cn/frankshi/lion-know/1086949)
+- [300ms以及点透事件产生的原因及处理方案](【移动端】300ms延迟以及点透事件原因以及解决方案.md)
 - rem布局详解
 - JSBridge原理，js和native是如何通信的
 - H5优化首页白屏时间过长
@@ -494,8 +494,8 @@ https://github.com/camsong/blog/issues/9
 
 
 ## 代码管理工具
-- [git学习总结](https://www.kancloud.cn/frankshi/lion-know/1086956)
-- [git分支管理策略](https://www.kancloud.cn/frankshi/lion-know/1086960)
+- [git学习总结](git个人学习总结.md)
+- [git分支管理策略](git多人协作式开发时分支管理策略.md)
 
 ## 浏览器
 - 深入理解浏览器工作原理 https://www.cnblogs.com/xiaohuochai/p/9174471.html
@@ -516,8 +516,8 @@ https://github.com/camsong/blog/issues/9
 - vim学习
 
 【Linux】
-- [常用bash命令](https://www.kancloud.cn/frankshi/lion-know/1086976)
-- [Linux用户组、文件权限](https://www.kancloud.cn/frankshi/lion-know/1086968)
+- [常用bash命令](Linux常用bash命令.md)
+- [Linux用户组、文件权限](Linux系统中用户组、文件权限浅解.md)
 - 操作系统理解：unix、linux、windows
 - linux常用命令级管理
 
@@ -529,8 +529,8 @@ https://github.com/camsong/blog/issues/9
 
 ## 前端框架
 【react】
-- [react实战项目开发(1) 搭建react开发环境初始化项目（Create-react-app）](https://www.kancloud.cn/frankshi/lion-know/1086994)
-- [react实战项目开发(2) react基础语法之JSX](https://www.kancloud.cn/frankshi/lion-know/1086999)
+- [react实战项目开发(1) 搭建react开发环境初始化项目（Create-react-app）](react实战项目开发1搭建react开发环境初始化项目（Create-react-app）.md)
+- [react实战项目开发(2) react基础语法之JSX](react实战项目开发2react几个重要概念以及JSX语法.md)
 - [react实战项目开发() react组件条件渲染、列表渲染等基础语法]
 - [react实战项目开发() react组件状态与组件生命周期]
 - [react实战项目开发() react组件之间的传值]
@@ -550,25 +550,25 @@ https://github.com/camsong/blog/issues/9
 - vue 相关深入学习 vuex 之类的
 
 【AngularJS】
-- [AngularJS基础](https://www.kancloud.cn/frankshi/lion-know/1087004)
+- [AngularJS基础](AngularJS基础.md)
 
 【Angular】
-- [Angular项目初始化](https://www.kancloud.cn/frankshi/lion-know/1087021)
-- [ng常用命令](https://www.kancloud.cn/frankshi/lion-know/1087027)
-- [Angular模板语法](https://www.kancloud.cn/frankshi/lion-know/1087034)
-- [Angular生命周期](https://www.kancloud.cn/frankshi/lion-know/1087039)
-- [Angular组件交互](https://www.kancloud.cn/frankshi/lion-know/1087040)
-- [Angular样式 ](https://www.kancloud.cn/frankshi/lion-know/1087045)
-- [Angular指令](https://www.kancloud.cn/frankshi/lion-know/1087057)
-- [Angular管道](https://www.kancloud.cn/frankshi/lion-know/1087064)
-- [Angular事件处理](https://www.kancloud.cn/frankshi/lion-know/1087065)
-- [NgModule ](https://www.kancloud.cn/frankshi/lion-know/1087070)
+- [Angular项目初始化](Angular项目初始化.md)
+- [ng常用命令](ng常用命令.md)
+- [Angular模板语法](Angular模板语法.md)
+- [Angular生命周期](Angular生命周期.md)
+- [Angular组件交互](Angular组件交互.md)
+- [Angular样式 ](Angular样式.md)
+- [Angular指令](Angular指令.md)
+- [Angular管道](Angular管道.md)
+- [Angular事件处理](Angular事件处理.md)
+- [NgModule](NgModule.md)
 - [Angular依赖注入(DI)与服务service详解](Angular依赖注入与服务service详解.md)
 - 表单
-    - [模板驱动表单](https://www.kancloud.cn/frankshi/lion-know/1087071)
-    - [wip:[表单]响应式表单](https://www.kancloud.cn/frankshi/lion-know/1087078)
-    - [自定义表单验证器](https://www.kancloud.cn/frankshi/lion-know/1087079)
-    - [[表单]自定义表单控件](https://www.kancloud.cn/frankshi/lion-know/1087087)
+    - [模板驱动表单](模板驱动表单.md)
+    - [wip:[表单]响应式表单](响应式表单.md)
+    - [自定义表单验证器](自定义表单验证器.md)
+    - [[表单]自定义表单控件](自定义表单控件.md)
 - 重难点
     - [@Input() or @Inject() 该如何选择](InputorInjectable.md)
     - [@Input()的set or ngOnChanges()](Input的set还是ngOnChanges.md)
@@ -577,7 +577,7 @@ https://github.com/camsong/blog/issues/9
  - [rxjs简介](rxjs简介.md)
     
 【路由】
-- [UI-Router基础](https://www.kancloud.cn/frankshi/lion-know/1087009)
+- [UI-Router基础](UI-Router基础.md)
 
 【状态管理】
 - Mobx
@@ -585,7 +585,7 @@ https://github.com/camsong/blog/issues/9
 
 【框架的重点难点】
 - vue 和 react 的区别
-- [实现一个简单的mvvm框架](https://www.kancloud.cn/frankshi/lion-know/1087015)
+- [实现一个简单的mvvm框架](JavaScript实现一个简单的MVVM前端框架ES6语法.md)
 - 服务端渲染方案SSR
 - visualDOM
 - diff算法
@@ -602,7 +602,7 @@ https://github.com/camsong/blog/issues/9
 ## 前端构建
 - gulp
 - webpack
-    - [webpack基础](https://www.kancloud.cn/frankshi/lion-know/1087114)
+    - [webpack基础](webpack入门学习.md)
     - webpack实战
     - webpack Tree-shaking深入学习
     - 抽象语法树AST
@@ -627,29 +627,30 @@ https://github.com/camsong/blog/issues/9
 ### canvas
 
 ### svg
-- [svg 基本形状及样式设置](https://www.kancloud.cn/frankshi/lion-know/1087132)
-- [svg 文本](https://www.kancloud.cn/frankshi/lion-know/1087133)
-- [svg 路径](https://www.kancloud.cn/frankshi/lion-know/1087139)
-- [svg 辅助标签](https://www.kancloud.cn/frankshi/lion-know/1087145)
-- [svg 视野](https://www.kancloud.cn/frankshi/lion-know/1087158)
-- [svg 坐标系统及图形变换](https://www.kancloud.cn/frankshi/lion-know/1087159)
-- [svg 渐变](https://www.kancloud.cn/frankshi/lion-know/1087169)
+- [svg 基本形状及样式设置](SVG基本形状及样式设置.md)
+- [svg 文本](svg文本.md)
+- [svg 路径](SVG路径.md)
+- [svg 辅助标签](SVG辅助标签.md)
+- [svg 视野](svg视野.md)
+- [svg 坐标系统及图形变换](SVG坐标系统及图形变换.md)
+- [svg 渐变](SVG渐变.md)
 
 ### 3D
 
 ## 常用工具
-- [Homebrew](https://www.kancloud.cn/frankshi/lion-know/1087187)
-- [yarn](https://www.kancloud.cn/frankshi/lion-know/1087181)
-- [lerna](https://www.kancloud.cn/frankshi/lion-know/1090317)
+- [Homebrew](Homebrew使用教程.md)
+- [yarn](yarn教程.md)
+- [lerna](lerna教程.md)
 
 ### 插件库
-- [chart.js 实战配置、插件编写](https://www.kancloud.cn/frankshi/lion-know/1087195)
+- [chart.js 实战配置、插件编写](chart.jsangular组件封装ng6、实战配置、插件编写.md)
 - lodash
 
 ## 源码阅读
 
 ### underscore
-- underscore源码非常值得阅读 https://github.com/lessfish/underscore-analysis/blob/master/underscore-1.8.3.js/underscore-1.8.3-analysis.js
+- [underscore源码-内部方法](underscore源码-内部方法.md)
+- [underscore源码-外部方法](underscore源码-外部方法.md)
 
 ### antd源码
 - checkbox的实现
