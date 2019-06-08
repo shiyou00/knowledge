@@ -1,11 +1,10 @@
 ### 端午学习计划
 - [ing]rxjs
-- 端午节听课
 
 ### 周计划
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - HttpClient
-- ui-router: 按照英文官网一句一句进行翻译，并且自己构建一个简单的应用来实践（逃是逃不掉的）
+- ui-router 系列文章(5-1)
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
@@ -583,6 +582,7 @@ https://github.com/camsong/blog/issues/9
     
 【路由】
 - [UI-Router基础](UI-Router基础.md)
+- [UI-Router Features](UI-RouterFeatures.md)
 
 【状态管理】
 - Mobx
