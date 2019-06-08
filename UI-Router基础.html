@@ -3334,9 +3334,84 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x9605;&#x8BFB;&#x82F1;&#x6587;&#x5B98;&#x7F51;&#x91CD;&#x65B0;&#x5B66;&#x4E60;&#x4E00;&#x904D;"><a name="&#x9605;&#x8BFB;&#x82F1;&#x6587;&#x5B98;&#x7F51;&#x91CD;&#x65B0;&#x5B66;&#x4E60;&#x4E00;&#x904D;" class="anchor-navigation-ex-anchor" href="#&#x9605;&#x8BFB;&#x82F1;&#x6587;&#x5B98;&#x7F51;&#x91CD;&#x65B0;&#x5B66;&#x4E60;&#x4E00;&#x904D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9605;&#x8BFB;&#x82F1;&#x6587;&#x5B98;&#x7F51;&#x91CD;&#x65B0;&#x5B66;&#x4E60;&#x4E00;&#x904D;</h2>
+                                <h2 id="&#x524D;&#x8A00;"><a name="&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x524D;&#x8A00;</h2>
+<p>&#x672C;&#x7CFB;&#x5217;&#x4E3B;&#x8981;&#x8BB2;&#x89E3;UI-Router&#x5728;angular2+&#x4E2D;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x4ECA;&#x5929;&#x4E3B;&#x8BB2;&#x5728;angular&#x4E2D;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;UI-Router&#x5E76;&#x4E14;&#x5EFA;&#x7ACB;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x8DEF;&#x7531;&#x3002;</p>
+<h2 id="&#x521D;&#x59CB;&#x5316;angular&#x9879;&#x76EE;"><a name="&#x521D;&#x59CB;&#x5316;angular&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;angular&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;Angular&#x9879;&#x76EE;</h2>
+<p>1&#x3001;&#x5B89;&#x88C5;angular/cli</p>
+<pre class="language-"><code>npm install -g angular/cli
+&#x5B89;&#x88C5;&#x597D;&#x540E;&#xFF1A;ng --version
+</code></pre><p>2&#x3001;&#x5229;&#x7528;&#x811A;&#x624B;&#x67B6;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x9879;&#x76EE;</p>
+<pre class="language-"><code>ng new task
+</code></pre><p>&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#x6210;&#x529F;&#x540E;</p>
+<pre class="language-"><code>&#x6267;&#x884C;&#xFF1A;npm start &#x6216;&#x8005; ng serve
+</code></pre><h2 id="uirouterangular"><a name="uirouterangular" class="anchor-navigation-ex-anchor" href="#uirouterangular"><i class="fa fa-link" aria-hidden="true"></i></a>@uirouter/angular</h2>
+<p>&#x5B89;&#x88C5;</p>
+<pre class="language-"><code>npm install --save @uirouter/angular
+&#x6216;&#x8005;&#xFF1A;
+yarn add @uirouter/angular
+</code></pre><p>&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;hello &#x548C; about<br>&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre class="language-"><code>ng g c hello &amp; ng g c about
+</code></pre><p>&#x521B;&#x5EFA;router<br>&#x521B;&#x5EFA;&#x5982;&#x4E0B;&#x6587;&#x4EF6;&#x4EE5;&#x53CA;&#x6587;&#x4EF6;&#x5939;&#xFF1A;/src/app/router/index.ts</p>
+<pre class="language-"><code>import { HelloComponent } from &quot;../hello/hello.component&quot;;
+import { AboutComponent } from &quot;../about/about.component&quot;;
+
+// &#x4EE5;&#x4E0B;&#x662F;&#x4E24;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;
+const helloState = {
+  name: &apos;hello&apos;,
+  url: &apos;/hello&apos;,
+  component: HelloComponent
+};
+
+const aboutState = {
+  name: &apos;about&apos;,
+  url: &apos;/about&apos;,
+  component: AboutComponent
+};
+
+//&#x5BFC;&#x51FA;&#x8DEF;&#x7531;&#x6570;&#x7EC4;
+export const allStates = [
+  helloState,
+  aboutState
+];
+</code></pre><p>app.module.ts&#x4E2D;&#x6DFB;&#x52A0;&#x8DEF;&#x7531;module&#x4EE5;&#x53CA;&#x521B;&#x5EFA;&#x597D;&#x7684;&#x8DEF;&#x7531;<br>path:/src/app/app.module.ts </p>
+<pre class="language-"><code>import { BrowserModule } from &apos;@angular/platform-browser&apos;;
+import { NgModule } from &apos;@angular/core&apos;;
+
+import { AppComponent } from &apos;./app.component&apos;;
+import {UIRouterModule} from &quot;@uirouter/angular&quot;;// &#x5F15;&#x5165;&#x8DEF;&#x7531;module
+import { allStates } from &quot;./router&quot;;
+import { HelloComponent } from &apos;./hello/hello.component&apos;;
+import { AboutComponent } from &apos;./about/about.component&apos;;
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    AboutComponent
+  ],
+  imports: [
+    BrowserModule,
+    UIRouterModule.forRoot({ states: allStates, useHash: true }) // &#x5F15;&#x5165;
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+</code></pre><p>&#x7F16;&#x5199;&#x5165;&#x53E3;&#x754C;&#x9762;<br>/src/app/app.component.html</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">uiSref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hello<span class="token punctuation">&quot;</span></span> <span class="token attr-name">uiSrefActive</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>active<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">uiSref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>about<span class="token punctuation">&quot;</span></span> <span class="token attr-name">uiSrefActive</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>active<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>About<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ui-view</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ui-view</span><span class="token punctuation">&gt;</span></span> // &#x8DEF;&#x7531;&#x89C6;&#x53E3;
+</code></pre><p>/src/app/app.component.css</p>
+<pre class="language-"><code>.active { color: red; font-weight: bold; } // &#x5F53;&#x8DEF;&#x7531;&#x5904;&#x4E8E;&#x6FC0;&#x6D3B;&#x72B6;&#x6001;&#x7684;&#x6837;&#x5F0F;
+a{margin:20px;}
+</code></pre><h2 id="&#x6548;&#x679C;"><a name="&#x6548;&#x679C;" class="anchor-navigation-ex-anchor" href="#&#x6548;&#x679C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6548;&#x679C;</h2>
+<p>&#x4EE3;&#x7801;&#x90FD;&#x7F16;&#x5199;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x6765;&#x770B;&#x4E0B;&#x6548;&#x679C;&#xFF1A;
+<img src="image/217.gif" alt=""></p>
+<h2 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;</h2>
+<p>&#x4EE5;&#x4E0A;&#x5C31;&#x7B80;&#x5355;&#x7684;&#x7B80;&#x4ECB;&#x4E86;&#x5982;&#x4F55;&#x5728;&#x4E00;&#x4E2A;angular2+&#x9879;&#x76EE;&#x4E2D;&#x914D;&#x5408;ui-router&#x6765;&#x4F7F;&#x7528;&#x3002;&#x63A5;&#x4E0B;&#x4F1A;&#x66F4;&#x52A0;&#x6DF1;&#x5165;&#x7684;&#x8BB2;&#x89E3;ui-router&#x7684;&#x4E00;&#x4E9B;&#x65B0;&#x7279;&#x6027;&#x3002;</p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; frankshi.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-06-04 08:01:42
+2019-06-08 10:25:02
 </span></footer>
                                 
                                 </section>
@@ -3380,7 +3455,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Angular2+项目中安装并初始化UI-Router","level":"1.17.6.1","depth":3,"next":{"title":"状态管理","level":"1.17.7","depth":2,"path":"状态管理.md","ref":"状态管理.md","articles":[]},"previous":{"title":"路由","level":"1.17.6","depth":2,"path":"路由.md","ref":"路由.md","articles":[{"title":"Angular2+项目中安装并初始化UI-Router","level":"1.17.6.1","depth":3,"path":"UI-Router基础.md","ref":"UI-Router基础.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2","expandable-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],"showLevel":false},"github":{"url":"https://github.com/shiyou00/knowledge"},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"UI-Router基础.md","mtime":"2019-06-04T00:01:42.524Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T09:38:02.029Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Angular2+项目中安装并初始化UI-Router","level":"1.17.6.1","depth":3,"next":{"title":"状态管理","level":"1.17.7","depth":2,"path":"状态管理.md","ref":"状态管理.md","articles":[]},"previous":{"title":"路由","level":"1.17.6","depth":2,"path":"路由.md","ref":"路由.md","articles":[{"title":"Angular2+项目中安装并初始化UI-Router","level":"1.17.6.1","depth":3,"path":"UI-Router基础.md","ref":"UI-Router基础.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2","expandable-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],"showLevel":false},"github":{"url":"https://github.com/shiyou00/knowledge"},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"UI-Router基础.md","mtime":"2019-06-08T02:25:02.105Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-08T02:25:13.972Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
