@@ -3447,8 +3447,174 @@ const subscriber = observable.subscribe(observer);
 <blockquote>
 <p>&#x5E95;&#x4E0B;&#x6709;3&#x4E2A;&#x6570;&#x636E;&#x6D88;&#x8D39;&#x8005;&#xFF0C;&#x5F53;&#x6211;&#x6D3E;&#x51FA;&#x54EA;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x624D;&#x4F1A;&#x6D88;&#x8D39;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x6D3E;&#x51FA;&#x5219;&#x4E0D;&#x6D88;&#x8D39;</p>
 </blockquote>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code>var observer = {
+  next: x =&gt; console.log(&apos;Observer got a next value: &apos; + x),
+  error: err =&gt; console.error(&apos;Observer got an error: &apos; + err),
+};
+</code></pre><p>&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x6D88;&#x8D39;&#x4E0D;&#x5230;complete&#x4F20;&#x6765;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4ED6;&#x4F20;&#x6765;&#x7684;&#x6570;&#x636E;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6D88;&#x8D39;&#x3002;</p>
+<h2 id="subscription"><a name="subscription" class="anchor-navigation-ex-anchor" href="#subscription"><i class="fa fa-link" aria-hidden="true"></i></a>Subscription</h2>
+<blockquote>
+<p>Subscription &#x662F;&#x8868;&#x793A;&#x53EF;&#x6E05;&#x7406;&#x8D44;&#x6E90;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x5E38;&#x662F; Observable &#x7684;&#x6267;&#x884C;&#x3002;
+Subscription &#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5373; unsubscribe&#xFF0C;&#x5B83;&#x4E0D;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#xFF0C;&#x53EA;&#x662F;&#x7528;&#x6765;&#x6E05;&#x7406;&#x7531; Subscription &#x5360;&#x7528;&#x7684;&#x8D44;&#x6E90;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code>var observable = Rx.Observable.interval(1000);
+var subscription = observable.subscribe(x =&gt; console.log(x));
+// &#x7A0D;&#x540E;&#xFF1A;
+// &#x8FD9;&#x4F1A;&#x53D6;&#x6D88;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x4E2D;&#x7684; Observable &#x6267;&#x884C;
+// Observable &#x6267;&#x884C;&#x662F;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x89C2;&#x5BDF;&#x8005;&#x8C03;&#x7528; subscribe &#x65B9;&#x6CD5;&#x542F;&#x52A8;&#x7684;
+subscription.unsubscribe();
+</code></pre><p><strong>&#x8BB0;&#x4F4F;&#x4E00;&#x70B9;&#xFF0C;&#x5B83;&#x5B58;&#x5728;&#x7684;&#x4EF7;&#x503C;&#x5C31;&#x662F;&#x7528;&#x6765;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x6216;&#x53BB;&#x53D6;&#x6D88;Observable&#x6267;&#x884C;&#x3002;</strong></p>
+<h3 id="subscription&#x7684;&#x65B9;&#x6CD5;"><a name="subscription&#x7684;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#subscription&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>Subscription&#x7684;&#x65B9;&#x6CD5;</h3>
+<p>&#x3010;add()&#x3011;<br>&#x628A;&#x4E00;&#x4E2A;childSubscription&#x6DFB;&#x52A0;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;subscription&#x4E2D;</p>
+<pre class="language-"><code>var observable1 = Rx.Observable.interval(400);
+var observable2 = Rx.Observable.interval(300);
+
+var subscription = observable1.subscribe(x =&gt; console.log(&apos;first: &apos; + x));
+var childSubscription = observable2.subscribe(x =&gt; console.log(&apos;second: &apos; + x));
+
+subscription.add(childSubscription);
+</code></pre><p>&#x3010;remove()&#x3011;<br>&#x7528;&#x6765;&#x64A4;&#x9500;&#x4E00;&#x4E2A;&#x5DF2;&#x6DFB;&#x52A0;&#x7684;&#x5B50; Subscription &#x3002;</p>
+<pre class="language-"><code>var observable1 = Rx.Observable.interval(400);
+var observable2 = Rx.Observable.interval(300);
+
+var subscription = observable1.subscribe(x =&gt; console.log(&apos;first: &apos; + x));
+var childSubscription = observable2.subscribe(x =&gt; console.log(&apos;second: &apos; + x));
+
+subscription.add(childSubscription);
+subscription.remove(childSubscription);
+</code></pre><p>&#x3010;unsubscribe()&#x3011;</p>
+<blockquote>
+<p>&#x53D6;&#x6D88;&#x8BA2;&#x9605;,&#x91CA;&#x653E;&#x8D44;&#x6E90;&#xFF0C;&#x4E00;&#x822C;&#x5728;&#x7EC4;&#x4EF6;&#x7684;destroy&#x58F0;&#x660E;&#x5468;&#x671F;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<pre class="language-"><code>subscription.unsubscribe();
+</code></pre><p>&#x4EE5;&#x4E0A;&#x57FA;&#x672C;&#x4E0A;&#x5DF2;&#x7ECF;&#x628A;rxjs&#x7684;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x90FD;&#x8BB2;&#x89E3;&#x6E05;&#x695A;&#x4E86;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x4E60;&#x4E9B;&#x8FDB;&#x9636;&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
+<h2 id="subject"><a name="subject" class="anchor-navigation-ex-anchor" href="#subject"><i class="fa fa-link" aria-hidden="true"></i></a>Subject</h2>
+<p>Subject &#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7C7B;&#x578B;&#x7684; Observable</p>
+<p>Subject vs Observable</p>
+<ol>
+<li>Subject&#x5141;&#x8BB8;&#x5C06;&#x503C;&#x591A;&#x64AD;&#x7ED9;&#x591A;&#x4E2A;&#x89C2;&#x5BDF;&#x8005;,&#x6240;&#x4EE5; Subject &#x662F;&#x591A;&#x64AD;&#x7684;</li>
+<li>&#x800C;&#x666E;&#x901A;&#x7684; Observables &#x662F;&#x5355;&#x64AD;&#x7684;(&#x6BCF;&#x4E2A;&#x5DF2;&#x8BA2;&#x9605;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x90FD;&#x62E5;&#x6709; Observable &#x7684;&#x72EC;&#x7ACB;&#x6267;&#x884C;)</li>
+</ol>
+<p>Subject&#x6807;&#x7B7E;</p>
+<ol>
+<li>&#x591A;&#x64AD;</li>
+<li>&#x5B83;&#x5C31;&#x662F;Observable&#x7684;&#x4E00;&#x79CD;(&#x5B50;&#x7C7B;&#x578B;)</li>
+</ol>
+<h3 id="&#x5355;&#x64AD;&#x3001;&#x591A;&#x64AD;&#x7684;&#x7406;&#x89E3;"><a name="&#x5355;&#x64AD;&#x3001;&#x591A;&#x64AD;&#x7684;&#x7406;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x64AD;&#x3001;&#x591A;&#x64AD;&#x7684;&#x7406;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5355;&#x64AD;&#x3001;&#x591A;&#x64AD;&#x7684;&#x7406;&#x89E3;</h3>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x6765;&#x7406;&#x89E3;&#x4E0B;&#x591A;&#x64AD;&#x7684;&#x6982;&#x5FF5;&#xFF1A; </p>
+<p>observable</p>
+<pre class="language-"><code>const observable = Observable.create(function subscribe(observer) {
+      try {
+        observer.next(1);
+        observer.next(2);
+        observer.next(3);
+        observer.complete();
+      } catch (err) {
+        observer.error(err);
+      }
+    });
+    observable.subscribe(val =&gt; {
+      console.log(&apos;&#x7B2C;&#x4E00;&#x4E2A;&#x76D1;&#x542C;&#x8005;&#xFF1A;&apos;, val );
+    });
+
+    setTimeout(() =&gt; {
+      observable.subscribe(val =&gt; {
+        console.log(&apos;&#x7B2C;&#x4E8C;&#x4E2A;&#x76D1;&#x542C;&#x8005;&#xFF1A;&apos;, val );
+      });
+    }, 3000);
+</code></pre><p>&#x770B;&#x4E0B;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x503C;&#xFF1A;<br><img src="image/218.png" alt=""></p>
+<p>&#x7ED3;&#x8BBA;&#xFF1A;&#x65E0;&#x8BBA;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53BB;&#x76D1;&#x542C;<code>observable</code>&#x90FD;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x8BE5;<code>observable</code>&#x63A8;&#x9001;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;&#x6211;&#x4EEC;&#x5BF9;&#x8FD9;&#x79CD;&#x7279;&#x6027;&#x5C31;&#x79F0;&#x4E4B;&#x4E3A;<strong>&#x5355;&#x64AD;</strong></p>
+<p>&#x90A3;&#x6211;&#x4EEC;&#x5728;&#x6765;&#x770B;&#x770B;subject&#x662F;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x63A8;&#x9001;&#x7684;&#xFF1A;   </p>
+<pre class="language-"><code>const subject = new Subject();
+// &#x76D1;&#x542C;&#x6570;&#x636E;
+subject.subscribe({
+  next: (v) =&gt; {
+    console.log(`&#x76D1;&#x542C;&#x8005;1&#xFF1A;` + v );
+  }
+});
+
+subject.subscribe({
+  next: (v) =&gt; {
+    console.log(`&#x76D1;&#x542C;&#x8005;2&#xFF1A;` + v );
+  }
+});
+
+setTimeout(() =&gt; {
+  subject.subscribe({
+    next: (v) =&gt; {
+      console.log(`&#x76D1;&#x542C;&#x8005;3&#xFF1A;` + v );
+    }
+  });
+}, 3000 );
+
+// &#x63A8;&#x9001;&#x6570;&#x636E;
+subject.next(1);
+subject.next(2);
+subject.next(3);
+setTimeout(() =&gt; {
+  subject.next(4);
+}, 4000 );
+</code></pre><p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x6570;&#x636E;&#x6253;&#x5370;&#x7684;&#x7ED3;&#x679C;&#xFF1A;<br><img src="image/219.gif" alt=""></p>
+<ul>
+<li>&#x76D1;&#x542C;&#x8005;1&#x548C;&#x76D1;&#x542C;&#x8005;2,&#x6700;&#x5F00;&#x59CB;&#x5C31;&#x6253;&#x5370;&#x51FA;&#x4E86;1&#xFF0C;2&#xFF0C;3</li>
+<li>&#x8FC7;&#x4E86;4&#x79D2;&#x540E;&#xFF0C;&#x76D1;&#x542C;&#x8005;1&#xFF0C;&#x76D1;&#x542C;&#x8005;2&#xFF0C;&#x76D1;&#x542C;&#x8005;3&#x90FD;&#x6253;&#x5370;&#x4E86;&#x4E00;&#x4E2A;4</li>
+</ul>
+<p>&#x8FD9;&#x8BF4;&#x660E;&#x201C;&#x76D1;&#x542C;&#x8005;3&#x201D;&#x662F;&#x6CA1;&#x6709;&#x76D1;&#x542C;&#x5230;&#x6570;&#x636E;1&#xFF0C;2&#xFF0C;3&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;3&#x79D2;&#x540E;&#x624D;&#x5F00;&#x59CB;&#x76D1;&#x542C;&#x7684;&#xFF0C;&#x800C;&#x6570;&#x636E;1&#xFF0C;2&#xFF0C;3&#x5219;&#x662F;&#x5728;&#x5B83;&#x76D1;&#x542C;&#x4E4B;&#x524D;&#x5C31;&#x5DF2;&#x7ECF;&#x63A8;&#x9001;&#x8FC7;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EA;&#x76D1;&#x542C;&#x5230;&#x4E86;4&#xFF0C;&#x56E0;&#x4E3A;4&#x662F;&#x5728;4&#x79D2;&#x540E;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x3002;&#x6240;&#x4EE5;&#x76D1;&#x542C;&#x8005;1&#xFF0C;2&#xFF0C;3&#x90FD;&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x5230;&#x4E86;</p>
+<p>&#x73B0;&#x5728;&#x62FF;subject&#x548C;observable&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;observable&#x7684;&#x5355;&#x64AD;&#xFF0C;&#x5219;&#x662F;&#x6BCF;&#x4E2A;&#x76D1;&#x542C;&#x8005;&#x4E4B;&#x95F4;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x72EC;&#x7ACB;&#x7684;&#x83B7;&#x53D6;&#x5230;&#x4E86;observable&#x63D0;&#x4F9B;&#x7684;&#x6570;&#x636E;(&#x4EE5;&#x5F80;&#x63D0;&#x4F9B; + &#x672A;&#x6765;&#x63D0;&#x4F9B;)&#xFF0C;&#x800C;subject&#x5411;&#x5916;&#x63A8;&#x9001;&#x7684;&#x6570;&#x636E;&#x66F4;&#x50CF;&#x4E00;&#x4E2A;&#x7BA1;&#x9053;&#x7684;&#x6D41;&#x6C34;&#xFF0C;&#x4F60;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x5F00;&#x59CB;&#x76D1;&#x542C;&#x4E86;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x6D41;&#x5411;&#x4F60;&#x8FD9;&#x91CC;&#x3002;&#x6BCF;&#x4E2A;&#x76D1;&#x542C;&#x8005;&#x90FD;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4E2A;&#x7BA1;&#x9053;&#x7684;&#x6D41;&#x6C34;&#x3002;</p>
+<p>&#x591A;&#x64AD;:subject
+<img src="image/220.png" alt=""></p>
+<p>&#x5355;&#x64AD;:observable<br><img src="image/221.png" alt=""></p>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5C31;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4EC0;&#x4E48;&#x662F;&#x5355;&#x64AD;&#xFF0C;&#x4EC0;&#x4E48;&#x662F;&#x591A;&#x64AD;&#x7684;&#x5F62;&#x5F0F;&#x4E86;&#x3002;</p>
+<h3 id="subject&#x7684;&#x53CC;&#x91CD;&#x8EAB;&#x4EFD;"><a name="subject&#x7684;&#x53CC;&#x91CD;&#x8EAB;&#x4EFD;" class="anchor-navigation-ex-anchor" href="#subject&#x7684;&#x53CC;&#x91CD;&#x8EAB;&#x4EFD;"><i class="fa fa-link" aria-hidden="true"></i></a>Subject&#x7684;&#x53CC;&#x91CD;&#x8EAB;&#x4EFD;</h3>
+<ol>
+<li>Observable &#x751F;&#x4EA7;&#x8005;</li>
+<li>Observer &#x6D88;&#x8D39;&#x8005;</li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x70B9;&#x4F5C;&#x4E3A;&#x751F;&#x4EA7;&#x8005;Observable&#x7684;&#x4E00;&#x79CD;&#x591A;&#x64AD;&#x5F62;&#x5F0F;&#xFF0C;&#x4E0A;&#x9762;&#x5DF2;&#x7ECF;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;</p>
+<p>&#x3010;&#x4F5C;&#x4E3A;&#x6D88;&#x8D39;&#x8005;&#x3011;  </p>
+<blockquote>
+<p>&#x6BCF;&#x4E2A; Subject &#x90FD;&#x662F;&#x89C2;&#x5BDF;&#x8005;&#x3002; - Subject &#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x7684;&#x5BF9;&#x8C61;&#xFF1A; next(v)&#x3001;error(e) &#x548C; complete() &#x3002;&#x8981;&#x7ED9; Subject &#x63D0;&#x4F9B;&#x65B0;&#x503C;&#xFF0C;&#x53EA;&#x8981;&#x8C03;&#x7528; next(theValue)&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x503C;&#x591A;&#x64AD;&#x7ED9;&#x5DF2;&#x6CE8;&#x518C;&#x76D1;&#x542C;&#x8BE5; Subject &#x7684;&#x89C2;&#x5BDF;&#x8005;&#x4EEC;&#x3002;</p>
+</blockquote>
+<p>&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x597D;&#x7406;&#x89E3;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#x5176;&#x5B9E;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;&#x8BE5;&#x7279;&#x6027;&#xFF1A;</p>
+<pre class="language-"><code>1. const subject = new Subject();
+2. subject.next(1);
+</code></pre><p>&#x7B2C;&#x4E8C;&#x884C;&#x4EE3;&#x7801;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;subject&#x5BF9;&#x8C61;&#x662F;&#x5177;&#x6709;next&#x65B9;&#x6CD5;&#x7684;&#xFF0C;&#x4E14;&#x8C03;&#x7528;&#x4E86;&#x8BE5;&#x65B9;&#x6CD5;&#x5C31;&#x53EF;&#x4EE5;&#x5411;&#x7BA1;&#x9053;&#x4E2D;&#x6CE8;&#x5165;&#x4E00;&#x80A1;&#x6570;&#x636E;&#x3002;</p>
+<p>subject&#x662F;&#x4E00;&#x4E2A;&#x89C2;&#x5BDF;&#x8005; == Observer&#x89C2;&#x5BDF;&#x8005;</p>
+<p>&#x6211;&#x4EEC;&#x518D;&#x56DE;&#x987E;&#x4E00;&#x4E0B;Observable&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code>1. const observable = Observable.create(function (observer) {
+      observer.next(1);
+});
+
+2. const observer = {
+    next: x =&gt; console.log(&apos;&#x503C;&#xFF1A;&apos; + x),
+    error: err =&gt; console.error(&apos;&#x62A5;&#x9519;&#xFF1A;&apos; + err),
+    complete: () =&gt; console.log(&apos;&#x7ED3;&#x675F;&apos;)
+   }
+
+3. const subscriber = observable.subscribe(observer);
+</code></pre><p>&#x7B2C;&#x4E09;&#x884C;&#xFF1A;observable&#x7684;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4F20;&#x5165;&#x4E00;&#x4E2A;observer&#x89C2;&#x5BDF;&#x8005;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x4E00;&#x4E2A;subject&#x8FDB;&#x53BB;&#x5417;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;</p>
+<pre class="language-"><code>const observable = Observable.create(function (observer) {
+  observer.next(1);
+});
+
+const subject = new Subject();
+// &#x76D1;&#x542C;subject
+subject.subscribe({
+  next: (v) =&gt; {
+    console.log( &apos;&#x76D1;&#x542C;&#x8005;1&#xFF1A;&apos; + v );
+  }
+});
+// &#x8FD9;&#x91CC;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4F1A;&#x8C03;&#x7528;subject&#x7684;next&#x65B9;&#x6CD5;&#xFF0C;&#x5411;subject&#x7BA1;&#x9053;&#x91CC;&#x9762;&#x6CE8;&#x5165;&#x4E00;&#x80A1;&#x6570;&#x636E;1&#xFF0C;
+&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x76D1;&#x542C;subject&#x5C31;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x6570;&#x636E;1
+observable.subscribe(subject);
+</code></pre><p>&#x6570;&#x636E;&#x4E5F;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6253;&#x5370;&#xFF0C;&#x8BF4;&#x660E;subject&#x5728;&#x8FD9;&#x91CC;&#x5C31;&#x662F;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x7684;&#x529F;&#x80FD;</p>
+<p><strong>&#x8FD9;&#x4E5F;&#x662F;&#x628A;Observable&#x4ECE;&#x5355;&#x64AD;&#x8F6C;&#x6362;&#x4E3A;&#x591A;&#x64AD;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</strong></p>
+<h2 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;</h2>
+<p>&#x5230;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x57FA;&#x672C;&#x4E0A;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x7406;&#x89E3;Subject &#x4E0E; Observable &#x4E86;&#xFF0C;&#x4EE5;&#x53CA;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4EC0;&#x4E48;&#x662F;&#x5355;&#x64AD;&#xFF0C;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x591A;&#x64AD;&#xFF0C;&#x5DF2;&#x7ECF;&#x5982;&#x4F55;&#x628A;&#x4E00;&#x4E2A;&#x5355;&#x64AD;&#x7684;Observable&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x591A;&#x64AD;&#x7684;Subject&#x3002;</p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; frankshi.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-05-30 18:09:00
+2019-06-08 22:15:42
 </span></footer>
                                 
                                 </section>
@@ -3492,7 +3658,7 @@ const subscriber = observable.subscribe(observer);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"rxjs简介","level":"1.17.3.1","depth":3,"next":{"title":"JavaScript 函数式编程","level":"1.17.3.2","depth":3,"path":"FunctionalProgramming.md","ref":"FunctionalProgramming.md","articles":[]},"previous":{"title":"rxjs","level":"1.17.3","depth":2,"path":"rxjs.md","ref":"rxjs.md","articles":[{"title":"rxjs简介","level":"1.17.3.1","depth":3,"path":"rxjs简介.md","ref":"rxjs简介.md","articles":[]},{"title":"JavaScript 函数式编程","level":"1.17.3.2","depth":3,"path":"FunctionalProgramming.md","ref":"FunctionalProgramming.md","articles":[]},{"title":"Observable","level":"1.17.3.3","depth":3,"path":"Observable.md","ref":"Observable.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2","expandable-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],"showLevel":false},"github":{"url":"https://github.com/shiyou00/knowledge"},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"rxjs简介.md","mtime":"2019-05-30T10:09:00.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-08T03:14:05.729Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"rxjs简介","level":"1.17.3.1","depth":3,"next":{"title":"JavaScript 函数式编程","level":"1.17.3.2","depth":3,"path":"FunctionalProgramming.md","ref":"FunctionalProgramming.md","articles":[]},"previous":{"title":"rxjs","level":"1.17.3","depth":2,"path":"rxjs.md","ref":"rxjs.md","articles":[{"title":"rxjs简介","level":"1.17.3.1","depth":3,"path":"rxjs简介.md","ref":"rxjs简介.md","articles":[]},{"title":"JavaScript 函数式编程","level":"1.17.3.2","depth":3,"path":"FunctionalProgramming.md","ref":"FunctionalProgramming.md","articles":[]},{"title":"Observable","level":"1.17.3.3","depth":3,"path":"Observable.md","ref":"Observable.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","github@^2.0.0","github-buttons@2.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","sectionx@^3.1.0","local-video@^1.0.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","alerts@^0.2.0","-sharing","sharing-plus@^0.0.2","expandable-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © frankshi.com 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],"showLevel":false},"github":{"url":"https://github.com/shiyou00/knowledge"},"todo":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"alerts":{},"github-buttons":{"repo":"shiyou00/knowledge","types":["star"],"size":"small"},"local-video":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon","qq","qzone"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"frankshi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"lion","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"https://www.cnblogs.com/shiyou00/"}},"gitbook":"3.2.3","description":"知识整理"},"file":{"path":"rxjs简介.md","mtime":"2019-06-08T14:15:42.817Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-08T14:44:21.561Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

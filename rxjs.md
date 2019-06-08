@@ -18,10 +18,12 @@
 5、正式产出
 
 
-
-
-
-
-
-
-
+## rxjs系列文章
+1. rxjs基本概念入门，Observable、Observer、Subscription、Subject
+2. Subject的3个变体
+3. Operators(操作符)以及如何理解弹珠图
+4. Scheduler(调度器)
+5. rxjs实战应用(参考下面文章实现todoList)
+    - https://github.com/ecmadao/Coding-Guide/blob/master/Notes/RxJS/%E6%8E%A2%E7%B4%A2RxJS-%E5%81%9A%E4%B8%80%E4%B8%AAgithub%E5%B0%8F%E5%BA%94%E7%94%A8.md
+    - https://jerryzou.com/posts/rxjs-practice-01/
+    - Angular打造企业级协作平台(慕课视频)
