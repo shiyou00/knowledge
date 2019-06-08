@@ -1,7 +1,3 @@
-### 端午学习计划
-- 阅读下学习课程
-- 整理下博客园的文章
-
 ### 周计划
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
 - HttpClient
