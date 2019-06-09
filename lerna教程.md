@@ -52,111 +52,230 @@ lerna到底是什么呢？lerna官网上是这样描述的。
 2.  通过`git`检测文件改动，自动发布
 3.  根据`git`提交记录，自动生成CHANGELOG
 
+一个基础lerna仓库结构如下：
+```
+my-lerna-repo/
+    ┣━ packages/
+    ┃     ┣━ package-1/
+    ┃     ┃      ┣━ ...
+    ┃     ┃      ┗━ package.json
+    ┃     ┗━ package-2/
+    ┃            ┣━ ...
+    ┃            ┗━ package.json
+    ┣━ ...
+    ┣━ lerna.json
+    ┗━ package.json
+```
+
 ## 使用lerna的基本工作流
 
-### 环境配置
+### 准备工作
 
-*   Git 在一个lerna工程里，是通过git来进行代码管理的。所以你首先要确保本地有正确的git环境。 如果需要多人协作开发，请先创建正确的git中心仓库的链接。 因此需要你了解基本的git操作，在此不再赘述。
-
-*   npm仓库 无论你管理的package是要发布到官网还是公司的私有服务器上，都需要正确的仓库地址和用户名。 你可运行下方的命令来检查，本地的`npm registry`地址是否正确。
-[注意]这个步骤的含义是把项目工程和包发布服务器关联起来
-```
-npm config ls
-```
-
-lerna 你需要全局安装lerna工具。
+1. git仓库(自行安装)
+2. npm仓库注册开通(参考文章>>>[npm发线上包(npm publish)](npm发线上包npmpublish.md))
+3. 全局安装lerna
 ```
 npm install lerna -g
 ```
 
-### 初始化一个lerna工程
-在这个例子中，我将在我本地`d:/`根目录下初始化一个lerna工程。
+### 初始化一个lerna项目
+1、创建文件夹
 ```
-mkdir lerna-demo
+mkdir lerna-demo && cd $_
 ```
 
-初始化 通过cmd进入相关目录，进行初始化
+2、初始化lerna工程
 ```
-cd d:/lerna-demo 
 lerna init
 ```
 
 执行成功后，目录下将会生成这样的目录结构
 ```
-- packages(目录) 
-- lerna.json(配置文件) 
-- package.json(工程描述文件)
+lerna-demo/
+    ┣━ packages/
+    ┣━ lerna.json
+    ┗━ package.json
 ```
 
-默认情况下，package是放在`packages`目录下的。
-```
-// 进入packages目录 
-cd d:/lerna-demo/packages 
+## 创建模块
+> Lerna 提供了两种创建或导入模块的方式，分别是 create，import。
 
-// 创建一个packge目录
- mkdir module-1 
-
-// 进入module-1 
-package目录 cd module-1 
-
-// 初始化一个
-package npm init -y
-```
-
-执行完毕，工程下的目录结构如下
-```
---packages
-	--module-1
-		package.json
---lerna.json
---package.json
-```
-
-安装各packages依赖 这一步操作，官网上是这样描述的。
-> Bootstrap the packages in the current Lerna repo. Installs all of their dependencies and links any cross-dependencies.
+### create
+> 创建一个 lerna 管理的模块。基本命令格式如下：
 
 ```
-cd d:/lerna-demo
+lerna create packageName [loc]
+```
+
+[注意]packageName必须是唯一的(npm仓库中无重名已发布包)
+
+```
+lerna create @lion/package-a
+```
+命令执行完后，lerna 会帮我们在指定位置创建模块的文件夹，同时会默认在该文件夹下执行 npm init 的命令，在终端上根据根据提示填写所有信息后会帮我们创建对应的 package.json 文件，大致的结构如下
+```
+lerna-demo/
+    ┣━ packages/
+    ┃     ┗━ package-a/
+    ┃            ┣━ ...
+    ┃            ┗━ package.json
+    ┣━ lerna.json
+    ┗━ package.json
+```
+
+### import
+导入一个已存在的模块，同时保留之前的提交记录，方便将其他正在维护的项目合并到一起。基本命令格式如下：`lerna import dir`
+
+dir 是本项目外的包含 npm 包的 git 仓库路径（相对于本项目根路径的相对路径）
+
+
+### 查看模块列表
+创建完毕之后，我们可以通过 list 命令来查看和确认现在管理的包是否符合我们的预期，执行如下命令：
+```
+lerna list
+```
+
+### 添加依赖包
+现在我们来添加依赖包，在 lerna 项目里，你可以分别给每个模块单独添加依赖包，也可以同时给部分或全部模块添加依赖包，还可以把管理的某些模块作为依赖添加给其他模块。
+```
+lerna add [@version] [--dev] [--exact]
+```
+[注意]--dev 和 --exact 等同于 npm install 里的 --dev 和 --exact
+
+当我们执行此命令后，将会执行下面那2个动作：
+
+1. 在每一个符合要求的模块里安装指明的依赖包，类似于在指定模块文件夹中执行 `npm install <package>`。
+2. 更新每个安装了该依赖包的模块中的 `package.json` 中的依赖包信息
+
+```
+# 在 package-a 这个模块里安装 lodash 依赖
+$ lerna add lodash --scope @lion/package-a
+
+# 在 package-a 这个模块里安装 lodash 依赖，并作为 devDependencies
+$ lerna add lodash --scope @lion/package-a --dev
+
+# 在所有模块中安装 @lion/package-a 这个依赖除了 package-a 自己
+$ lerna add @lion/package-a
+
+# 在所有模块里安装 lodash 依赖
+$ lerna add lodash
+```
+
+### 安装依赖包
+lerna 通过 bootstrap 命令来快速安装所有模块所需的依赖包。基本命令如下
+```
 lerna bootstrap
 ```
-在现在的测试package中，module-1是没有任何依赖的，因此为了更加接近真实情况。你可已在module-1的`package.json`文件中添加一些第三方库的依赖。 这样的话，当你执行完该条命令后，你会发现module-1的依赖已经安装上了。
+当执行完上面的命令后，会发生以下的行为：
 
-在发布的时候，就需要`git`工具的配合了。 所以在发布之前，请确认此时该lerna工程是否已经连接到git的远程仓库。你可以执行下面的命令进行查看。
+1. 在各个模块中执行 npm install 安装所有依赖
+2. 将所有相互依赖的 Lerna 模块 链接在一起
+3. 在安装好依赖的所有模块中执行 npm run prepublish
+4. 在安装好依赖的所有模块中执行 npm run prepare
+
+### 清理依赖包
+可以通过 clean 命令来快速删除所有模块中的 node_modules 文件夹。基本命令如下：
 ```
-git remote -v
+lerna clean
 ```
-![](./image/210.png)
 
-一切准备就绪
+### 版本迭代
+lerna 通过 version 命令来为各个模块进行版本迭代。基本命令如下：
+
 ```
-lerna publish
+ lerna version [major | minor | patch | premajor | preminor | prepatch | prerelease]
 ```
-执行这条命令，你就可以根据cmd中的提示，一步步的发布packges了。
 
-实际上在执行该条命令的时候，lerna会做很多的工作。
- -  Run the equivalent of  `lerna updated`  to determine which packages need to be published.
- -  If necessary, increment the  `version`  key in  `lerna.json`.
- -  Update the  `package.json`  of all updated packages to their new versions.
- -  Update all dependencies of the updated packages with the new versions, specified with a  [caret (^)](https://docs.npmjs.com/files/package.json#dependencies).
- -  Create a new git commit and tag for the new version.
- -  Publish updated packages to npm.
+如果不选择此次迭代类型，则会进入交互式的提示流程来确定此次迭代类型
+```
+$ lerna version 1.0.1 # 按照指定版本进行迭代
+$ lerna version patch # 根据 semver 迭代版本号最后一位
+$ lerna version       # 进入交互流程选择迭代类型 
+```
 
-到这里为止，就是一个最简单的lerna的工作流了。但是lerna还有更多的功能等待你去发掘。 
+当执行此命令时，会发生如下行为：
 
-lerna有两种工作模式,Independent mode和Fixed/Locked mode，在这里介绍可能会对初学者造成困扰，但因为实在太重要了，还是有必要提一下的。 
+1. 标记每一个从上次打过 tag 发布后产生更新的包
+2. 提示选择此次迭代的新版本号
+3. 修改 package.json 中的 version 值来反映此次更新
+4. 提交记录此次更新并打 tag
+5. 推送到远端仓库
 
-lerna的默认模式是Fixed/Locked mode，在这种模式下，实际上lerna是把工程当作一个整体来对待。每次发布packges，都是全量发布，无论是否修改。
+> 你可以在执行此命令的时候加上 ——no-push 来阻止默认的推送行为，在你检查确认没有错误后再执行 git push 推送
 
-但是在Independent mode下，lerna会配合`Git`，检查文件变动，只发布有改动的packge。
+### –conventional-changelog
+```
+$ lerna version --conventional-commits
+```
 
-## lerna最佳实践
-为了能够使lerna发挥最大的作用，根据这段时间使用`lerna`的经验，总结出一个最佳实践。下面是一些特性。
+version 支持根据符合规范的提交记录在每个模块中自动创建和更新 CHANGELOG.md 文件，同时还会根据提交记录来确定此次迭代的类型。只需要在执行命令的时候带上 --conventional-changelog 参数即可
 
-1.  采用Independent模式
-2.  根据`Git`提交信息，自动生成changelog
-3.  eslint规则检查
-4.  prettier自动格式化代码
-5.  提交代码，代码检查hook
-6.  遵循semver版本规范
+### –changelog-preset
+```
+$ lerna version --conventional-commits --changelog-preset angular-bitbucket
+```
+changelog 默认的预设是 angular，你可以通过这个参数来选择你想要的预设创建和更新 CHANGELOG.md
 
-大家应该也可以看出来，在开发这种工程的过程的，最为重要的一点就是**规范**。因为应用场景各种各样，你必须保证发布的packge是规范的，代码是规范的，一切都是有迹可循的。这点我认为是非常重要的。
+> 上述 2 个参数也可以直接写在 lerna.json 文件中，这样每次执行 lerna version 命令的时候就会默认采用上面的 2 个参数
+
+```
+"command": {
+  "version": {
+    "conventionalCommits": true,
+    "changelogPreset": "angular"
+  }
+}
+```
+
+## 发版
+在一切准备就绪后，我们可以通过 publish 命令实现一键发布多个模块。基本命令如下：
+```
+$ lerna publish
+```
+当执行此命令时，会发生如下行为：
+
+1. 发布自上次发布以来更新的包(在底层执行了 lerna version，2.x 版本遗留的行为)
+2. 发布当前提交中打了 tag 的包
+3. 发布在之前的提交中更新的未经版本化的 “canary” 版本的软件包（及其依赖项）
+
+注意： Lerna 不会发布在 package.json 中将 private 属性设置为 true 的模块，如果要发布带域的包，你还需要在 ‘package.json’ 中设置如下内容：
+```
+"publishConfig": {
+    "access": "public"
+  }
+```
+
+由于我们之前已执行过 lerna version 命令，这里如果直接执行 lerna publish 会提示没有发现有更新的包需要更新，我们可以通过从远端的 git 仓库来发布：
+```
+$ lerna publish from-git
+```
+
+在确认后 lerna 就会帮我们把所有更新后的模块都发布在 npm 仓库里，当然在这之前你要做好发布 npm 包的一些准备，比如在 npm 注册账号，并在本地 npm adduser 等(查看>>>[npm发包](npm发线上包npmpublish.md))
+
+此时我们去 npm 上就能看到新发布上去的模块了
+
+
+## lerna的两种模式
+
+lerna有两种工作模式,Independent mode和Fixed/Locked mode。  
+lerna的默认模式是Fixed/Locked mode，在这种模式下，实际上lerna是把工程当作一个整体来对待。每次发布packages，都是全量发布，无论是否修改。但是在Independent mode下，lerna会配合Git，检查文件变动，只发布有改动的package。
+
+lerna.json
+```
+{
+  "lerna": "3.5.1",
+  "packages": ["packages/*"],
+  "version": "independent", <-- 这里设置
+  "stream": true,
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "allowBranch": "develop",
+      "verifyAccess": false,
+      "message": "chore(release): publish",
+      "registry": "https://registry.npm.local"
+    }
+  },
+  "conventionalCommits": true
+}
+```

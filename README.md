@@ -1,12 +1,11 @@
 ### 周计划
-- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
+- [ing]JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
+- ui-router 系列文章(5-1)1
+- rxjs 系列文章(5-1)1
 - HttpClient
-- ui-router 系列文章(5-1)
-- rxjs 系列文章(5-1)
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
-- lerna 进阶学习(包含项目实战)
 
 ### 学习池
 - IDEA 编辑器学习记录
@@ -221,7 +220,7 @@ https://github.com/camsong/blog/issues/9
 - [JavaScript 函数递归](JavaScript函数递归.md)
 - [JavaScript IIEF 模仿块级作用域](JavaScriptIIEF模仿块级作用域.md)
 - [深入学习 JavaScript 闭包](深入学习javaScript闭包闭包的原理，闭包的作用，闭包与内存管理.md)
-- 函数式编程
+- [函数式编程](JavaScript函数式编程.md)
 - 高阶函数
 - 函数柯里化
 - 函数节流和函数防抖

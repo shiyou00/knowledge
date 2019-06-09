@@ -90,6 +90,7 @@
         * [深入学习javaScript闭包(闭包的原理，闭包的作用，闭包与内存管理)](深入学习javaScript闭包闭包的原理，闭包的作用，闭包与内存管理.md)
         * [JavaScript IIEF 模仿块级作用域](JavaScriptIIEF模仿块级作用域.md)
         * [JavaScript 函数递归](JavaScript函数递归.md)
+        * [函数式编程](JavaScript函数式编程.md)
     * [事件](事件.md)
         * [javaScript事件机制深入学习(事件冒泡，事件捕获，事件绑定方式，移除事件方式，阻止浏览器默认](javaScript事件机制深入学习事件冒泡，事件捕获，事件绑定方式，移除事件方式，阻止浏览器默认.md)
         * [[浏览器事件循环] javaScript事件循环 EventLoop]([浏览器事件循环]javaScript事件循环EventLoop.md)
