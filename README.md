@@ -1,9 +1,9 @@
 ### 周计划
-- 整理课堂笔记
-    - 课前问题
-    - 如何进行pr
-    - 作业
-    - 周报
+- jquery Deffered
+- jquery plugin
+- 作业
+- 周报
+- [ing]课前问题setTimeout和setInterval
 - IDEA 编辑器学习记录
 - ui-router 系列文章(5-1)1
 - rxjs 系列文章(5-1)1
@@ -13,6 +13,8 @@
 - 写 ChangeDetectorRef
 
 ### 学习池
+- call，apply，bind 方法详解
+- 发布订阅模式的深入学习
 - es5 对象
 - es5 函数
 - es6
@@ -30,8 +32,6 @@
 - svg 慕课视频
 - css动画
 - js运动
-- call，apply，bind 方法详解
-- 发布订阅模式的深入学习
 - underscore源码阅读
 - mQuery
 - 算法
@@ -303,7 +303,7 @@ https://github.com/camsong/blog/issues/9
 
 【高级技巧】
 - call，apply，bind 方法详解
-- 高级定时器
+- [setTimeout和setInterval](setTimeout和setInterval.md)
 - 防篡改对象
 - 滚动优化https://www.cnblogs.com/xiaohuochai/p/9188619.html
 - 简易版jQuery——mQuery https://www.cnblogs.com/xiaohuochai/p/7526278.html
@@ -499,6 +499,7 @@ https://github.com/camsong/blog/issues/9
 ## 代码管理工具
 - [git学习总结](git个人学习总结.md)
 - [git分支管理策略](git多人协作式开发时分支管理策略.md)
+- [github上如何进行PR(pullRequest)操作](github上如何进行PR(pullRequest)操作.md)
 
 ## 浏览器
 - 深入理解浏览器工作原理 https://www.cnblogs.com/xiaohuochai/p/9174471.html
@@ -668,6 +669,7 @@ https://github.com/camsong/blog/issues/9
 ## zc
 
 【作业】
+- [setTimeout和setInterval](setTimeout和setInterval.md)
 - [幻灯片插件](幻灯片插件.md)
 
 【周报】
