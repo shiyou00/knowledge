@@ -1,5 +1,10 @@
 ### 周计划
-- [ing]JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/
+- 整理课堂笔记
+    - 课前问题
+    - 如何进行pr
+    - 作业
+    - 周报
+- IDEA 编辑器学习记录
 - ui-router 系列文章(5-1)1
 - rxjs 系列文章(5-1)1
 - HttpClient
@@ -8,23 +13,25 @@
 - 写 ChangeDetectorRef
 
 ### 学习池
-- IDEA 编辑器学习记录
 - es5 对象
 - es5 函数
 - es6
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - 单元测试
+- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/(学完es5函数相关知识，再来写该文章)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - redux理论及在angular中的应用(慕课视频)
 - SVG图案
 - SVG裁切和蒙版
 - vim学习
+- Linux学习
 - react 技术栈
 - Web Components
 - svg 慕课视频
 - css动画
 - js运动
 - call，apply，bind 方法详解
+- 发布订阅模式的深入学习
 - underscore源码阅读
 - mQuery
 - 算法
@@ -33,11 +40,6 @@
 https://github.com/camsong/blog/issues/9
 - 常见的开源协议：MIT等等
 - javascript AOP的实现
-- 图片的原理和优化方案
-	- 什么是图片，计算机是如何表示和理解图片的
-	- 历史上的图片优化方案：雪碧图，文件格式，压缩
-	- 区分可控图片和不可控图片
-	- 该如何优化呢？
 - Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
 
 ## HTML目录
@@ -661,6 +663,18 @@ https://github.com/camsong/blog/issues/9
 - 使用jenkins进行前端项目自动部署
 
 ## [写的更优雅](优雅的代码.md)
+
+
+## zc
+
+【作业】
+- [幻灯片插件](幻灯片插件.md)
+
+【周报】
+- [zc-第一周-周报](zc第一周周报.md)
+
+【内容core】
+- [二、前端框架](zc前端框架.md)
 
 ------------------------------------------------
 
