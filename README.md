@@ -2,8 +2,7 @@
 - jquery Deffered
 - jquery plugin
 - 作业
-- 周报
-- [ing]课前问题setTimeout和setInterval
+- 周报(周五写)
 - IDEA 编辑器学习记录
 - ui-router 系列文章(5-1)1
 - rxjs 系列文章(5-1)1

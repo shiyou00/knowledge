@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    let start = new Date().getTime();
+    let count = 0;
+
+    //占用线程事件
+    setInterval(function(){
+        let j = 0;
+        while(j++ < 100000000){}
+    }, 0);
+
+    //定时器测试
+    setInterval(()=>{
+        count++;
+        console.log( new Date().getTime() - (start + count * 1000));
+    },1000);
+</script>
+</body>
+</html>
