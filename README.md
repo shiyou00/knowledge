@@ -1,14 +1,13 @@
 ### 6月11日
-- jquery Deffered
-- jquery plugin
-- 作业：幻灯片
-- IDEA 快捷键30个
 - ui-router 系列文章(5-1)1
 - rxjs 系列文章(5-1)1
+- jquery plugin
+- 作业：幻灯片
+- jquery Deffered
 
 ### 周计划
 - 周报(周五写)
-- IDEA 快捷键30个
+- IDEA(Alt,Shift,Ctrl + Alt,Ctrl + Shift,Alt + Shift,Ctrl + Shift + Alt)
 - HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
