@@ -1,11 +1,14 @@
-### 周计划
+### 6月11日
 - jquery Deffered
 - jquery plugin
-- 作业
-- 周报(周五写)
-- IDEA 编辑器学习记录
+- 作业：幻灯片
+- IDEA 快捷键30个
 - ui-router 系列文章(5-1)1
 - rxjs 系列文章(5-1)1
+
+### 周计划
+- 周报(周五写)
+- IDEA 快捷键30个
 - HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
@@ -14,6 +17,7 @@
 ### 学习池
 - call，apply，bind 方法详解
 - 发布订阅模式的深入学习
+- javascript运行机制 http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html
 - es5 对象
 - es5 函数
 - es6
@@ -25,7 +29,7 @@
 - SVG图案
 - SVG裁切和蒙版
 - vim学习
-- Linux学习
+- Linux学习(可以进行持续学习，学习越深入对于程序的理解则越深入)
 - react 技术栈
 - Web Components
 - svg 慕课视频
@@ -509,20 +513,21 @@ https://github.com/camsong/blog/issues/9
 - 使用chrome开发者工具中的performance面板解决性能瓶颈 https://www.cnblogs.com/xiaohuochai/p/9182710.html
 - 使用chrome开发者工具中的network面板测量网站网络性能 https://www.cnblogs.com/xiaohuochai/p/9182165.html
 
+## Linux
+- [常用bash命令](Linux常用bash命令.md)
+- [Linux用户组、文件权限](Linux系统中用户组、文件权限浅解.md)
+- vim学习
+- shell编程入门
+- 操作系统理解：unix、linux、windows
+- linux常用命令级管理
+
+
 ## 计算机基础
 - base64
 - unicode编码
-- shell编程入门
 - 时间格式说明
 - 虚拟主机
 - 代理、网关、隧道
-- vim学习
-
-【Linux】
-- [常用bash命令](Linux常用bash命令.md)
-- [Linux用户组、文件权限](Linux系统中用户组、文件权限浅解.md)
-- 操作系统理解：unix、linux、windows
-- linux常用命令级管理
 
 ------------------------------------------------
 
@@ -676,6 +681,10 @@ https://github.com/camsong/blog/issues/9
 
 【内容core】
 - [二、前端框架](zc前端框架.md)
+
+
+## IDEA
+- [IDEA快捷键](IDEA快捷键.md)
 
 ------------------------------------------------
 
