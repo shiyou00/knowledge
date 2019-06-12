@@ -1,48 +1,57 @@
-### 6月11日
-- ui-router 系列文章(5-1)1
-- rxjs 系列文章(5-1)1
-- jquery plugin
-- 作业：幻灯片
+### 6月12日
 - jquery Deffered
+- ui-router系列文章1
+- rxjs系列文章1
+- IDEA(Alt)
 
 ### 周计划
+- ui-router系列文章
+- rxjs系列文章
 - 周报(周五写)
-- IDEA(Alt,Shift,Ctrl + Alt,Ctrl + Shift,Alt + Shift,Ctrl + Shift + Alt)
+- IDEA(Shift,Ctrl + Alt,Ctrl + Shift,Alt + Shift,Ctrl + Shift + Alt)
 - HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
 
 ### 学习池
+
+【短文】
 - call，apply，bind 方法详解
 - 发布订阅模式的深入学习
 - javascript运行机制 http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html
-- es5 对象
-- es5 函数
-- es6
-- [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
-- 单元测试
-- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/(学完es5函数相关知识，再来写该文章)
-- [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
-- redux理论及在angular中的应用(慕课视频)
-- SVG图案
-- SVG裁切和蒙版
-- vim学习
-- Linux学习(可以进行持续学习，学习越深入对于程序的理解则越深入)
-- react 技术栈
-- Web Components
-- svg 慕课视频
-- css动画
-- js运动
-- underscore源码阅读
-- mQuery
-- 算法
 - 如何使用n管理node.js版本
 - JavaScript 浮点数陷阱及解法
 https://github.com/camsong/blog/issues/9
 - 常见的开源协议：MIT等等
 - javascript AOP的实现
 - Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
+- JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/(学完es5函数相关知识，再来写该文章)
+- [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
+
+【中文】
+- mQuery
+- css动画
+- Web Components
+- redux理论及在angular中的应用(慕课视频)
+
+【系列】
+- es5 对象
+- es5 函数
+- es6
+- [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
+- 单元测试
+- Linux学习(可以进行持续学习，学习越深入对于程序的理解则越深入)
+    - vim学习
+- 算法
+- underscore源码阅读
+- js运动
+- react 技术栈
+- svg
+    - SVG图案
+    - SVG裁切和蒙版
+    - svg 慕课视频  
+
 
 ## HTML目录
 【基础】
@@ -501,9 +510,9 @@ https://github.com/camsong/blog/issues/9
 ## 代码管理工具
 - [git学习总结](git个人学习总结.md)
 - [git分支管理策略](git多人协作式开发时分支管理策略.md)
-- [github上如何进行PR(pullRequest)操作](github上如何进行PR(pullRequest)操作.md)
+- [github上如何进行PR(pullRequest)操作](pullRequest操作.md)
 
-## 浏览器
+## 浏览器，
 - 深入理解浏览器工作原理 https://www.cnblogs.com/xiaohuochai/p/9174471.html
 - chrome devTools 使用教程
 - 渲染机制
@@ -650,9 +659,13 @@ https://github.com/camsong/blog/issues/9
 - [yarn](yarn教程.md)
 - [lerna](lerna教程.md)
 
-### 插件库
+## 插件库
 - [chart.js 实战配置、插件编写](chart.jsangular组件封装ng6、实战配置、插件编写.md)
-- lodash
+
+## jquery
+- [jquery如何编写插件](jquery如何编写插件.md)
+- [jquery幻灯片插件](幻灯片插件.md)
+
 
 ## 源码阅读
 
