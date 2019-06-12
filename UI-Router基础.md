@@ -1,6 +1,7 @@
 ## 前言
 本系列主要讲解UI-Router在angular2+中的应用，今天主讲在angular中初始化一个UI-Router并且建立一些简单的路由。
 
+[完整代码](https://github.com/shiyou00/angular-ui-router)
 
 ## 初始化Angular项目
 

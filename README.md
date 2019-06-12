@@ -1,8 +1,8 @@
 ### 6月12日
-- jquery Deffered
-- ui-router系列文章1
+- [ing]ui-router系列文章1
 - rxjs系列文章1
 - IDEA(Alt)
+- jquery Deffered
 
 ### 周计划
 - ui-router系列文章
