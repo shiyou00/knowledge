@@ -1,13 +1,13 @@
-### 6月12日
+### 6月14日
+- 周报(周五写)
 - [ing]ui-router系列文章1
-- rxjs系列文章1
 - IDEA(Alt)
+- rxjs系列文章1
 - jquery Deffered
 
 ### 周计划
 - ui-router系列文章
 - rxjs系列文章
-- 周报(周五写)
 - IDEA(Shift,Ctrl + Alt,Ctrl + Shift,Alt + Shift,Ctrl + Shift + Alt)
 - HttpClient
 - Angular文档阅读：DI 实战
@@ -51,6 +51,10 @@ https://github.com/camsong/blog/issues/9
     - SVG图案
     - SVG裁切和蒙版
     - svg 慕课视频  
+
+【zc驱动】  
+- todomvc backbone版本
+- backbone 框架源码
 
 
 ## HTML目录
@@ -198,6 +202,7 @@ https://github.com/camsong/blog/issues/9
 - Array基础
 - 数组方法总结
 - [数组检测方式](JavaScript数据类型检测数组Array检测方式.md)
+- [判断两个数组是否相等的方法](判断两个数组是否相等的方法.md)
 
 【Date】
 - [日期和时间基础知识](JavaScript日期和时间基础知识.md)

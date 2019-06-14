@@ -76,6 +76,7 @@
         * [(void 0) 与 undefined](void0与undefined.md)
     * [数组](数组.md)
         * [JavaScript数据类型检测 数组(Array)检测方式](JavaScript数据类型检测数组Array检测方式.md)
+        * [判断两个数组是否相等的方法](判断两个数组是否相等的方法.md)
     * [Date](Date.md)
         * [JavaScript 日期和时间基础知识](JavaScript日期和时间基础知识.md)
         * [JavaScript Date日期对象以及日期格式化方法](JavaScriptDate日期对象以及日期格式化方法.md)
@@ -234,4 +235,3 @@
         * [jquery幻灯片插件](幻灯片插件.md)
     * [zx-core](zcCore.md)
         * [二、前端框架](zc前端框架.md)
-    
