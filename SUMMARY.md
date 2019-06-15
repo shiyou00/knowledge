@@ -235,3 +235,5 @@
         * [jquery幻灯片插件](幻灯片插件.md)
     * [zx-core](zcCore.md)
         * [二、前端框架](zc前端框架.md)
+* [IDEA](IDEA.md)
+    * [IDEA快捷键](IDEA快捷键.md)

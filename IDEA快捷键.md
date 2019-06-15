@@ -1,5 +1,5 @@
 ## 前言
-题主使用IDEA主要是前端开发，所以不会涉及关于java sdk maven 等相关知识及快捷键
+题主使用IDEA主要是前端开发，所以不会涉及关于`java sdk maven` 等相关知识及快捷键
 
 本文主要列举些项目常用的快捷键
 
@@ -7,8 +7,8 @@
 
 ### Ctrl
 - 在当前文件进行文本查找：`Ctrl + F`
-    - 严格匹配：Match Case
-    - 正则匹配：Regex
+    - 严格匹配：`Match Case`
+    - 正则匹配：`Regex`
 - 在当前文件进行文本替换：`Ctrl + R`
 - 撤销 ：`Ctrl + Z`
 - 剪切光标所在行 或 剪切选择内容 ：`Ctrl + X`
@@ -28,24 +28,16 @@
 - 光标切换到行首：`Ctrl + 左方向`
 
 ### Alt
-- ：``
 
 ### Shift
-- ：``
 
 ### Ctrl + Alt
-- ：``
 
 ### Ctrl + Shift
-- ：``
 
 ### Alt + Shift
-- ：``
 
 ### Ctrl + Shift + Alt
-- ：``
-
-
 
 ## 参考资料
 - [快捷键](https://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html)
