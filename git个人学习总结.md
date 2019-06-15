@@ -103,6 +103,18 @@ git reset --hard HEAD^ : 回退到上一次commit的状态
 git reset --hard commitId : 回退到任意commitId
 ```
 
+修改最后一次提交的msg
+```
+git commit --amend
+```
+
+修改多个提交信息  
+> 再次记住这是一个变基命令 - 在 HEAD~3..HEAD 范围内的每一个提交都会被重写，无论你是否修改信息。 不要涉及任何已经推送到中央服务器的提交 - 这样做会产生一次变更的两个版本，因而使他人困惑。
+
+```
+git rebase -i HEAD~3
+```
+
 
 ## 常见问题
 1、当我们在gitLab上面创建了一个新分支，为什么使用命令行是看不到的？

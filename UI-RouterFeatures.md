@@ -74,9 +74,90 @@ FolderListComponent定义
 [完整代码](https://github.com/shiyou00/angular-ui-router)
 
 ## Urls
+state中定义的URL实际上只是一个URL片段。  
+每个状态只定义它自己的那部分。如果是嵌套路由时，会先读取父路由拼接在一起的。  
+
+上面代码中如果想访问`childTwoState`这个状态，实际上访问的路由地址是：`/folder/foo`
 
 ## Parameters
+在一个状态中，或者说一个具体的URL中我们经常是需要使用参数的。
+
+基本写法：
+```
+const childTwoState = {
+  url: '/foo/{fooId}', 第一种写法
+  url: '/foo?fooId' 第二种写法
+};
+```
+
+但是这样写也是不够的，我们还需要对参数项做一些配置
+```
+const childTwoState = {
+  name: 'folderlist.foolist',
+  url: '/foo?fooId',
+  component: FooListComponent,
+  params: {
+      fooId: {
+          type: 'string',
+          value: "aabbcc", // <-- Default value aabbcc
+          squash: true, // 压缩模式:省略URL中的默认参数值
+      },
+  }
+};
+```
+type类型: string、int、bool、Date、json。  
+value: 设置默认值  
+squash: true/false,压缩模式:省略URL中的默认参数值  
+
+参数的配置项是非常重要的，后续会详细讲解的。
 
 ## Resolve Data
+简单的理解：    
+当路由进入一个组件时，通过resolve可以实现准备好这个路由所需的数据；
+
+当一个resolve请求的后台接口报错例如：401，404，500等错误时，将调用错误的钩子拒绝进入该路由组件；
+
+当然一个组件可以同时注入多个resolve的；  
+
+解析resolve的过程是异步的。如果一个resolve返回一个Promise，则将暂停转换，直到该Promise得到解决。因此，resolve数据参与转换生命周期。  
+
+[重点]resolve系统实际上是一个异步的、分层的依赖注入系统。
+
+```
+var state = {
+  name: 'user',
+  url: '/user/:userId
+  resolve: [
+    {
+      token: 'user',
+      policy: { when: 'EAGER' }, // 
+      deps: ['UserService', Transition],
+      resolveFn: (userSvc, trans) => userSvc.fetchUser(trans.params().userId) },
+    }
+  ]
+}
+```
+代码解析：   
+token: 注入到组件数据的名字，在组件中可以通过 @Input() user的方式注入该resolve  
+policy: 定义何时获取到 resolve 数据，`EAGER`(进入到组件前) 获取 `LAZY`(进入到组件后)    
+deps: 该resolve依赖的服务  
+resolveFn: resolve函数主体，通过它来获取后台返回的请求数据  
 
 ## Transitions
+路由切换：一个状态(URL)切换到另外一个状态(URL)
+
+声明周期：
+    - before：跳转开始之前
+    - start：跳转开始
+    - exit：退出状态
+    - retain：状态被保留(状态是活动的，既不退出也不进入)
+    - enter：进入状态
+    - finish：完成
+    - success/error：跳转完成后的状态
+    
+Transition 生命周期挂钩：
+    - 钩子可以在转换生命周期的任何阶段注册
+    - 钩子可以改变转换
+
+## 小结
+通过简单了解关于ui-router的一些基本概念，我们能明白，一个url就是一个state状态对象，一个state状态对象包含：视图、url、参数、resolve等属性。当状态之间跳转的时候，又要经历一些生命周期以及触发一些钩子。在接下来的文章我会对每一个部分进行详细讲解和学习，并应用到实战项目中，加深对ui-router的理解。

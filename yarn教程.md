@@ -30,6 +30,7 @@ yarn init
 
 【添加依赖包】
 ```
+yarn global add [package] 全局安装包
 yarn add [package]
 yarn add [package]@[version]
 yarn add [package]@[tag]

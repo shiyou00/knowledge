@@ -1,13 +1,13 @@
-### 6月14日
-- 周报(周五写)
-- [ing]ui-router系列文章1
+### 6月16日
 - IDEA(Alt)
-- rxjs系列文章1
+- rxjs系列文章2
 - jquery Deffered
+- 整理第三节课的内容
+- 完成第三节课的作业：阅读 ant design
 
 ### 周计划
-- ui-router系列文章
-- rxjs系列文章
+- ui-router系列文章(3)
+- rxjs系列文章(2)
 - IDEA(Shift,Ctrl + Alt,Ctrl + Shift,Alt + Shift,Ctrl + Shift + Alt)
 - HttpClient
 - Angular文档阅读：DI 实战
