@@ -27,17 +27,36 @@
 - 光标切换到行尾：`Ctrl + 右方向`
 - 光标切换到行首：`Ctrl + 左方向`
 
-### Alt
-
 ### Shift
+- 取消缩进：`Shift + Tab`
+- 开始新一行：`Shift + Enter`
+- 关闭当前文件：`Shift + 单击 + 文件名`
 
 ### Ctrl + Alt
+- 格式化代码，可以对当前文件和整个包目录使用：`Ctrl + Alt + L`
+- 对选中的代码弹出环绕选项弹出层：`Ctrl + Alt + T`
+- 光标所在行上空出一行，光标定位到新行：`Ctrl + Alt + Enter`
+- 退回到上一个操作的地方：`Ctrl + Alt + 左方向键`
+- 前进到下一个操作的地方：`Ctrl + Alt + 右方向键`
 
 ### Ctrl + Shift
+- 根据输入内容查找整个项目 或 指定目录内文件：`Ctrl + Shift + F`
+- 根据输入内容替换对应内容：`Ctrl + Shift + R`
+- 取消撤销：`Ctrl + Shift + Z`
+- 对选中的代码进行大 / 小写轮流转换：`Ctrl + Shift + U`
+- 复制当前文件磁盘路径到剪贴板：`Ctrl + Shift + C`
+- 弹出缓存的最近拷贝的内容管理器弹出层：`Ctrl + Shift + V`
+- 展开所有代码：`Ctrl + Shift + +`
+- 折叠所有代码：`Ctrl + Shift + -`
+- 选择该行：`Ctrl + Shift + 左方向键|右方向键`
+- 光标放在方法名上，调整方法排序：`Ctrl + Shift + 前方向键|后方向键`
 
 ### Alt + Shift
+- 移动光标所在行向上移动：`Alt + Shift + 前方向键`
+- 移动光标所在行向下移动：`Alt + Shift + 后方向键`
 
 ### Ctrl + Shift + Alt
+- 无格式黏贴：`Ctrl + Shift + Alt + V`
 
 ## 参考资料
 - [快捷键](https://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html)

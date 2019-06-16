@@ -100,7 +100,7 @@
     * [DOM](DOM.md)
     * [元素尺寸](元素尺寸.md)
     * [表单脚本](表单脚本.md)
-    * [校本化css](校本化css.md)
+    * [脚本化css](脚本化CSS.md)
     * [HTML5新特性](HTML5新特性.md)
         * [javaScript drag对象进行拖拽使用详解](javaScriptdrag对象进行拖拽使用详解.md)
     * [错误处理与调试](错误处理与调试.md)
