@@ -234,6 +234,7 @@
         * [setTimeout和setInterval](setTimeout和setInterval.md)
         * [jquery幻灯片插件](幻灯片插件.md)
     * [zx-core](zcCore.md)
+        * [一、前端的自我修养](zc前端修养.md)
         * [二、前端框架](zc前端框架.md)
 * [IDEA](IDEA.md)
     * [IDEA快捷键](IDEA快捷键.md)

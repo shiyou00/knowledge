@@ -1,11 +1,10 @@
-### 6月16日
-- 整理第三节课的内容
-- 完成第三节课的作业：阅读 ant design
+### 6月17日
+- [ing]完成第三节课的作业：阅读 ant design(https://ant.design/index-cn)
 - jquery Deffered
 
 ### 周计划
+- zc第二周周报(周五)
 - ui-router系列文章(3)
-- rxjs系列文章(2)
 - HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
@@ -33,6 +32,7 @@ https://github.com/camsong/blog/issues/9
 - redux理论及在angular中的应用(慕课视频)
 
 【系列】
+- rxjs系列文章(2)
 - es5 对象
 - es5 函数
 - es6
@@ -279,7 +279,6 @@ https://github.com/camsong/blog/issues/9
 - 表单的基础知识
 - 文本框脚本
 - 选择框脚本
-- 富文本编辑
 
 【脚本化CSS】
 - JavaScript 动态操作CSS
@@ -320,6 +319,7 @@ https://github.com/camsong/blog/issues/9
 - 防篡改对象
 - 滚动优化https://www.cnblogs.com/xiaohuochai/p/9188619.html
 - 简易版jQuery——mQuery https://www.cnblogs.com/xiaohuochai/p/7526278.html
+- 实现富文本编辑器
 
 【动画】
 - JavaScript 运动系列总结
@@ -636,6 +636,7 @@ https://github.com/camsong/blog/issues/9
 ## 前端安全
 - 跨域问题
 - 跨站脚本攻击（XSS）
+- 富文本编辑器如何解决XSS问题
 - CSRF攻击
 - oAuth2.0
 
@@ -693,7 +694,9 @@ https://github.com/camsong/blog/issues/9
 【周报】
 - [zc-第一周-周报](zc第一周周报.md)
 
+
 【内容core】
+- [一、前端的自我修养](zc前端修养.md)
 - [二、前端框架](zc前端框架.md)
 
 
