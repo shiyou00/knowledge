@@ -191,6 +191,8 @@
     * [ui-router](uiRouter.md)
         * [Angular2+项目中安装并初始化UI-Router](UI-Router基础.md)
         * [UI-Router Features](UI-RouterFeatures.md)
+        * [UI-Router State对象](State对象.md)
+        * [UI-Router 搭建一个简单的后台管理](UI-Router实例.md)
     * [状态管理](状态管理.md)
     * [重难](重难.md)
         * [JavaScript 实现一个简单的MVVM前端框架(ES6语法)](JavaScript实现一个简单的MVVM前端框架ES6语法.md)

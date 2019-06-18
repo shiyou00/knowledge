@@ -1,9 +1,12 @@
 ### 6月18日
-- [ing]ui-router系列文章(3)
-- 展开收起动画的实现
+- [ing]展开收起动画的实现(并扩展一个jquery插件)
 
 ### 周计划
-- ui-router系列文章(4)
+- ui-router系列文章
+    - params
+    - directives
+    - Transition
+    - 后台管理系统实战案例
 - HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
@@ -627,6 +630,8 @@ https://github.com/camsong/blog/issues/9
 【路由】
 - [UI-Router基础](UI-Router基础.md)
 - [UI-Router Features](UI-RouterFeatures.md)
+- [UI-Router State对象](State对象.md)
+- [UI-Router 搭建一个简单的后台管理](UI-Router实例.md)
 
 【状态管理】
 - Mobx
