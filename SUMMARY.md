@@ -223,6 +223,7 @@
   [jquery](jquery.md)  
     * [jquery如何编写插件](jquery如何编写插件.md)
     * [jquery幻灯片插件](幻灯片插件.md)
+    * [jquery Deferred 对象](Deferred.md)
 * [源码阅读](源码.md)
     * [underscore源码-内部方法](underscore源码-内部方法.md)
     * [underscore源码-外部方法](underscore源码-外部方法.md)

@@ -1,14 +1,14 @@
-### 6月17日
-- [ing]完成第三节课的作业：阅读 ant design(https://ant.design/index-cn)
-- jquery Deffered
+### 6月18日
+- [ing]ui-router系列文章(3)
+- 展开收起动画的实现
 
 ### 周计划
-- zc第二周周报(周五)
-- ui-router系列文章(3)
+- ui-router系列文章(4)
 - HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
+- zc第二周周报(周五)
 
 ### 学习池
 
@@ -24,10 +24,11 @@ https://github.com/camsong/blog/issues/9
 - Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/(学完es5函数相关知识，再来写该文章)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
+- 如何实现栅格化系统布局
+- font-variant-numeric 设置为 tabular-nums，使其为等宽字体。(https://www.fonts.com/content/learning/fontology/level-3/numbers/proportional-vs-tabular-figures)
 
 【中文】
 - mQuery
-- css动画
 - Web Components
 - redux理论及在angular中的应用(慕课视频)
 
@@ -41,13 +42,34 @@ https://github.com/camsong/blog/issues/9
 - Linux学习(可以进行持续学习，学习越深入对于程序的理解则越深入)
     - vim学习
 - 算法
-- underscore源码阅读
+- css动画
+    - 过渡transition
+    - 变形transform(2d)
+    - 变形transform(3d)
+    - 变形transform的副作用
+    - 动画animation
+    - 动画animation的三个应用(漂浮的白云、旋转的星球和正方体合成)
+    - animate.css的使用
 - js运动
+    - 匀速运动
+    - 变速运动
+    - 曲线运动
+    - 抖动
+    - 缓冲运动和弹性运动
+    - 投掷和轨迹
+    - 鼠标跟随运动
+    - 碰壁运动
+    - 碰撞运动
+    - 时间版运动
+    - velocity.js的使用
+    - tween.js的使用
+    - 帧动画
 - react 技术栈
 - svg
     - SVG图案
     - SVG裁切和蒙版
     - svg 慕课视频  
+- underscore源码阅读
 
 【zc驱动】  
 - todomvc backbone版本
@@ -320,6 +342,14 @@ https://github.com/camsong/blog/issues/9
 - 滚动优化https://www.cnblogs.com/xiaohuochai/p/9188619.html
 - 简易版jQuery——mQuery https://www.cnblogs.com/xiaohuochai/p/7526278.html
 - 实现富文本编辑器
+
+【拖拽】
+- 原生拖放
+- 模拟拖拽
+- 磁性吸附
+- 碰撞检测
+- 拖拽改变元素大小
+- 模拟滚动条
 
 【动画】
 - JavaScript 运动系列总结
@@ -668,7 +698,7 @@ https://github.com/camsong/blog/issues/9
 ## jquery
 - [jquery如何编写插件](jquery如何编写插件.md)
 - [jquery幻灯片插件](幻灯片插件.md)
-
+- [jquery Deferred 对象](Deferred.md)
 
 ## 源码阅读
 
