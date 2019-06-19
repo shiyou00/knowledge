@@ -2,16 +2,16 @@
 - ui-router系列文章
     - directives
 - Angular文档阅读：DI 实战
+- 作业：用代码写个日记
 
 ### 周计划(每周：系列+短文)
 - ui-router系列文章
     - Transition
     - 后台管理系统实战案例
 - Angular文档阅读：浏览组件树
-- zc第二周周报(周五)
 
 ### 学习池
-【短文】
+【短文】  
 - call，apply，bind 方法详解
 - javascript运行机制 http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html
 - 如何使用n管理node.js版本
@@ -37,6 +37,7 @@ https://github.com/camsong/blog/issues/9
 - es5 对象
 - es5 函数
 - es6
+- babel
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - 单元测试
 - Linux学习(可以进行持续学习，学习越深入对于程序的理解则越深入)
@@ -73,11 +74,16 @@ https://github.com/camsong/blog/issues/9
 - 设计模式
     - 发布订阅模式
     - 单例模式
+    - 工厂模式
 
 【zc驱动】  
 - todomvc backbone版本
 - backbone 框架源码
-
+- css规范学习
+- stylelint
+- js规范学习
+- ESLint
+- editorconfig的实践
 
 ## HTML目录
 【基础】
@@ -679,6 +685,9 @@ https://github.com/camsong/blog/issues/9
 
 ## 前端监控
 
+## 前端架构
+- [如何进行技术方案选型](如何进行技术方案选型.md)
+
 ## 计算机图形
 
 ### canvas
@@ -727,14 +736,16 @@ https://github.com/camsong/blog/issues/9
 【作业】
 - [setTimeout和setInterval](setTimeout和setInterval.md)
 - [幻灯片插件](幻灯片插件.md)
+- [用代码写个日记](用代码写个日记.md)
 
 【周报】
 - [zc-第一周-周报](zc第一周周报.md)
-
+- [zc-第二周-周报](zc第二周周报.md)
 
 【内容core】
 - [一、前端的自我修养](zc前端修养.md)
 - [二、前端框架](zc前端框架.md)
+- [三、前端规范](zc前端规范.md)
 
 
 ## IDEA
