@@ -11,6 +11,7 @@ npm install -g angular/cli
 ## 创建一个项目
 ```
 ng new taskmgr
+样式默认使用less: --style less
 ```
 
 ## 启动一个项目

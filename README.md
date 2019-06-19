@@ -1,23 +1,20 @@
-### 6月18日
-- [ing]展开收起动画的实现(并扩展一个jquery插件)
+### 6月19日
+- ui-router系列文章(params)
+- HttpClient
 
 ### 周计划
 - ui-router系列文章
-    - params
     - directives
     - Transition
     - 后台管理系统实战案例
-- HttpClient
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - 写 ChangeDetectorRef
 - zc第二周周报(周五)
 
 ### 学习池
-
 【短文】
 - call，apply，bind 方法详解
-- 发布订阅模式的深入学习
 - javascript运行机制 http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html
 - 如何使用n管理node.js版本
 - JavaScript 浮点数陷阱及解法
@@ -31,7 +28,7 @@ https://github.com/camsong/blog/issues/9
 - font-variant-numeric 设置为 tabular-nums，使其为等宽字体。(https://www.fonts.com/content/learning/fontology/level-3/numbers/proportional-vs-tabular-figures)
 
 【中文】
-- mQuery
+- sQuery
 - Web Components
 - redux理论及在angular中的应用(慕课视频)
 
@@ -69,10 +66,13 @@ https://github.com/camsong/blog/issues/9
     - 帧动画
 - react 技术栈
 - svg
-    - SVG图案
-    - SVG裁切和蒙版
+    - svg 图案
+    - svg 裁切和蒙版
     - svg 慕课视频  
 - underscore源码阅读
+- 设计模式
+    - 发布订阅模式
+    - 单例模式
 
 【zc驱动】  
 - todomvc backbone版本
@@ -343,7 +343,7 @@ https://github.com/camsong/blog/issues/9
 - [setTimeout和setInterval](setTimeout和setInterval.md)
 - 防篡改对象
 - 滚动优化https://www.cnblogs.com/xiaohuochai/p/9188619.html
-- 简易版jQuery——mQuery https://www.cnblogs.com/xiaohuochai/p/7526278.html
+- 简易版jQuery——mQuery
 - 实现富文本编辑器
 
 【拖拽】
@@ -617,9 +617,9 @@ https://github.com/camsong/blog/issues/9
 - [Angular依赖注入(DI)与服务service详解](Angular依赖注入与服务service详解.md)
 - 表单
     - [模板驱动表单](模板驱动表单.md)
-    - [wip:[表单]响应式表单](响应式表单.md)
+    - [wip:【表单】响应式表单](响应式表单.md)
     - [自定义表单验证器](自定义表单验证器.md)
-    - [[表单]自定义表单控件](自定义表单控件.md)
+    - [【表单】自定义表单控件](自定义表单控件.md)
 - 重难点
     - [@Input() or @Inject() 该如何选择](InputorInjectable.md)
     - [@Input()的set or ngOnChanges()](Input的set还是ngOnChanges.md)
