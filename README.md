@@ -1,6 +1,5 @@
 ### 6月19日
-- ui-router系列文章(params)
-- HttpClient
+- [ing]HttpClient
 
 ### 周计划
 - ui-router系列文章
@@ -9,7 +8,6 @@
     - 后台管理系统实战案例
 - Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
-- 写 ChangeDetectorRef
 - zc第二周周报(周五)
 
 ### 学习池
@@ -187,8 +185,8 @@ https://github.com/camsong/blog/issues/9
 - [css-modules](css-modules.md)
 
 ## JavaScript目录
-【ES5】
-【基本概念】
+【ES5】   
+【基本概念】   
 - [JavaScript 基础(语法、关键字和保留字、变量)](JavaScript基础基础语法、关键字和保留字、变量.md)
 - [JavaScript 基础(表达式)](JavaScript基础表达式.md)
 - JavaScript 基础(动态脚本)
@@ -631,6 +629,7 @@ https://github.com/camsong/blog/issues/9
 - [UI-Router基础](UI-Router基础.md)
 - [UI-Router Features](UI-RouterFeatures.md)
 - [UI-Router State对象](State对象.md)
+- [UI-Router params参数详解](uirouter-params.md)
 - [UI-Router 搭建一个简单的后台管理](UI-Router实例.md)
 
 【状态管理】
