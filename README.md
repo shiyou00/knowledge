@@ -1,12 +1,12 @@
 ### 6月19日
-- [ing]HttpClient
-
-### 周计划
 - ui-router系列文章
     - directives
+- Angular文档阅读：DI 实战
+
+### 周计划(每周：系列+短文)
+- ui-router系列文章
     - Transition
     - 后台管理系统实战案例
-- Angular文档阅读：DI 实战
 - Angular文档阅读：浏览组件树
 - zc第二周周报(周五)
 
@@ -24,6 +24,8 @@ https://github.com/camsong/blog/issues/9
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - 如何实现栅格化系统布局
 - font-variant-numeric 设置为 tabular-nums，使其为等宽字体。(https://www.fonts.com/content/learning/fontology/level-3/numbers/proportional-vs-tabular-figures)
+- CSRF攻击
+- HttpClient(完成rxjs之后在写)
 
 【中文】
 - sQuery
@@ -613,6 +615,7 @@ https://github.com/camsong/blog/issues/9
 - [Angular事件处理](Angular事件处理.md)
 - [NgModule](NgModule.md)
 - [Angular依赖注入(DI)与服务service详解](Angular依赖注入与服务service详解.md)
+- [Angular HttpClient](HttpClient.md)
 - 表单
     - [模板驱动表单](模板驱动表单.md)
     - [wip:【表单】响应式表单](响应式表单.md)
