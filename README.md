@@ -1,15 +1,17 @@
-### 6月19日
-- ui-router系列文章
-    - directives
-- Angular文档阅读：DI 实战
+### 6月21日
+- [ing]ui-router系列(directives)
 - 作业：用代码写个日记
 
 ### 周计划(每周：系列+短文)
-- ui-router系列文章
+- angular
+    - ng-content
+    - ElementRef
+    - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
+    - angular响应式表单
+- ui-router系列
     - Transition
     - 后台管理系统实战案例
-- Angular文档阅读：浏览组件树
-
+    
 ### 学习池
 【短文】  
 - call，apply，bind 方法详解
@@ -33,9 +35,13 @@ https://github.com/camsong/blog/issues/9
 - redux理论及在angular中的应用(慕课视频)
 
 【系列】
+- es5 函数
 - rxjs系列文章(2)
 - es5 对象
-- es5 函数
+- 设计模式
+    - 发布订阅模式
+    - 单例模式
+    - 工厂模式
 - es6
 - babel
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
@@ -65,16 +71,11 @@ https://github.com/camsong/blog/issues/9
     - velocity.js的使用
     - tween.js的使用
     - 帧动画
-- react 技术栈
 - svg
     - svg 图案
     - svg 裁切和蒙版
-    - svg 慕课视频  
+    - svg 慕课视频      
 - underscore源码阅读
-- 设计模式
-    - 发布订阅模式
-    - 单例模式
-    - 工厂模式
 
 【zc驱动】  
 - todomvc backbone版本
@@ -621,6 +622,8 @@ https://github.com/camsong/blog/issues/9
 - [Angular事件处理](Angular事件处理.md)
 - [NgModule](NgModule.md)
 - [Angular依赖注入(DI)与服务service详解](Angular依赖注入与服务service详解.md)
+- [[进阶]依赖注入实战](依赖注入实战.md)
+- [[进阶]angular中组件的引用](angular中组件的引用.md)
 - [Angular HttpClient](HttpClient.md)
 - 表单
     - [模板驱动表单](模板驱动表单.md)
