@@ -196,7 +196,7 @@
         * [UI-Router Features](UI-RouterFeatures.md)
         * [UI-Router State对象](State对象.md)
         * [UI-Router params参数详解](uirouter-params.md)
-        * [UI-Router ]()
+        * [UI-Router 常用指令](uirouter-directives.md)
         * [UI-Router 搭建一个简单的后台管理](UI-Router实例.md)
     * [状态管理](状态管理.md)
     * [重难](重难.md)
