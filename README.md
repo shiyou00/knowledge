@@ -1,6 +1,6 @@
-### 6月21日
-- [ing]ui-router系列(directives)
-- 作业：用代码写个日记
+### 6月24日
+- [ing]整理上课内容
+- [ing]完成课上作业
 
 ### 周计划(每周：系列+短文)
 - angular
@@ -9,6 +9,7 @@
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
+    - directives
     - Transition
     - 后台管理系统实战案例
     
@@ -747,10 +748,10 @@ https://github.com/camsong/blog/issues/9
 - [zc-第二周-周报](zc第二周周报.md)
 
 【内容core】
-- [一、前端的自我修养](zc前端修养.md)
-- [二、前端框架](zc前端框架.md)
-- [三、前端规范](zc前端规范.md)
-
+- [1、前端的自我修养](zc前端修养.md)
+- [2、前端框架](zc前端框架.md)
+- [3、前端规范](zc前端规范.md)
+- [4、图片知多少](zc图片知多少.md)
 
 ## IDEA
 - [IDEA快捷键](IDEA快捷键.md)
