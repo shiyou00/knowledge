@@ -1,6 +1,7 @@
-### 6月24日
-- [ing]整理上课内容
+### 6月25日
 - [ing]完成课上作业
+- Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
+- 整理下博客园文章，只留下原创文章
 
 ### 周计划(每周：系列+短文)
 - angular
@@ -12,7 +13,9 @@
     - directives
     - Transition
     - 后台管理系统实战案例
-    
+- 占位框子是如何实现的
+- retina && 4k屏幕
+
 ### 学习池
 【短文】  
 - call，apply，bind 方法详解
@@ -22,7 +25,6 @@
 https://github.com/camsong/blog/issues/9
 - 常见的开源协议：MIT等等
 - javascript AOP的实现
-- Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
 - JavaScript 函数式编程http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/(学完es5函数相关知识，再来写该文章)
 - [四种常见的 POST 提交数据方式](https://imququ.com/post/four-ways-to-post-data-in-http.html)
 - 如何实现栅格化系统布局
