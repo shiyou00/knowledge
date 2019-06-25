@@ -1,7 +1,7 @@
 ### 6月25日
-- [ing]完成课上作业
-- Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
 - 整理下博客园文章，只留下原创文章
+- 预习下节课内容
+- Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
 
 ### 周计划(每周：系列+短文)
 - angular
@@ -14,7 +14,7 @@
     - Transition
     - 后台管理系统实战案例
 - 占位框子是如何实现的
-- retina && 4k屏幕
+
 
 ### 学习池
 【短文】  
@@ -31,6 +31,7 @@ https://github.com/camsong/blog/issues/9
 - font-variant-numeric 设置为 tabular-nums，使其为等宽字体。(https://www.fonts.com/content/learning/fontology/level-3/numbers/proportional-vs-tabular-figures)
 - CSRF攻击
 - HttpClient(完成rxjs之后在写)
+- retina && 4k屏幕
 
 【中文】
 - sQuery
