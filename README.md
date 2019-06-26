@@ -1,16 +1,14 @@
 ### 6月26日
-- [ing]占位框子是如何实现的
-- Base-64编码 http://www.cnblogs.com/xiaohuochai/p/6202207.html
-- 预习下节课内容
+- [ing]预习下节课内容
+- ui-router系列(directives)
+- angular(ng-content)
 
 ### 周计划(每周：系列+短文)
 - angular
-    - ng-content
     - ElementRef
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
-    - directives
     - Transition
     - 后台管理系统实战案例
 
@@ -528,6 +526,7 @@ https://github.com/camsong/blog/issues/9
 - Hybrid-App
 - 移动端中的陀螺仪 https://www.cnblogs.com/xiaohuochai/p/8511935.html
 - 移动web开发之touch事件 https://www.cnblogs.com/xiaohuochai/p/8293225.html
+- 加载骨架屏幕
 
 ## TypeScript
 
