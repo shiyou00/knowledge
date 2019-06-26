@@ -1,15 +1,15 @@
-### 6月26日
-
+### 6月27日
+- angular(ng-content)
+- angular(ElementRef)
+- ui-router系列(directives)
+- visual DOM (1、先阅读一些优秀文章。2、在进行自我的深度思考总结 3、输出属于自己的文章)
+- 晚上视频学习
 
 ### 周计划(每周：系列+短文)
-- visual DOM(入门学习第一篇)
 - angular
-    - ng-content
-    - ElementRef
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
-    - directives
     - Transition
     - 后台管理系统实战案例
 
@@ -89,7 +89,6 @@ https://github.com/camsong/blog/issues/9
 - js规范学习
 - ESLint
 - editorconfig的实践
-- visual DOM
 
 ## HTML目录
 【基础】
