@@ -497,7 +497,6 @@ https://github.com/camsong/blog/issues/9
 - 实体和编码
 - 字符集
 - 内容协商
-- 使用javascript实现base64编码器
 
 【内容发布】
 - Web主机托管
@@ -574,7 +573,7 @@ https://github.com/camsong/blog/issues/9
 
 
 ## 计算机基础
-- base64
+- [base64原理及引用](base64.md)
 - unicode编码
 - 时间格式说明
 - 虚拟主机
