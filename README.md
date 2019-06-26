@@ -1,14 +1,14 @@
 ### 6月26日
-- [ing]预习下节课内容
-- ui-router系列(directives)
-- angular(ng-content)
+
 
 ### 周计划(每周：系列+短文)
 - angular
+    - ng-content
     - ElementRef
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
+    - directives
     - Transition
     - 后台管理系统实战案例
 
@@ -28,6 +28,8 @@ https://github.com/camsong/blog/issues/9
 - CSRF攻击
 - HttpClient(完成rxjs之后在写)
 - retina && 4k屏幕
+- Git Commit Message
+- Git Hook
 
 【中文】
 - sQuery
@@ -42,8 +44,9 @@ https://github.com/camsong/blog/issues/9
     - 发布订阅模式
     - 单例模式
     - 工厂模式
+- babel    
 - es6
-- babel
+- webpack
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - 单元测试
 - Linux学习(可以进行持续学习，学习越深入对于程序的理解则越深入)
@@ -384,6 +387,9 @@ https://github.com/camsong/blog/issues/9
 - 如何实现中英文切换
 - [JavaScript 判断数组和对象是否为空的方法](JavaScript判断数组和对象是否为空的方法.md)
 
+【Babel】
+- Babel 入门学习
+
 【ES6基础】
 - let 和 const 命令
 - 变量的解构赋值
@@ -404,7 +410,6 @@ https://github.com/camsong/blog/issues/9
 - Module 语法
 
 【ES6难点】
-- Babel
 - [ES6 新增数组方法的实战用法](【重难】ES6数组遍历方法的实战用法总结（forEach，every，some，map，filter）.md)
 
 ## Node目录
@@ -553,6 +558,8 @@ https://github.com/camsong/blog/issues/9
 - [git学习总结](git个人学习总结.md)
 - [git分支管理策略](git多人协作式开发时分支管理策略.md)
 - [github上如何进行PR(pullRequest)操作](pullRequest操作.md)
+- Git Commit Message
+- Git Hook
 
 ## 浏览器，
 - 深入理解浏览器工作原理 https://www.cnblogs.com/xiaohuochai/p/9174471.html
