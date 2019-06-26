@@ -202,6 +202,7 @@
         * [UI-Router 常用指令](uirouter-directives.md)
         * [UI-Router 搭建一个简单的后台管理](UI-Router实例.md)
     * [状态管理](状态管理.md)
+    * [visual DOM](visualDOM.md)
     * [重难](重难.md)
         * [JavaScript 实现一个简单的MVVM前端框架(ES6语法)](JavaScript实现一个简单的MVVM前端框架ES6语法.md)
 * [webComponent](webComponent.md)

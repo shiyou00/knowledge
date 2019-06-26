@@ -2,6 +2,7 @@
 
 
 ### 周计划(每周：系列+短文)
+- visual DOM(入门学习第一篇)
 - angular
     - ng-content
     - ElementRef
@@ -88,6 +89,7 @@ https://github.com/camsong/blog/issues/9
 - js规范学习
 - ESLint
 - editorconfig的实践
+- visual DOM
 
 ## HTML目录
 【基础】
@@ -656,11 +658,13 @@ https://github.com/camsong/blog/issues/9
 - Mobx
 - redux https://www.cnblogs.com/xiaohuochai/p/8652683.html
 
+【visual DOM】
+
+
 【框架的重点难点】
 - vue 和 react 的区别
 - [实现一个简单的mvvm框架](JavaScript实现一个简单的MVVM前端框架ES6语法.md)
 - 服务端渲染方案SSR
-- visualDOM
 - diff算法
 - 编写简单版的UI组件库
 - 网站PWA升级https://www.cnblogs.com/xiaohuochai/p/9173959.html
