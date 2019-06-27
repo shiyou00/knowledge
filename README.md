@@ -1,12 +1,12 @@
 ### 6月27日
-- angular(ng-content)
-- angular(ElementRef)
+- [ing]angular(ElementRef)
 - ui-router系列(directives)
-- visual DOM (1、先阅读一些优秀文章。2、在进行自我的深度思考总结 3、输出属于自己的文章)
-- 晚上视频学习
+- md文件按照文件夹规整
+- 视频学习
 
 ### 周计划(每周：系列+短文)
 - angular
+    - ng-template
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
@@ -33,6 +33,7 @@ https://github.com/camsong/blog/issues/9
 - Git Hook
 
 【中文】
+- visual DOM (1、先阅读一些优秀文章。2、在进行自我的深度思考总结 3、输出属于自己的文章)
 - sQuery
 - Web Components
 - redux理论及在angular中的应用(慕课视频)
@@ -619,20 +620,21 @@ https://github.com/camsong/blog/issues/9
 - [AngularJS基础](AngularJS基础.md)
 
 【Angular】
-- [Angular项目初始化](Angular项目初始化.md)
-- [ng常用命令](ng常用命令.md)
-- [Angular模板语法](Angular模板语法.md)
-- [Angular生命周期](Angular生命周期.md)
-- [Angular组件交互](Angular组件交互.md)
-- [Angular样式 ](Angular样式.md)
-- [Angular指令](Angular指令.md)
-- [Angular管道](Angular管道.md)
-- [Angular事件处理](Angular事件处理.md)
+- [Angular 项目初始化](Angular项目初始化.md)
+- [ng 常用命令](ng常用命令.md)
+- [Angular 模板语法](Angular模板语法.md)
+- [Angular 生命周期](Angular生命周期.md)
+- [Angular 组件交互](Angular组件交互.md)
+- [Angular 样式 ](Angular样式.md)
+- [Angular 指令](Angular指令.md)
+- [Angular 管道](Angular管道.md)
+- [Angular 事件处理](Angular事件处理.md)
 - [NgModule](NgModule.md)
-- [Angular依赖注入(DI)与服务service详解](Angular依赖注入与服务service详解.md)
+- [Angular 依赖注入(DI)与服务 service 详解](Angular依赖注入与服务service详解.md)
 - [[进阶]依赖注入实战](依赖注入实战.md)
-- [[进阶]angular中组件的引用](angular中组件的引用.md)
+- [[进阶] angular 中组件的引用](angular中组件的引用.md)
 - [Angular HttpClient](HttpClient.md)
+- [Angular 内容投影 ng-content](Angular-ngContent.md)
 - 表单
     - [模板驱动表单](模板驱动表单.md)
     - [wip:【表单】响应式表单](响应式表单.md)
@@ -640,13 +642,13 @@ https://github.com/camsong/blog/issues/9
     - [【表单】自定义表单控件](自定义表单控件.md)
 - 重难点
     - [@Input() or @Inject() 该如何选择](InputorInjectable.md)
-    - [@Input()的set or ngOnChanges()](Input的set还是ngOnChanges.md)
+    - [@Input()的 set or ngOnChanges()](Input的set还是ngOnChanges.md)
  
  【rxjs】
- - [rxjs简介](rxjs简介.md)
+ - [rxjs 简介](rxjs简介.md)
     
 【路由】
-- [UI-Router基础](UI-Router基础.md)
+- [UI-Router 基础](UI-Router基础.md)
 - [UI-Router Features](UI-RouterFeatures.md)
 - [UI-Router State对象](State对象.md)
 - [UI-Router params参数详解](uirouter-params.md)
