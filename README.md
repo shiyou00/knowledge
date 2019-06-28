@@ -1,15 +1,17 @@
-### 6月27日
-- [ing]angular(ElementRef)
-- ui-router系列(directives)
-- md文件按照文件夹规整
-- 视频学习
+### 6月28日
+- [ing]视频学习
+- ApplicationRef
+- Overlay
+- renderer2
 
 ### 周计划(每周：系列+短文)
 - angular
-    - ng-template
+    - 实现message组件
+    - 实现modal组件
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
+    - directives
     - Transition
     - 后台管理系统实战案例
 
@@ -31,6 +33,7 @@ https://github.com/camsong/blog/issues/9
 - retina && 4k屏幕
 - Git Commit Message
 - Git Hook
+- Git 本地新建分支并推送到远端
 
 【中文】
 - visual DOM (1、先阅读一些优秀文章。2、在进行自我的深度思考总结 3、输出属于自己的文章)
@@ -48,6 +51,7 @@ https://github.com/camsong/blog/issues/9
     - 工厂模式
 - babel    
 - es6
+- 阅读 ant-design 源码
 - webpack
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
 - 单元测试
@@ -635,6 +639,7 @@ https://github.com/camsong/blog/issues/9
 - [[进阶] angular 中组件的引用](angular中组件的引用.md)
 - [Angular HttpClient](HttpClient.md)
 - [Angular 内容投影 ng-content](Angular-ngContent.md)
+- [Angular 操作 DOM 详解](Angular操作DOM详解.md)
 - 表单
     - [模板驱动表单](模板驱动表单.md)
     - [wip:【表单】响应式表单](响应式表单.md)
@@ -738,7 +743,7 @@ https://github.com/camsong/blog/issues/9
 - [underscore源码-内部方法](underscore源码-内部方法.md)
 - [underscore源码-外部方法](underscore源码-外部方法.md)
 
-### antd源码
+### ant-design 源码
 - checkbox的实现
 
 ## 发布

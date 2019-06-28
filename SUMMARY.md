@@ -191,6 +191,7 @@
         * [[重难]@Input() 的 set or ngOnChanges()](Input的set还是ngOnChanges.md)
         * [Angular HttpClient](HttpClient.md)
         * [Angular 内容投影 ng-content](Angular-ngContent.md)
+        * [Angular 操作 DOM 详解](Angular操作DOM详解.md)
     * [rxjs](rxjs.md)
         * [rxjs 简介](rxjs简介.md)
         * [JavaScript 函数式编程](FunctionalProgramming.md)
