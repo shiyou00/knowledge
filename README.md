@@ -1,5 +1,5 @@
 ### 6月28日
-- Cookie
+- [ing]Cookie
 - web worker
 - encodeURI() && encodeURIComponent() 
 - string replace 方法详细学习
@@ -352,7 +352,8 @@ https://github.com/camsong/blog/issues/9
 - [前端上传文件的理解](js文件上传原理（form表单，FormData+XHR2+FileReader+canvas）.md)
 
 【存储】
-- Cookie && sessionStorage && localStorage
+- [Cookie](Cookie.md) 
+- sessionStorage && localStorage
 
 【模块化】
 - amd && cmd && CommonJs && ES6模块化

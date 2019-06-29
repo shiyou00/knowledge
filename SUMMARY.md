@@ -114,6 +114,7 @@
         * [js文件上传原理（form表单 ，FormData + XHR2 + FileReader + canvas）](js文件上传原理（form表单，FormData+XHR2+FileReader+canvas）.md)
         * [axios 入门教程](axios入门教程.md)
     * [存储](存储.md)
+        * [Cookie](Cookie.md) 
     * [模块化](模块化.md)
     * [高级技巧](高级技巧.md)
         * [setTimeout和setInterval](setTimeout和setInterval.md)
