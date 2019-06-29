@@ -1,13 +1,15 @@
 ### 6月28日
-- [ing]视频学习
-- ApplicationRef
+- Cookie
+- web worker
+- encodeURI() && encodeURIComponent() 
+- string replace 方法详细学习
+- ApplicationRef(刷新组件的例子)
 - Overlay
 - renderer2
+- 实现message组件
 
 ### 周计划(每周：系列+短文)
 - angular
-    - 实现message组件
-    - 实现modal组件
     - angular组件中继承extends：https://segmentfault.com/a/1190000008976996
     - angular响应式表单
 - ui-router系列
@@ -51,6 +53,7 @@ https://github.com/camsong/blog/issues/9
     - 工厂模式
 - babel    
 - es6
+- DOM
 - 阅读 ant-design 源码
 - webpack
 - [typeScript](https://jkchao.github.io/typescript-book-chinese/typings/readonly.html#readonly-2)
@@ -94,6 +97,7 @@ https://github.com/camsong/blog/issues/9
 - js规范学习
 - ESLint
 - editorconfig的实践
+
 
 ## HTML目录
 【基础】
@@ -567,8 +571,8 @@ https://github.com/camsong/blog/issues/9
 - Git Commit Message
 - Git Hook
 
-## 浏览器，
-- 深入理解浏览器工作原理 https://www.cnblogs.com/xiaohuochai/p/9174471.html
+## 浏览器
+- [深入理解浏览器工作原理](zc浏览器基础.md)
 - chrome devTools 使用教程
 - 渲染机制
 - 缓存机制
@@ -665,13 +669,13 @@ https://github.com/camsong/blog/issues/9
 - redux https://www.cnblogs.com/xiaohuochai/p/8652683.html
 
 【visual DOM】
+- diff算法
 
 
 【框架的重点难点】
 - vue 和 react 的区别
-- [实现一个简单的mvvm框架](JavaScript实现一个简单的MVVM前端框架ES6语法.md)
+- [实现一个简单的 mvvm 框架](JavaScript实现一个简单的MVVM前端框架ES6语法.md)
 - 服务端渲染方案SSR
-- diff算法
 - 编写简单版的UI组件库
 - 网站PWA升级https://www.cnblogs.com/xiaohuochai/p/9173959.html
 
@@ -768,6 +772,7 @@ https://github.com/camsong/blog/issues/9
 - [2、前端框架](zc前端框架.md)
 - [3、前端规范](zc前端规范.md)
 - [4、图片知多少](zc图片知多少.md)
+- [5、浏览器基础](zc浏览器基础.md)
 
 ## IDEA
 - [IDEA快捷键](IDEA快捷键.md)
