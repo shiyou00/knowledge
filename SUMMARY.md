@@ -249,6 +249,8 @@
 * [zc概览](zc笔记.md)
     * [zx周报](zc周报.md)
         * [zc-第一周-周报](zc第一周周报.md)
+        * [zc-第二周-周报](zc第二周周报.md)
+        * [zc-第三周-周报](zc图片知多少.md)
     * [zx作业](zc作业.md)
         * [setTimeout和setInterval](setTimeout和setInterval.md)
         * [jquery幻灯片插件](幻灯片插件.md)

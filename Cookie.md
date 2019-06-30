@@ -111,3 +111,14 @@ Other-header: other-header-value
 
 　　该头信息指定了一个叫做name的cookie，它会在格林威治时间2017年1月22日7:10:24失效，同时对于www.wrox.com和wrox.com的任何子域(如p2p.wrox.com)都有效
 
+secure标志是cookie中唯一一个非名值对儿的部分，直接包含一个secure单词。如下所示
+```
+HTTP/1.1 200 0K
+Content-type: text/html
+Set-Cookie: name=value; domain=.wrox.com; path=/; secure
+Other-header: other-header-value
+```
+
+这里，创建了一个对于所有wrox.com的子域和域名下(由path参数指定的)所有页面都有效的cookie。因为设置了secure标志，这个cookie只能通过SSL连接才能传输
+
+[注意]域、路径、失效时间、有效期和安全标志都是服务器给浏览器的指示，以指定何时应该发送cookie。这些参数并不会作为发送到服务器的cookie信息的一部分，只有名值对儿才会被发送
