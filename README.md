@@ -1,7 +1,10 @@
 ### 6月28日
 - [ing]Cookie
-- web worker
+- 整理课件 + 完成作业
+- 浏览器的 memory cache disk cache
 - encodeURI() && encodeURIComponent() 
+- web worker
+- service worker（缓存策略）
 - string replace 方法详细学习
 - ApplicationRef(刷新组件的例子)
 - Overlay
@@ -767,6 +770,7 @@ https://github.com/camsong/blog/issues/9
 【周报】
 - [zc-第一周-周报](zc第一周周报.md)
 - [zc-第二周-周报](zc第二周周报.md)
+- [zc-第三周-周报](zc图片知多少.md)
 
 【内容core】
 - [1、前端的自我修养](zc前端修养.md)
