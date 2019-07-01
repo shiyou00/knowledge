@@ -122,3 +122,123 @@ Other-header: other-header-value
 这里，创建了一个对于所有wrox.com的子域和域名下(由path参数指定的)所有页面都有效的cookie。因为设置了secure标志，这个cookie只能通过SSL连接才能传输
 
 [注意]域、路径、失效时间、有效期和安全标志都是服务器给浏览器的指示，以指定何时应该发送cookie。这些参数并不会作为发送到服务器的cookie信息的一部分，只有名值对儿才会被发送
+
+## 读取
+通过document.cookie属性可以获取cookie的值，其返回值是一个字符串，该字符串都是由一系列名值对儿组成，不同名/值对之间通过“分号和空格”分开，其内容包含了所有作用在当前文档的cookie。但是，它并不包含其他设置的cookie属性
+
+```
+document.cookie = "name=match; domain=127.0.0.1; path=/test";
+console.log(document.cookie);//'age=32; name=match'
+```
+
+但是为了更好地査看cookie的值，一般会采用split()方法将cookie值中的名/值对都分离出来
+
+把cookie的值从cookie属性分离出来之后，必须要采用相应的解码方式(取决于之前存储cookie值时采用的编码方式)，把值还原出来。比如，先采用decodeURIComponent()方法把cookie值解码出来，之后再利用JSON.parse()方法转化成json对象
+
+```
+function getCookie(key){
+    var arr1 = document.cookie.split("; ");
+    for(var i = 0; i < arr1.length; i++){
+        var arr2 = arr1[i].split("=");
+        if(arr2[0] == key){
+            return decodeURIComponent(arr2[1]);
+        }
+    }
+}
+
+console.log(getCookie('name'));//'match'
+console.log(getCookie('age'));//'32'
+```
+
+## 设置
+当用于设置值的时候，document.cookie属性可以设置为一个新的cookie字符串。这个cookie字符串会被解释并添加到现有的cookie集合中。设置document.cookie并不会覆盖cookie，除非设置的cookie的名称已经存在。设置cookie的格式如下，和Set-Cookie头中使用的格式一样
+
+```
+name=value;expires=expiration_time;path=domain_path; domain=domain_name;secure 
+```
+
+这些参数中，只有cookie的名字和值是必需的。这段代码创建了一个叫name的cookie，值为Nicholas。当客户端每次向服务器端发送请求的时候，都会发送这个cookie; 当浏览器关闭的时候，它就会被删除
+```
+document.cookie = "name=Nicholas";
+```
+
+以简单的名/值对形式存储的cookie数据有效期只在当前Web浏览器的会话内，一旦用户关闭浏览器，cookie数据就丢失了。如果想要延长cookie的有效期，就需要设置max-age属性来指定cookie的有效期(单位是秒)。按照如下的字符串形式设置cookie属性即可：
+```
+name=value;max-age=seconds
+```
+
+由于cookie的名/值中的值是不允许包含分号、逗号和空白符，因此，在存储前一般可以采用encodeURIComponent()对值进行编码。相应的，读取cookie值的时候需要采用decodeURIComponent()函数解码
+
+要给被创建的cookie指定额外的信息，只要将参数追加到该字符串，和Set-Cookie头中的格式一样，如下所示
+```
+document.cookie = encodeURIComponent("name")+"="+encodeURIComponent("Nicholas") + ";domain=.wrox.com;path=/";
+```
+
+下面的函数用来设置一个cookie的值，同时提供一个可选的max-age属性
+```
+function setCookie(key,value,d){
+    if(d === undefined){
+        document.cookie = encodeURIComponent(key) + "=" + encodeURIComponent(value);
+    }else{
+        document.cookie = encodeURIComponent(key) + "=" + encodeURIComponent(value) + ";max-age=" + (d*60*60*24);        
+    }
+}
+```
+
+【改变】  
+要改变cookie的值，需要使用相同的名字、路径和域，但是新的值重新设置cookie的值。同样地，设置新max-age属性就可以改变原来的cookie的有效期
+
+
+【删除】  
+要删除一个cookie，需要使用相同的名字、路径和域，然后指定一个任意(非空)的值，并且将max-age属性指定为0，再次设置cookie
+
+## 读写差异
+document.cookie属性一次可以读出全部Cookie，但是只能写入一个Cookie，与服务器与浏览器之间的Cookie通信格式有关。浏览器向服务器发送Cookie的时候，是一行将所有Cookie全部发送
+
+```
+GET /sample_page.html HTTP/1.1
+Host: www.example.org
+Cookie: cookie_name1=cookie_value1; cookie_name2=cookie_value2
+Accept: */*
+```
+
+上面的头信息中，Cookie字段是浏览器向服务器发送的Cookie
+
+服务器告诉浏览器需要储存Cookie的时候，则是分行指定
+
+```
+HTTP/1.0 200 OK
+Content-type: text/html
+Set-Cookie: cookie_name1=cookie_value1
+Set-Cookie: cookie_name2=cookie_value2; expires=Sun, 16 Jul 3567 06:23:41 GMT
+```
+上面的头信息中，Set-Cookie字段是服务器写入浏览器的Cookie，一行一个
+
+## 子cookie
+为了绕开浏览器的单域名下的cookie数限制，一些开发人员使用了一种称为子cookie(subcookie)的概念。子cookie是存放在单个cookie中的更小段的数据。也就是使用cookie值来存储多个名称值对儿。子cookie最常见的格式如下所示
+
+```
+name=name1=value1&name2=value2&name3=value3&name4=value4&name5=value5
+```
+子cookie一般也以査询字符串的格式进行格式化。然后这些值可以使用单个cookie进行存储和访问，而非对每个名称——值对儿使用不同的cookie存储。最后网站或者Web应用程序可以无需达到单域名cookie上限也可以存储更加结构化的数据
+
+为了更好地操作子cookie，必须建立一系列新方法。子cookie的解析和序列化会因子cookie的期望用途而略有不同并更加复杂些
+
+
+## HTTP专有
+设置Cookie的时候，如果服务器加上了HttpOnly属性，则这个Cookie无法被javascript读取(即document.cookie不会返回这个Cookie的值)，只能从服务器端读取。进行AJAX操作时，XMLHttpRequest对象也无法包括这个Cookie。这主要是为了防止XSS攻击盗取Cookie
+
+[注意]cookie依然保存在客户端中，只是无法被document.cookie读取
+
+## 小结
+1. cookie 会自动发送给服务器
+2. 服务端可以为客户端设置cookie，同时通过设置HttpOnly属性，放置客户端读取
+3. 浏览器通过window.navigator.cookieEnabled查询cookie是否启用
+4. cookie在有些浏览器上是有数量限制的(Safari和Chrome对于每个域的cookie数量限制没有硬性规定)，通过“子cookie”可以绕开该限制
+5. 共享cookie，要满足域名相同和端口相同(协议不要求)
+6. cookie包含 name、value、expires、max-age、domain、path、secure 7个设置项
+7. document.cookie属性可以读取和设置cookie的值
+8. 想要删除一个cookie，只需将其过期时间设置为小于等于当前时间即可
+9. 设置cookie时，未设置max-age以及expires时，则是一个会话的时间
+
+

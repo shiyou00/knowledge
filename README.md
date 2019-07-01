@@ -1,8 +1,10 @@
 ### 6月28日
-- [ing]Cookie
 - 整理课件 + 完成作业
+- service worker
+    - https://developers.google.com/web/fundamentals/primers/service-workers/?hl=zh-cn
+    - http://taobaofed.org/blog/2018/08/08/workbox3/
 - 浏览器的 memory cache disk cache
-- encodeURI() && encodeURIComponent() 
+- JavaScript 编码解码详解
 - web worker
 - service worker（缓存策略）
 - string replace 方法详细学习
@@ -54,7 +56,7 @@ https://github.com/camsong/blog/issues/9
     - 发布订阅模式
     - 单例模式
     - 工厂模式
-- babel    
+- babel
 - es6
 - DOM
 - 阅读 ant-design 源码
