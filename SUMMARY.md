@@ -108,6 +108,7 @@
     * [脚本化css](脚本化CSS.md)
     * [HTML5新特性](HTML5新特性.md)
         * [javaScript drag对象进行拖拽使用详解](javaScriptdrag对象进行拖拽使用详解.md)
+        * [Web Worker](webWorker.md)
     * [错误处理与调试](错误处理与调试.md)
     * [数据传递与格式](数据传递与格式.md)
         * [Fetch 入门教程](Fetch入门教程.md)
